@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "obsidian": {
+      "command": "uv",
+      "args": ["run", "python", "obsidian-mcp-server/server.py"],
+      "env": {
+        "OBSIDIAN_API_KEY": "your-api-key-here",
+        "OBSIDIAN_API_URL": "https://127.0.0.1:27124"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your-github-token-here"
+      }
+    }
+  }
+}

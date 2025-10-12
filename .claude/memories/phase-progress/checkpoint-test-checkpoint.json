@@ -1,0 +1,18 @@
+{
+  "checkpoint_name": "test-checkpoint",
+  "session_id": "test-session",
+  "timestamp": "2025-10-12T16:26:02.196756",
+  "state": {
+    "phase": "Test Phase",
+    "completed_tasks": [
+      "Task 1",
+      "Task 2"
+    ],
+    "next_tasks": [
+      "Task 3",
+      "Task 4"
+    ]
+  },
+  "thinking_summary": "## Thinking Session Summary\n**Session ID**: test-session\n**Started**: 2025-10-12T16:26:02.194335\n**Thinking Steps**: 4\n\n### Key Thoughts:\n1. **Initial thought**: This is a test thought...\n\n**Final thought**: Finally, I'll implement each component...",
+  "thinking_log_path": "thinking-logs/session-test-session.xml"
+}

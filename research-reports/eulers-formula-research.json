@@ -1,0 +1,308 @@
+{
+  "concept": "Euler's Formula",
+  "concept_id": "eulers-formula",
+  "research_timestamp": "2025-10-13T00:00:00Z",
+
+  "definitions": [
+    {
+      "source": "Mathematical Analysis",
+      "text": "Euler's formula states that for any real number x, e^(ix) = cos(x) + i·sin(x), where e is Euler's number (the base of natural logarithms), i is the imaginary unit (satisfying i² = -1), and cos and sin are the trigonometric functions cosine and sine respectively.",
+      "url": "https://en.wikipedia.org/wiki/Euler%27s_formula"
+    },
+    {
+      "source": "Complex Analysis",
+      "text": "Euler's formula establishes the fundamental relationship between the exponential function and the trigonometric functions in the complex plane. It extends the exponential function from real numbers to complex numbers.",
+      "url": "https://mathworld.wolfram.com/EulersFormula.html"
+    },
+    {
+      "source": "Special Case - Euler's Identity",
+      "text": "When x = π, Euler's formula yields Euler's identity: e^(iπ) + 1 = 0. This equation is celebrated as one of the most beautiful equations in mathematics, connecting five fundamental mathematical constants: e, i, π, 1, and 0.",
+      "url": "https://en.wikipedia.org/wiki/Euler%27s_identity"
+    },
+    {
+      "source": "Taylor Series Derivation",
+      "text": "Euler's formula can be derived by comparing the Taylor series expansions of e^(ix), cos(x), and sin(x). The series for e^(ix) naturally separates into real and imaginary parts that exactly match cos(x) and i·sin(x) respectively.",
+      "url": "https://www.math.toronto.edu/mathnet/questionCorner/epii.html"
+    }
+  ],
+
+  "formulas": [
+    {
+      "latex": "e^{ix} = \\cos(x) + i\\sin(x)",
+      "description": "Euler's formula - the general form establishing the relationship between complex exponentials and trigonometric functions"
+    },
+    {
+      "latex": "e^{i\\pi} + 1 = 0",
+      "description": "Euler's identity - special case when x = π, considered one of the most beautiful equations in mathematics"
+    },
+    {
+      "latex": "e^{ix} = \\sum_{n=0}^{\\infty} \\frac{(ix)^n}{n!} = \\sum_{n=0}^{\\infty} \\frac{i^n x^n}{n!}",
+      "description": "Taylor series expansion of e^(ix)"
+    },
+    {
+      "latex": "\\cos(x) = \\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{(2n)!}",
+      "description": "Taylor series expansion of cosine"
+    },
+    {
+      "latex": "\\sin(x) = \\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n+1}}{(2n+1)!}",
+      "description": "Taylor series expansion of sine"
+    },
+    {
+      "latex": "\\cos(x) = \\frac{e^{ix} + e^{-ix}}{2}",
+      "description": "Cosine expressed using Euler's formula"
+    },
+    {
+      "latex": "\\sin(x) = \\frac{e^{ix} - e^{-ix}}{2i}",
+      "description": "Sine expressed using Euler's formula"
+    },
+    {
+      "latex": "e^{i\\theta} = r(\\cos(\\theta) + i\\sin(\\theta))",
+      "description": "Complex number in polar form (where r = 1 for unit circle)"
+    },
+    {
+      "latex": "\\frac{d}{dx}e^{ix} = ie^{ix}",
+      "description": "Differential equation approach - derivative property"
+    },
+    {
+      "latex": "|e^{ix}| = \\sqrt{\\cos^2(x) + \\sin^2(x)} = 1",
+      "description": "Magnitude of e^(ix) is always 1 (lies on unit circle)"
+    }
+  ],
+
+  "prerequisites": [
+    {
+      "name": "Complex Numbers",
+      "concept_id": "complex-numbers",
+      "level": "essential",
+      "difficulty": "undergraduate",
+      "reason": "Must understand the imaginary unit i and complex number arithmetic to comprehend e^(ix)"
+    },
+    {
+      "name": "Imaginary Unit",
+      "concept_id": "imaginary-unit",
+      "level": "essential",
+      "difficulty": "undergraduate",
+      "reason": "The definition i² = -1 is fundamental to understanding the formula"
+    },
+    {
+      "name": "Exponential Functions",
+      "concept_id": "exponential-functions",
+      "level": "essential",
+      "difficulty": "high-school",
+      "reason": "Need to understand e^x and properties of exponential functions"
+    },
+    {
+      "name": "Trigonometric Functions",
+      "concept_id": "trigonometric-functions",
+      "level": "essential",
+      "difficulty": "high-school",
+      "reason": "Must know sine and cosine functions and their properties"
+    },
+    {
+      "name": "Taylor Series",
+      "concept_id": "taylor-series",
+      "level": "essential",
+      "difficulty": "undergraduate",
+      "reason": "Required for the most rigorous derivation of Euler's formula"
+    },
+    {
+      "name": "Infinite Series",
+      "concept_id": "infinite-series",
+      "level": "essential",
+      "difficulty": "undergraduate",
+      "reason": "Must understand convergence and manipulation of power series"
+    },
+    {
+      "name": "Calculus",
+      "concept_id": "calculus",
+      "level": "essential",
+      "difficulty": "undergraduate",
+      "reason": "Derivatives and limits are needed for Taylor series and differential equation derivations"
+    },
+    {
+      "name": "Polar Coordinates",
+      "concept_id": "polar-coordinates",
+      "level": "recommended",
+      "difficulty": "high-school",
+      "reason": "Helps visualize complex numbers as points on the unit circle"
+    },
+    {
+      "name": "Complex Plane",
+      "concept_id": "complex-plane",
+      "level": "recommended",
+      "difficulty": "undergraduate",
+      "reason": "Provides geometric interpretation of Euler's formula"
+    },
+    {
+      "name": "Differential Equations",
+      "concept_id": "differential-equations",
+      "level": "recommended",
+      "difficulty": "undergraduate",
+      "reason": "Alternative derivation using f'(x) = if(x) with f(0) = 1"
+    }
+  ],
+
+  "related_concepts": [
+    {
+      "name": "Euler's Identity",
+      "concept_id": "eulers-identity",
+      "relationship": "special-case",
+      "note": "The special case e^(iπ) + 1 = 0 when x = π in Euler's formula"
+    },
+    {
+      "name": "De Moivre's Formula",
+      "concept_id": "de-moivres-formula",
+      "relationship": "closely-related",
+      "note": "(cos(x) + i·sin(x))^n = cos(nx) + i·sin(nx), follows directly from Euler's formula"
+    },
+    {
+      "name": "Fourier Transform",
+      "concept_id": "fourier-transform",
+      "relationship": "application",
+      "note": "Uses complex exponentials e^(iωt) as basis functions for frequency analysis"
+    },
+    {
+      "name": "Fourier Series",
+      "concept_id": "fourier-series",
+      "relationship": "application",
+      "note": "Represents periodic functions as sums of complex exponentials using Euler's formula"
+    },
+    {
+      "name": "Complex Analysis",
+      "concept_id": "complex-analysis",
+      "relationship": "foundation",
+      "note": "Euler's formula is fundamental to extending calculus to complex functions"
+    },
+    {
+      "name": "Harmonic Oscillator",
+      "concept_id": "harmonic-oscillator",
+      "relationship": "application",
+      "note": "Solutions to oscillator equations often expressed using e^(iωt)"
+    },
+    {
+      "name": "Quantum Mechanics",
+      "concept_id": "quantum-mechanics",
+      "relationship": "application",
+      "note": "Wave functions and quantum states use complex exponentials based on Euler's formula"
+    },
+    {
+      "name": "Signal Processing",
+      "concept_id": "signal-processing",
+      "relationship": "application",
+      "note": "Complex representation of signals using phasors derived from Euler's formula"
+    },
+    {
+      "name": "Phasor Representation",
+      "concept_id": "phasor-representation",
+      "relationship": "application",
+      "note": "Represents sinusoidal signals as complex exponentials in electrical engineering"
+    },
+    {
+      "name": "Complex Exponential Function",
+      "concept_id": "complex-exponential-function",
+      "relationship": "generalization",
+      "note": "Euler's formula defines the exponential function for complex arguments"
+    },
+    {
+      "name": "Trigonometric Identities",
+      "concept_id": "trigonometric-identities",
+      "relationship": "derives-from",
+      "note": "Many trig identities can be easily derived using Euler's formula"
+    },
+    {
+      "name": "Unit Circle",
+      "concept_id": "unit-circle",
+      "relationship": "geometric-interpretation",
+      "note": "e^(ix) traces out the unit circle in the complex plane as x varies"
+    },
+    {
+      "name": "Rotation Matrices",
+      "concept_id": "rotation-matrices",
+      "relationship": "related",
+      "note": "2D rotations can be represented using complex multiplication via Euler's formula"
+    }
+  ],
+
+  "domain_classification": {
+    "primary_domain": "complex-analysis",
+    "secondary_domains": ["trigonometry", "calculus", "mathematical-analysis"],
+    "level": "undergraduate",
+    "difficulty": 6,
+    "applications": [
+      "Fourier analysis",
+      "Signal processing",
+      "Quantum mechanics",
+      "Electrical engineering",
+      "Control theory",
+      "Vibration analysis"
+    ]
+  },
+
+  "historical_context": {
+    "discoverer": "Leonhard Euler",
+    "year": 1748,
+    "publication": "Introductio in analysin infinitorum",
+    "significance": "Established the deep connection between exponential and trigonometric functions, revolutionized complex analysis, and provided elegant tools for solving differential equations and analyzing periodic phenomena",
+    "euler_identity_recognition": "The special case e^(iπ) + 1 = 0 is often called 'the most beautiful equation in mathematics' because it connects five fundamental constants"
+  },
+
+  "derivations": [
+    {
+      "method": "Taylor Series",
+      "description": "Compare the Taylor series of e^(ix), cos(x), and sin(x). The series for e^(ix) naturally separates into real (cos) and imaginary (i·sin) parts.",
+      "rigor": "rigorous",
+      "prerequisites": ["taylor-series", "infinite-series", "complex-numbers"]
+    },
+    {
+      "method": "Differential Equations",
+      "description": "Show that f(x) = e^(ix) satisfies f'(x) = if(x) with f(0) = 1, and that g(x) = cos(x) + i·sin(x) satisfies the same equation with same initial condition. By uniqueness, f = g.",
+      "rigor": "rigorous",
+      "prerequisites": ["differential-equations", "complex-numbers", "uniqueness-theorems"]
+    },
+    {
+      "method": "Geometric/Intuitive",
+      "description": "View e^(ix) as rotation in the complex plane by angle x. The unit circle parametrization gives the cosine and sine components.",
+      "rigor": "intuitive",
+      "prerequisites": ["complex-plane", "polar-coordinates", "unit-circle"]
+    }
+  ],
+
+  "key_properties": [
+    {
+      "property": "Periodicity",
+      "description": "e^(i(x+2π)) = e^(ix) because sine and cosine have period 2π",
+      "formula": "e^{i(x+2\\pi)} = e^{ix}"
+    },
+    {
+      "property": "Unit Magnitude",
+      "description": "The magnitude of e^(ix) is always 1, so it lies on the unit circle",
+      "formula": "|e^{ix}| = 1"
+    },
+    {
+      "property": "Angle Interpretation",
+      "description": "The argument (angle) of e^(ix) in the complex plane is x radians",
+      "formula": "\\arg(e^{ix}) = x"
+    },
+    {
+      "property": "Conjugate Property",
+      "description": "The complex conjugate of e^(ix) is e^(-ix)",
+      "formula": "\\overline{e^{ix}} = e^{-ix}"
+    },
+    {
+      "property": "Multiplication as Rotation",
+      "description": "Multiplying by e^(ix) rotates a complex number by angle x counterclockwise",
+      "formula": "z \\cdot e^{ix} \\text{ rotates } z \\text{ by angle } x"
+    }
+  ],
+
+  "sources": [
+    "https://en.wikipedia.org/wiki/Euler%27s_formula",
+    "https://en.wikipedia.org/wiki/Euler%27s_identity",
+    "https://mathworld.wolfram.com/EulersFormula.html",
+    "https://www.math.toronto.edu/mathnet/questionCorner/epii.html",
+    "https://brilliant.org/wiki/eulers-formula/",
+    "https://betterexplained.com/articles/intuitive-understanding-of-eulers-formula/"
+  ],
+
+  "research_notes": "Euler's Formula is a foundational result in mathematics that bridges multiple domains. It requires solid understanding of complex numbers, exponential functions, and trigonometry. The Taylor series derivation is most rigorous but requires series convergence knowledge. The formula has profound applications across pure and applied mathematics, particularly in Fourier analysis, signal processing, and quantum mechanics. The special case (Euler's identity) is celebrated for its mathematical beauty and elegance."
+}

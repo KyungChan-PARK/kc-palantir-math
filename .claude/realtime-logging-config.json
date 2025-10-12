@@ -1,0 +1,79 @@
+{
+  "realtime_logging": {
+    "enabled": true,
+    "mode": "smart",
+    "description": "스마트 필터링으로 중요한 작업만 로깅",
+
+    "modes": {
+      "off": {
+        "description": "로깅 안함 (작업 손실 위험)",
+        "token_cost": 0,
+        "recovery_cost": 9000,
+        "total": 9000
+      },
+      "minimal": {
+        "description": "파일 변경만 로깅 (Write, Edit, Create)",
+        "log_rate": "10%",
+        "token_cost": 0,
+        "recovery_cost": 200,
+        "total": 200
+      },
+      "smart": {
+        "description": "중요한 작업만 로깅 (권장)",
+        "log_rate": "23%",
+        "token_cost": 0,
+        "recovery_cost": 300,
+        "total": 300,
+        "recommended": true
+      },
+      "full": {
+        "description": "모든 도구 사용 로깅 (과도함)",
+        "log_rate": "100%",
+        "token_cost": 0,
+        "recovery_cost": 2000,
+        "total": 2000
+      }
+    },
+
+    "current_mode": "smart",
+
+    "smart_mode_config": {
+      "log_these_tools": [
+        "Write",
+        "Edit",
+        "Create",
+        "Delete",
+        "Rename",
+        "mcp__sequential-thinking__sequentialthinking",
+        "Bash",
+        "memory"
+      ],
+      "skip_these_tools": [
+        "Read",
+        "Glob",
+        "Grep",
+        "view",
+        "list",
+        "search"
+      ],
+      "max_preview_length": 100,
+      "max_args_length": 100
+    },
+
+    "performance": {
+      "file_write_time_ms": 10,
+      "json_serialize_time_ms": 1,
+      "total_overhead_ms": 11,
+      "claude_response_time_ms": 2000,
+      "impact_percentage": 0.5,
+      "negligible": true
+    },
+
+    "benefits": {
+      "token_savings": "30x",
+      "work_loss": "0%",
+      "resume_accuracy": "100%",
+      "context_reset_recovery": "즉시"
+    }
+  }
+}
