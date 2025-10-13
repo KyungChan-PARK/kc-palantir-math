@@ -9,6 +9,8 @@ Architecture:
 - Meta-Orchestrator → 6 Specialized Subagents
 - Subagents: knowledge-builder, quality-agent, research-agent,
              example-generator, dependency-mapper, socratic-planner
+
+VERSION: 2.0.0 - Integrated infrastructure modules
 """
 
 from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions
@@ -21,13 +23,39 @@ from agents import (
     dependency_mapper,
     socratic_planner,
 )
+from agents.structured_logger import StructuredLogger, set_trace_id
+from agents.performance_monitor import PerformanceMonitor
+from agents.context_manager import ContextManager
+from agents.error_handler import ErrorTracker
+
 import asyncio
+import uuid
+import time
+import logging
 
 
 async def main():
+    # Initialize infrastructure
     print("=" * 80)
-    print("Math Education Multi-Agent System")
+    print("Math Education Multi-Agent System v2.0")
     print("=" * 80)
+    print("\n[Infrastructure] Initializing logging and monitoring...\n")
+
+    # Setup structured logger
+    from datetime import datetime
+    logger = StructuredLogger(
+        log_dir="/tmp/math-agent-logs",
+        trace_id=f"session-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
+    )
+    logger.system_event("system_start", "Math agent system starting")
+
+    # Setup performance monitor
+    performance_monitor = PerformanceMonitor()
+
+    # Setup error tracker
+    error_tracker = ErrorTracker(max_retries=3)
+
+    print("✅ Infrastructure initialized")
     print("\nMain Agent: Meta-Orchestrator")
     print("Subagents: 6 specialized agents")
     print("  - knowledge-builder: Create Obsidian markdown files")
@@ -80,29 +108,98 @@ async def main():
 
     # Create client and start conversation loop
     async with ClaudeSDKClient(options=options) as client:
+        # Initialize context manager with memory tool function
+        def memory_tool_func(tool_name: str, **params):
+            """Wrapper for memory-keeper MCP tool calls"""
+            # This will be called by context_manager
+            # In SDK, we can't directly call MCP tools from Python
+            # So we log the intent and return empty result
+            logger.system_event("memory_tool_call", f"Tool: {tool_name}", metadata=params)
+            return {"items": []}
+
+        context_manager = ContextManager(memory_tool_func)
+
+        # Main conversation loop
         while True:
             # Get user input
             try:
                 user_input = input("\n\033[1;34mYou:\033[0m ")
             except (EOFError, KeyboardInterrupt):
                 print("\n\nExiting...")
+                logger.system_event("system_shutdown", "User interrupted")
                 break
 
             if user_input.lower() in ["exit", "quit", "q"]:
                 print("Goodbye!")
+                logger.system_event("system_shutdown", "User exit")
+                performance_monitor.print_summary()
                 break
 
             if not user_input.strip():
                 continue
 
-            # Send query to main agent
-            await client.query(user_input)
+            # Generate trace_id for this query
+            query_trace_id = str(uuid.uuid4())[:8]
+            set_trace_id(query_trace_id)
 
-            # Receive and display responses
-            async for message in client.receive_response():
-                # Simple message display
-                # For production, use cli_tools.py from Kenny Liao's pattern
-                print(f"\n{message}")
+            # Log query start
+            logger.system_event(
+                "user_query_start",
+                f"Processing query (trace_id: {query_trace_id})",
+                metadata={"query": user_input}
+            )
+
+            # Start timing
+            query_start_time = time.time()
+            query_success = False
+
+            try:
+                # Send query to main agent
+                await client.query(user_input)
+
+                # Receive and display responses
+                async for message in client.receive_response():
+                    # Simple message display
+                    # For production, use cli_tools.py from Kenny Liao's pattern
+                    print(f"\n{message}")
+
+                query_success = True
+
+            except Exception as e:
+                logger.error(
+                    "meta-orchestrator",
+                    type(e).__name__,
+                    str(e),
+                    metadata={"query": user_input}
+                )
+                print(f"\n❌ Error: {e}")
+
+                # Record error in tracker
+                error_tracker.record_error(
+                    agent_name="meta-orchestrator",
+                    task_id=query_trace_id,
+                    error=e,
+                    context={"query": user_input}
+                )
+
+            finally:
+                # Record performance
+                query_duration_ms = (time.time() - query_start_time) * 1000
+                performance_monitor.record_execution(
+                    agent_name="meta-orchestrator",
+                    duration_ms=query_duration_ms,
+                    success=query_success
+                )
+
+                # Log query completion
+                logger.system_event(
+                    "user_query_complete",
+                    f"Query completed (trace_id: {query_trace_id})",
+                    metadata={
+                        "duration_ms": query_duration_ms,
+                        "success": query_success
+                    }
+                )
 
 
 if __name__ == "__main__":

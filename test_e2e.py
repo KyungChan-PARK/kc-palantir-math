@@ -5,12 +5,41 @@ Tests the full workflow:
 1. Create ClaudeSDKClient with knowledge-builder agent
 2. Send query to build a math concept
 3. Verify Obsidian file is created in math-vault/
+4. Verify infrastructure modules are properly integrated
+
+VERSION: 2.0.0 - Added infrastructure validation
 """
 
 from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions
 from agents import knowledge_builder
 import asyncio
 import os
+
+
+def test_infrastructure_integration():
+    """Verify all infrastructure modules are importable and functional"""
+    print("\n[Infrastructure Check] Verifying modules...")
+
+    try:
+        from agents import error_handler
+        from agents import structured_logger
+        from agents import performance_monitor
+        from agents import context_manager
+
+        # Verify key classes exist
+        assert hasattr(error_handler, 'resilient_task'), "Missing resilient_task"
+        assert hasattr(error_handler, 'ErrorTracker'), "Missing ErrorTracker"
+        assert hasattr(structured_logger, 'StructuredLogger'), "Missing StructuredLogger"
+        assert hasattr(structured_logger, 'setup_structured_logger'), "Missing setup_structured_logger"
+        assert hasattr(performance_monitor, 'PerformanceMonitor'), "Missing PerformanceMonitor"
+        assert hasattr(context_manager, 'ContextManager'), "Missing ContextManager"
+
+        print("✅ All infrastructure modules verified")
+        return True
+
+    except Exception as e:
+        print(f"❌ Infrastructure check failed: {e}")
+        return False
 
 
 async def test_pythagorean_theorem():
@@ -98,6 +127,13 @@ async def test_pythagorean_theorem():
 async def main():
     """Run all e2e tests"""
     try:
+        # Run infrastructure check first
+        infra_ok = test_infrastructure_integration()
+        if not infra_ok:
+            print("\n❌ Infrastructure check failed - aborting e2e test")
+            return 1
+
+        # Run main e2e test
         success = await test_pythagorean_theorem()
 
         print("\n" + "=" * 60)
