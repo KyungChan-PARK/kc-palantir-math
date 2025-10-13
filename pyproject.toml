@@ -8,6 +8,7 @@ dependencies = [
     "httpx>=0.28.1",
     "mcp>=1.17.0",
     "nest-asyncio>=1.6.0",
+    "networkx>=3.5",
     "pyyaml>=6.0.3",
     "urllib3>=2.5.0",
 ]

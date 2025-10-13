@@ -2,14 +2,14 @@
 Math Education Agents
 
 Kenny Liao Claude Agent SDK 패턴 기반
-VERSION: 2.0.0 - Added infrastructure modules
+VERSION: 3.0.0 - Added Self-Improvement System v4.0
 """
 
 from .knowledge_builder import knowledge_builder
 from .quality_agent import quality_agent
 from .research_agent import research_agent
 from .example_generator import example_generator
-from .meta_orchestrator import meta_orchestrator
+from .meta_orchestrator import meta_orchestrator, MetaOrchestratorLogic
 from .dependency_mapper import dependency_mapper
 from .socratic_planner import socratic_planner
 
@@ -19,6 +19,23 @@ from .structured_logger import StructuredLogger, setup_structured_logger, AgentL
 from .performance_monitor import PerformanceMonitor, AgentMetrics, PerformanceTimer
 from .context_manager import ContextManager
 
+# Self-Improvement System v4.0 modules
+from .improvement_models import (
+    ImprovementAction,
+    ImpactAnalysis,
+    QualityGateApproval,
+    RootCauseAnalysis,
+    IssueReport,
+    ChangeStatus,
+    ChangeRecord,
+    ActionType
+)
+from .dependency_agent import DependencyAgent, DependencyNode, DependencyEdge, NodeType, EdgeType
+from .socratic_mediator import SocraticMediator
+from .self_improver import SelfImprover
+from .improvement_manager import ImprovementManager
+from .ask_agent_tool import ask_agent_tool
+
 __all__ = [
     # Agent definitions
     "knowledge_builder",
@@ -26,6 +43,7 @@ __all__ = [
     "research_agent",
     "example_generator",
     "meta_orchestrator",
+    "MetaOrchestratorLogic",
     "dependency_mapper",
     "socratic_planner",
     # Infrastructure
@@ -41,5 +59,23 @@ __all__ = [
     "PerformanceMonitor",
     "AgentMetrics",
     "PerformanceTimer",
-    "ContextManager"
+    "ContextManager",
+    # Self-Improvement System v4.0
+    "ImprovementAction",
+    "ImpactAnalysis",
+    "QualityGateApproval",
+    "RootCauseAnalysis",
+    "IssueReport",
+    "ChangeStatus",
+    "ChangeRecord",
+    "ActionType",
+    "DependencyAgent",
+    "DependencyNode",
+    "DependencyEdge",
+    "NodeType",
+    "EdgeType",
+    "SocraticMediator",
+    "SelfImprover",
+    "ImprovementManager",
+    "ask_agent_tool"
 ]
