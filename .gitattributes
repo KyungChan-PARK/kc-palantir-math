@@ -1,0 +1,7 @@
+# Text files => LF 고정
+* text=auto eol=lf
+
+# 바이너리는 변환 금지
+*.png binary
+*.jpg binary
+*.pdf binary
