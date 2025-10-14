@@ -12,6 +12,8 @@ from .example_generator import example_generator
 from .meta_orchestrator import meta_orchestrator, MetaOrchestratorLogic
 from .dependency_mapper import dependency_mapper
 from .socratic_planner import socratic_planner
+from .socratic_mediator_agent import socratic_mediator_agent
+from .self_improver_agent import self_improver_agent
 
 # Infrastructure modules
 from .error_handler import ErrorTracker, resilient_task, RetryConfig, human_escalation_handler
@@ -37,7 +39,7 @@ from .improvement_manager import ImprovementManager
 from .ask_agent_tool import ask_agent_tool
 
 __all__ = [
-    # Agent definitions
+    # Agent definitions (8 agents total: 6 specialized + 2 self-improvement)
     "knowledge_builder",
     "quality_agent",
     "research_agent",
@@ -46,6 +48,8 @@ __all__ = [
     "MetaOrchestratorLogic",
     "dependency_mapper",
     "socratic_planner",
+    "socratic_mediator_agent",
+    "self_improver_agent",
     # Infrastructure
     "ErrorTracker",
     "resilient_task",

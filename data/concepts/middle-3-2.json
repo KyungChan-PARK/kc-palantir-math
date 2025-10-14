@@ -1,0 +1,4995 @@
+{
+  "metadata": {
+    "education_level": "middle",
+    "grade": 3,
+    "semester": 2,
+    "curriculum": "2022_revised",
+    "total_concepts": 178
+  },
+  "concepts": [
+    {
+      "concept_id": "middle-3-2-ch1-1.1.1",
+      "name": "직각삼각형의 구성요소",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.1.1",
+        "parent": "1.1",
+        "parent_name": "직각삼각형과 삼각비의 정의"
+      },
+      "content": "직각삼각형의 구성요소은(는) 직각삼각형의 구성요소에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152767",
+      "original_content": "직각삼각형의 구성요소"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.1.1.1",
+      "name": "예각 θ를 기준으로 한 변의 이름",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.1.1.1",
+        "parent": "1.1.1",
+        "parent_name": "직각삼각형과 삼각비의 정의"
+      },
+      "content": "예각 θ를 기준으로 한 변의 이름은(는) 예각 θ를 기준으로 한 변의 이름에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152773",
+      "original_content": "예각 θ를 기준으로 한 변의 이름"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.1.1.2",
+      "name": "삼각비의 기본 개념",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.1.1.2",
+        "parent": "1.1.1",
+        "parent_name": "직각삼각형과 삼각비의 정의"
+      },
+      "content": "삼각비의 기본 개념은(는) 삼각비의 기본 개념에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152776",
+      "original_content": "삼각비의 기본 개념"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.1.1.3",
+      "name": "각의 표기법과 삼각비 표기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.1.1.3",
+        "parent": "1.1.1",
+        "parent_name": "직각삼각형과 삼각비의 정의"
+      },
+      "content": "각의 표기법과 삼각비 표기은(는) 각의 표기법과 삼각비 표기에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152777",
+      "original_content": "각의 표기법과 삼각비 표기"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.1",
+      "name": "사인(Sine) 비",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.1",
+        "parent": "1.2",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "사인(Sine) 비은(는) 사인(Sine) 비에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152779",
+      "original_content": "사인(Sine) 비"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.1.1",
+      "name": "정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.1.1",
+        "parent": "1.2.1",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "은(는) sin θ = 대변/빗변로 정의된다. 이는 중학교 3학년 도형과 측정 (Geometry and Measurement) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152781",
+      "original_content": "sin θ = 대변/빗변"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.1.2",
+      "name": "0° < θ < 90°에서 0 < sin θ < 1",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.1.2",
+        "parent": "1.2.1",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "0° < θ < 90°에서 0 < sin θ < 1은(는) 0° < θ < 90°에서 0 < sin θ < 1로 계산된다. 이 식을 활용하여 삼각비의 정의와 기본 성질 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152783",
+      "original_content": "0° < θ < 90°에서 0 < sin θ < 1"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.1.3",
+      "name": "특수각에서의 사인값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.1.3",
+        "parent": "1.2.1",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "특수각에서의 사인값은(는) 특수각에서의 사인값에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152784",
+      "original_content": "특수각에서의 사인값"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.2",
+      "name": "코사인(Cosine) 비",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.2",
+        "parent": "1.2",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "코사인(Cosine) 비은(는) 코사인(Cosine) 비에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152786",
+      "original_content": "코사인(Cosine) 비"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.2.1",
+      "name": "정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.2.1",
+        "parent": "1.2.2",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "은(는) cos θ = 인변/빗변로 정의된다. 이는 중학교 3학년 도형과 측정 (Geometry and Measurement) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152787",
+      "original_content": "cos θ = 인변/빗변"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.2.2",
+      "name": "0° < θ < 90°에서 0 < cos θ < 1",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.2.2",
+        "parent": "1.2.2",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "0° < θ < 90°에서 0 < cos θ < 1은(는) 0° < θ < 90°에서 0 < cos θ < 1로 계산된다. 이 식을 활용하여 삼각비의 정의와 기본 성질 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152789",
+      "original_content": "0° < θ < 90°에서 0 < cos θ < 1"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.2.3",
+      "name": "특수각에서의 코사인값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.2.3",
+        "parent": "1.2.2",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "특수각에서의 코사인값은(는) 특수각에서의 코사인값에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152790",
+      "original_content": "특수각에서의 코사인값"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.3",
+      "name": "탄젠트(Tangent) 비",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.3",
+        "parent": "1.2",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "탄젠트(Tangent) 비은(는) 탄젠트(Tangent) 비에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152792",
+      "original_content": "탄젠트(Tangent) 비"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.3.1",
+      "name": "정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.3.1",
+        "parent": "1.2.3",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "은(는) tan θ = 대변/인변로 정의된다. 이는 중학교 3학년 도형과 측정 (Geometry and Measurement) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152793",
+      "original_content": "tan θ = 대변/인변"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.3.2",
+      "name": "θ가 90°에 가까워질수록 tan θ는 무한히 커짐",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.3.2",
+        "parent": "1.2.3",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "θ가 90°에 가까워질수록 tan θ는 무한히 커짐은(는) θ가 90°에 가까워질수록 tan θ는 무한히 커짐로 계산된다. 이 식을 활용하여 삼각비의 정의와 기본 성질 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152795",
+      "original_content": "θ가 90°에 가까워질수록 tan θ는 무한히 커짐"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.2.3.3",
+      "name": "특수각에서의 탄젠트값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.2.3.3",
+        "parent": "1.2.3",
+        "parent_name": "삼각비의 정의와 기본 성질"
+      },
+      "content": "특수각에서의 탄젠트값은(는) 특수각에서의 탄젠트값에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152796",
+      "original_content": "특수각에서의 탄젠트값"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.1",
+      "name": "삼각비 사이의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.1",
+        "parent": "1.3",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "삼각비 사이의 관계은(는) 삼각비 사이의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152798",
+      "original_content": "삼각비 사이의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.1.1",
+      "name": "피타고라스 정리와의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.1.1",
+        "parent": "1.3.1",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "sin²θ + cos²θ = 1이(가) 성립한다는 정리이다. 증명을 통해 이 관계식이 항상 참임을 보일 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "theorem"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152799",
+      "original_content": "sin²θ + cos²θ = 1"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.1.2",
+      "name": "탄젠트와 사인, 코사인의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.1.2",
+        "parent": "1.3.1",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "탄젠트와 사인, 코사인의 관계은(는) tan θ = sin θ/cos θ에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152801",
+      "original_content": "tan θ = sin θ/cos θ"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.1.3",
+      "name": "여각의 삼각비 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.1.3",
+        "parent": "1.3.1",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "여각의 삼각비 관계은(는) 여각의 삼각비 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152802",
+      "original_content": "여각의 삼각비 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.2",
+      "name": "삼각비표 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.2",
+        "parent": "1.3",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "삼각비표 활용은(는) 삼각비표 활용에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152804",
+      "original_content": "삼각비표 활용"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.2.1",
+      "name": "삼각비표 읽는 방법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.2.1",
+        "parent": "1.3.2",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "삼각비표 읽는 방법의 방법으로 해결한다. 단계적인 접근을 통해 정확한 답을 구할 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "method"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152805",
+      "original_content": "삼각비표 읽는 방법"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.2.2",
+      "name": "계산기를 이용한 삼각비 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.2.2",
+        "parent": "1.3.2",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "계산기를 이용한 삼각비 계산은(는) 계산기를 이용한 삼각비 계산에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152806",
+      "original_content": "계산기를 이용한 삼각비 계산"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.2.3",
+      "name": "근사치를 이용한 삼각비 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.2.3",
+        "parent": "1.3.2",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "근사치를 이용한 삼각비 계산은(는) 근사치를 이용한 삼각비 계산에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152808",
+      "original_content": "근사치를 이용한 삼각비 계산"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.3.2.4",
+      "name": "역삼각함수의 기본 개념",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.3.2.4",
+        "parent": "1.3.2",
+        "parent_name": "삼각비의 기본 성질과 관계"
+      },
+      "content": "역삼각함수의 기본 개념은(는) 역삼각함수의 기본 개념에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152809",
+      "original_content": "역삼각함수의 기본 개념"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.1",
+      "name": "직각삼각형에서 변의 길이 구하기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.1",
+        "parent": "1.4",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "직각삼각형에서 변의 길이 구하기은(는) 직각삼각형에서 변의 길이 구하기에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152811",
+      "original_content": "직각삼각형에서 변의 길이 구하기"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.1.1",
+      "name": "한 각과 한 변이 주어진 경우",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.1.1",
+        "parent": "1.4.1",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "한 각과 한 변이 주어진 경우은(는) 한 각과 한 변이 주어진 경우에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152813",
+      "original_content": "한 각과 한 변이 주어진 경우"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.1.2",
+      "name": "두 변이 주어진 경우의 각 구하기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.1.2",
+        "parent": "1.4.1",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "두 변이 주어진 경우의 각 구하기은(는) 두 변이 주어진 경우의 각 구하기에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152814",
+      "original_content": "두 변이 주어진 경우의 각 구하기"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.1.3",
+      "name": "복잡한 도형에서의 삼각비 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.1.3",
+        "parent": "1.4.1",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "복잡한 도형에서의 삼각비 활용은(는) 복잡한 도형에서의 삼각비 활용에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "geometry"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152816",
+      "original_content": "복잡한 도형에서의 삼각비 활용"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.1.4",
+      "name": "삼각비를 이용한 작도",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.1.4",
+        "parent": "1.4.1",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "삼각비를 이용한 작도은(는) 삼각비를 이용한 작도에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152817",
+      "original_content": "삼각비를 이용한 작도"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.2",
+      "name": "높이 측정과 거리 측정[^5]",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.2",
+        "parent": "1.4",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "높이 측정과 거리 측정[^5]은(는) 높이 측정과 거리 측정[^5]로 계산된다. 이 식을 활용하여 삼각비의 활용 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152819",
+      "original_content": "높이 측정과 거리 측정[^5]"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.2.1",
+      "name": "건물의 높이 측정 (앙각 이용)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.2.1",
+        "parent": "1.4.2",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "건물의 높이 측정 (앙각 이용)은(는) 건물의 높이 측정 (앙각 이용)에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152820",
+      "original_content": "건물의 높이 측정 (앙각 이용)"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.2.2",
+      "name": "강의 폭 측정 (삼각측량법)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.2.2",
+        "parent": "1.4.2",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "강의 폭 측정 (삼각측량법)은(는) 강의 폭 측정 (삼각측량법)에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152822",
+      "original_content": "강의 폭 측정 (삼각측량법)"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.2.3",
+      "name": "산의 높이 측정 (기준점 이용)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.2.3",
+        "parent": "1.4.2",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "산의 높이 측정 (기준점 이용)은(는) 산의 높이 측정 (기준점 이용)에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152824",
+      "original_content": "산의 높이 측정 (기준점 이용)"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.2.4",
+      "name": "항공기의 위치 측정",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.2.4",
+        "parent": "1.4.2",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "항공기의 위치 측정은(는) 항공기의 위치 측정에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152825",
+      "original_content": "항공기의 위치 측정"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.3",
+      "name": "실생활에서의 삼각비 응용[^5]",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.3",
+        "parent": "1.4",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "실생활에서의 삼각비 응용[^5]은(는) 실생활에서의 삼각비 응용[^5]로 계산된다. 이 식을 활용하여 삼각비의 활용 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152827",
+      "original_content": "실생활에서의 삼각비 응용[^5]"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.3.1",
+      "name": "건축과 공학에서의 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.3.1",
+        "parent": "1.4.3",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "건축과 공학에서의 활용은(는) 건축과 공학에서의 활용에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152829",
+      "original_content": "건축과 공학에서의 활용"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.3.2",
+      "name": "GPS와 위성항법에서의 삼각측량",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.3.2",
+        "parent": "1.4.3",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "GPS와 위성항법에서의 삼각측량은(는) GPS와 위성항법에서의 삼각측량에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152830",
+      "original_content": "GPS와 위성항법에서의 삼각측량"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.3.3",
+      "name": "컴퓨터 그래픽스에서의 3D 좌표 변환",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.3.3",
+        "parent": "1.4.3",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "컴퓨터 그래픽스에서의 3D 좌표 변환은(는) 컴퓨터 그래픽스에서의 3D 좌표 변환로 계산된다. 이 식을 활용하여 삼각비의 활용 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152832",
+      "original_content": "컴퓨터 그래픽스에서의 3D 좌표 변환"
+    },
+    {
+      "concept_id": "middle-3-2-ch1-1.4.3.4",
+      "name": "물리학에서의 힘의 분해",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "1.4.3.4",
+        "parent": "1.4.3",
+        "parent_name": "삼각비의 활용"
+      },
+      "content": "물리학에서의 힘의 분해은(는) 물리학에서의 힘의 분해에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152834",
+      "original_content": "물리학에서의 힘의 분해"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.1",
+      "name": "원의 구성요소 복습",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.1",
+        "parent": "2.1",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "원의 구성요소 복습은(는) 원의 구성요소 복습에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152835",
+      "original_content": "원의 구성요소 복습"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.1.1",
+      "name": "중심, 반지름, 지름, 현, 할선, 접선",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.1.1",
+        "parent": "2.1.1",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "중심, 반지름, 지름, 현, 할선, 접선은(는) 중심, 반지름, 지름, 현, 할선, 접선에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152837",
+      "original_content": "중심, 반지름, 지름, 현, 할선, 접선"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.1.2",
+      "name": "호(Arc)와 부채꼴(Sector)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.1.2",
+        "parent": "2.1.1",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "호(Arc)와 부채꼴(Sector)은(는) 호(Arc)와 부채꼴(Sector)에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152839",
+      "original_content": "호(Arc)와 부채꼴(Sector)"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.1.3",
+      "name": "활꼴(Segment)과 중심각",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.1.3",
+        "parent": "2.1.1",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "활꼴(Segment)과 중심각은(는) 활꼴(Segment)과 중심각에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152841",
+      "original_content": "활꼴(Segment)과 중심각"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.1.4",
+      "name": "원 위의 점과 원 내부, 외부의 점",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.1.4",
+        "parent": "2.1.1",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "원 위의 점과 원 내부, 외부의 점은(는) 원 위의 점과 원 내부, 외부의 점에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152843",
+      "original_content": "원 위의 점과 원 내부, 외부의 점"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.2",
+      "name": "중심각과 호의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.2",
+        "parent": "2.1",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "중심각과 호의 관계은(는) 중심각과 호의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152844",
+      "original_content": "중심각과 호의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.2.1",
+      "name": "중심각의 크기와 호의 길이는 비례",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.2.1",
+        "parent": "2.1.2",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "중심각의 크기와 호의 길이는 비례은(는) 중심각의 크기와 호의 길이는 비례에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152846",
+      "original_content": "중심각의 크기와 호의 길이는 비례"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.2.2",
+      "name": "합동인 호에 대한 중심각은 합동",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.2.2",
+        "parent": "2.1.2",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "합동인 호에 대한 중심각은 합동은(는) 합동인 호에 대한 중심각은 합동에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152848",
+      "original_content": "합동인 호에 대한 중심각은 합동"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.1.2.3",
+      "name": "호와 현의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.1.2.3",
+        "parent": "2.1.2",
+        "parent_name": "원의 기본 성질과 중심각"
+      },
+      "content": "호와 현의 관계은(는) 호와 현의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152849",
+      "original_content": "호와 현의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.1",
+      "name": "원주각의 정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.1",
+        "parent": "2.2",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원주각의은(는) 원주각의 정의로 정의된다. 이는 중학교 3학년 도형과 측정 (Geometry and Measurement) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152851",
+      "original_content": "원주각의 정의"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.1.1",
+      "name": "원주각(Inscribed Angle)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.1.1",
+        "parent": "2.2.1",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원주각(Inscribed Angle)은(는) 원 위의 한 점에서 호를 보는 각에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152852",
+      "original_content": "원 위의 한 점에서 호를 보는 각"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.1.2",
+      "name": "원주각과 중심각의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.1.2",
+        "parent": "2.2.1",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원주각과 중심각의 관계은(는) 원주각 = 중심각 ÷ 2로 계산된다. 이 식을 활용하여 원주각과 중심각의 관계 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152854",
+      "original_content": "원주각 = 중심각 ÷ 2"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.1.3",
+      "name": "같은 호에 대한 원주각은 모두 같다",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.1.3",
+        "parent": "2.2.1",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "같은 호에 대한 원주각은 모두 같다은(는) 같은 호에 대한 원주각은 모두 같다에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152856",
+      "original_content": "같은 호에 대한 원주각은 모두 같다"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.1.4",
+      "name": "원에 내접하는 사각형의 성질",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.1.4",
+        "parent": "2.2.1",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원에 내접하는 사각형의 성질의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152857",
+      "original_content": "원에 내접하는 사각형의 성질"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.2",
+      "name": "원주각의 성질들",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.2",
+        "parent": "2.2",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원주각의 성질들의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152858",
+      "original_content": "원주각의 성질들"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.2.1",
+      "name": "반원에 내접하는 각은 직각",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.2.1",
+        "parent": "2.2.2",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "반원에 내접하는 각은 직각은(는) 반원에 내접하는 각은 직각에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152860",
+      "original_content": "반원에 내접하는 각은 직각"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.2.2",
+      "name": "원에 내접하는 사각형의 대각의 합은 180°",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.2.2",
+        "parent": "2.2.2",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원에 내접하는 사각형의 대각의 합은 180°은(는) 원에 내접하는 사각형의 대각의 합은 180°로 계산된다. 이 식을 활용하여 원주각과 중심각의 관계 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152861",
+      "original_content": "원에 내접하는 사각형의 대각의 합은 180°"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.2.3",
+      "name": "원주각을 이용한 각도 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.2.3",
+        "parent": "2.2.2",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원주각을 이용한 각도 계산은(는) 원주각을 이용한 각도 계산에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152863",
+      "original_content": "원주각을 이용한 각도 계산"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.2.2.4",
+      "name": "원주각의 성질을 이용한 증명",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.2.2.4",
+        "parent": "2.2.2",
+        "parent_name": "원주각과 중심각의 관계"
+      },
+      "content": "원주각의 성질을 이용한 증명의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152864",
+      "original_content": "원주각의 성질을 이용한 증명"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.1",
+      "name": "접선의 성질",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.1",
+        "parent": "2.3",
+        "parent_name": "접선과 할선"
+      },
+      "content": "접선의 성질의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152865",
+      "original_content": "접선의 성질"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.1.1",
+      "name": "접선의 정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.1.1",
+        "parent": "2.3.1",
+        "parent_name": "접선과 할선"
+      },
+      "content": "접선의은(는) 원과 한 점에서만 만나는 직선로 정의된다. 이는 중학교 3학년 도형과 측정 (Geometry and Measurement) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152867",
+      "original_content": "원과 한 점에서만 만나는 직선"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.1.2",
+      "name": "접선과 반지름은 수직",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.1.2",
+        "parent": "2.3.1",
+        "parent_name": "접선과 할선"
+      },
+      "content": "접선과 반지름은 수직은(는) 접선과 반지름은 수직에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152868",
+      "original_content": "접선과 반지름은 수직"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.1.3",
+      "name": "한 점에서 원에 그은 두 접선의 길이는 같다",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.1.3",
+        "parent": "2.3.1",
+        "parent_name": "접선과 할선"
+      },
+      "content": "한 점에서 원에 그은 두 접선의 길이는 같다은(는) 한 점에서 원에 그은 두 접선의 길이는 같다에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152870",
+      "original_content": "한 점에서 원에 그은 두 접선의 길이는 같다"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.1.4",
+      "name": "접선의 작도법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.1.4",
+        "parent": "2.3.1",
+        "parent_name": "접선과 할선"
+      },
+      "content": "접선의 작도법은(는) 접선의 작도법에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152872",
+      "original_content": "접선의 작도법"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.2",
+      "name": "접선-할선 정리",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.2",
+        "parent": "2.3",
+        "parent_name": "접선과 할선"
+      },
+      "content": "접선-할선 정리이(가) 성립한다는 정리이다. 증명을 통해 이 관계식이 항상 참임을 보일 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "theorem"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152873",
+      "original_content": "접선-할선 정리"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.2.1",
+      "name": "할선의 정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.2.1",
+        "parent": "2.3.2",
+        "parent_name": "접선과 할선"
+      },
+      "content": "할선의은(는) 원과 두 점에서 만나는 직선로 정의된다. 이는 중학교 3학년 도형과 측정 (Geometry and Measurement) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152874",
+      "original_content": "원과 두 점에서 만나는 직선"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.2.2",
+      "name": "원의 외부 한 점에서 그은 접선과 할선의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.2.2",
+        "parent": "2.3.2",
+        "parent_name": "접선과 할선"
+      },
+      "content": "원의 외부 한 점에서 그은 접선과 할선의 관계은(는) 원의 외부 한 점에서 그은 접선과 할선의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152876",
+      "original_content": "원의 외부 한 점에서 그은 접선과 할선의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.2.3",
+      "name": "두 할선이 원의 외부 한 점에서 만날 때의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.2.3",
+        "parent": "2.3.2",
+        "parent_name": "접선과 할선"
+      },
+      "content": "두 할선이 원의 외부 한 점에서 만날 때의 관계은(는) 두 할선이 원의 외부 한 점에서 만날 때의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152878",
+      "original_content": "두 할선이 원의 외부 한 점에서 만날 때의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.3.2.4",
+      "name": "할선-할선 정리와 접선-할선 정리",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.3.2.4",
+        "parent": "2.3.2",
+        "parent_name": "접선과 할선"
+      },
+      "content": "할선-할선 정리와 접선-할선 정리이(가) 성립한다는 정리이다. 증명을 통해 이 관계식이 항상 참임을 보일 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "theorem"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152879",
+      "original_content": "할선-할선 정리와 접선-할선 정리"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.1",
+      "name": "원과 직선의 위치관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.1",
+        "parent": "2.4",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "원과 직선의 위치관계은(는) 원과 직선의 위치관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152880",
+      "original_content": "원과 직선의 위치관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.1.1",
+      "name": "중심과 직선 사이의 거리 d, 반지름 r의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.1.1",
+        "parent": "2.4.1",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "중심과 직선 사이의 거리 d, 반지름 r의 관계은(는) 중심과 직선 사이의 거리 d, 반지름 r의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152882",
+      "original_content": "중심과 직선 사이의 거리 d, 반지름 r의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.1.2",
+      "name": "판별식을 이용한 위치관계 판정 (참고)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.1.2",
+        "parent": "2.4.1",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "판별식을 이용한 위치관계 판정 (참고)은(는) 판별식을 이용한 위치관계 판정 (참고)에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152884",
+      "original_content": "판별식을 이용한 위치관계 판정 (참고)"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.1.3",
+      "name": "접선의 방정식 구하기 (참고)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.1.3",
+        "parent": "2.4.1",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "접선의 방정식 구하기 (참고)은(는) 접선의 방정식 구하기 (참고)에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "equation"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152885",
+      "original_content": "접선의 방정식 구하기 (참고)"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.2",
+      "name": "두 원의 위치관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.2",
+        "parent": "2.4",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "두 원의 위치관계은(는) 두 원의 위치관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152887",
+      "original_content": "두 원의 위치관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.2.1",
+      "name": "두 원의 중심 사이의 거리와 반지름의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.2.1",
+        "parent": "2.4.2",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "두 원의 중심 사이의 거리와 반지름의 관계은(는) 두 원의 중심 사이의 거리와 반지름의 관계에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152889",
+      "original_content": "두 원의 중심 사이의 거리와 반지름의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.2.2",
+      "name": "외접, 내접, 교차, 분리의 경우들",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.2.2",
+        "parent": "2.4.2",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "외접, 내접, 교차, 분리의 경우들은(는) 외접, 내접, 교차, 분리의 경우들에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152890",
+      "original_content": "외접, 내접, 교차, 분리의 경우들"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.2.3",
+      "name": "공통 접선의 개수와 성질",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.2.3",
+        "parent": "2.4.2",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "공통 접선의 개수와 성질의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152891",
+      "original_content": "공통 접선의 개수와 성질"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.4.2.4",
+      "name": "두 원의 교점에서의 성질",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.4.2.4",
+        "parent": "2.4.2",
+        "parent_name": "원과 직선, 두 원의 위치관계"
+      },
+      "content": "두 원의 교점에서의 성질의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152892",
+      "original_content": "두 원의 교점에서의 성질"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.1",
+      "name": "원주각을 이용한 증명",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.1",
+        "parent": "2.5",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "원주각을 이용한 증명은(는) 원주각을 이용한 증명에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152894",
+      "original_content": "원주각을 이용한 증명"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.1.1",
+      "name": "삼각형의 각 이등분선과 외심",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.1.1",
+        "parent": "2.5.1",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "삼각형의 각 이등분선과 외심은(는) 삼각형의 각 이등분선과 외심에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152896",
+      "original_content": "삼각형의 각 이등분선과 외심"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.1.2",
+      "name": "사각형이 원에 내접하는 조건",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.1.2",
+        "parent": "2.5.1",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "사각형이 원에 내접하는 조건은(는) 사각형이 원에 내접하는 조건에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152897",
+      "original_content": "사각형이 원에 내접하는 조건"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.1.3",
+      "name": "탈레스의 정리와 그 역",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.1.3",
+        "parent": "2.5.1",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "탈레스의 정리와 그 역이(가) 성립한다는 정리이다. 증명을 통해 이 관계식이 항상 참임을 보일 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "theorem"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152898",
+      "original_content": "탈레스의 정리와 그 역"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.1.4",
+      "name": "원의 성질을 이용한 기하 증명",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.1.4",
+        "parent": "2.5.1",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "원의 성질을 이용한 기하 증명의 특징을 가진다. 이러한 성질을 이용하면 관련 문제를 더 쉽게 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "property"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152900",
+      "original_content": "원의 성질을 이용한 기하 증명"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.2",
+      "name": "원과 관련된 계산 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.2",
+        "parent": "2.5",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "원과 관련된 계산 문제은(는) 원과 관련된 계산 문제에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152901",
+      "original_content": "원과 관련된 계산 문제"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.2.1",
+      "name": "현의 길이 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.2.1",
+        "parent": "2.5.2",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "현의 길이 계산은(는) 현의 길이 계산에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152903",
+      "original_content": "현의 길이 계산"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.2.2",
+      "name": "접선의 길이 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.2.2",
+        "parent": "2.5.2",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "접선의 길이 계산은(는) 접선의 길이 계산에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152905",
+      "original_content": "접선의 길이 계산"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.2.3",
+      "name": "부채꼴의 호의 길이와 넓이",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.2.3",
+        "parent": "2.5.2",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "부채꼴의 호의 길이와 넓이은(는) 부채꼴의 호의 길이와 넓이에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152906",
+      "original_content": "부채꼴의 호의 길이와 넓이"
+    },
+    {
+      "concept_id": "middle-3-2-ch2-2.5.2.4",
+      "name": "복합 도형의 넓이 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 1,
+        "name": "도형과 측정 (Geometry and Measurement)",
+        "name_en": "Geometry and Measurement"
+      },
+      "section": {
+        "path": "2.5.2.4",
+        "parent": "2.5.2",
+        "parent_name": "원의 성질 활용 문제"
+      },
+      "content": "복합 도형의 넓이 계산은(는) 복합 도형의 넓이 계산에 관한 개념이다. 중학교 3학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "geometry"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152908",
+      "original_content": "복합 도형의 넓이 계산"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.1",
+      "name": "대푯값의 종류별 특성 분석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.1",
+        "parent": "3.1",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "대푯값의 종류별 특성 분석은(는) 대푯값의 종류별 특성 분석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152910",
+      "original_content": "대푯값의 종류별 특성 분석"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.1.1",
+      "name": "평균의 특성과 이상치의 영향",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.1.1",
+        "parent": "3.1.1",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "평균의 특성과 이상치의 영향은(는) 평균의 특성과 이상치의 영향에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152911",
+      "original_content": "평균의 특성과 이상치의 영향"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.1.2",
+      "name": "중앙값의 안정성과 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.1.2",
+        "parent": "3.1.1",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "중앙값의 안정성과 활용은(는) 중앙값의 안정성과 활용에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152913",
+      "original_content": "중앙값의 안정성과 활용"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.1.3",
+      "name": "최빈값의 의미와 다봉분포",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.1.3",
+        "parent": "3.1.1",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "최빈값의 의미와 다봉분포은(는) 최빈값의 의미와 다봉분포에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152914",
+      "original_content": "최빈값의 의미와 다봉분포"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.1.4",
+      "name": "상황에 따른 적절한 대푯값 선택",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.1.4",
+        "parent": "3.1.1",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "상황에 따른 적절한 대푯값 선택은(는) 상황에 따른 적절한 대푯값 선택에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152916",
+      "original_content": "상황에 따른 적절한 대푯값 선택"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.2",
+      "name": "가중평균과 계급값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.2",
+        "parent": "3.1",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "가중평균과 계급값은(는) 가중평균과 계급값에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152918",
+      "original_content": "가중평균과 계급값"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.2.1",
+      "name": "가중평균의 계산법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.2.1",
+        "parent": "3.1.2",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "가중평균의 계산법은(는) 가중평균의 계산법에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152919",
+      "original_content": "가중평균의 계산법"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.2.2",
+      "name": "도수분포표에서 평균 구하기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.2.2",
+        "parent": "3.1.2",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "도수분포표에서 평균 구하기은(는) 도수분포표에서 평균 구하기에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152921",
+      "original_content": "도수분포표에서 평균 구하기"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.2.3",
+      "name": "계급값을 이용한 근사평균",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.2.3",
+        "parent": "3.1.2",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "계급값을 이용한 근사평균은(는) 계급값을 이용한 근사평균에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152922",
+      "original_content": "계급값을 이용한 근사평균"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.1.2.4",
+      "name": "가중평균의 실생활 응용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.1.2.4",
+        "parent": "3.1.2",
+        "parent_name": "대푯값의 심화"
+      },
+      "content": "가중평균의 실생활 응용은(는) 가중평균의 실생활 응용에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152924",
+      "original_content": "가중평균의 실생활 응용"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.1",
+      "name": "산포도의 개념",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.1",
+        "parent": "3.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "산포도의 개념은(는) 산포도의 개념에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152925",
+      "original_content": "산포도의 개념"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.1.1",
+      "name": "산포도의 필요성",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.1.1",
+        "parent": "3.2.1",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "산포도의 필요성은(는) 평균만으로는 부족한 정보에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152927",
+      "original_content": "평균만으로는 부족한 정보"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.1.2",
+      "name": "자료의 흩어진 정도를 나타내는 지표",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.1.2",
+        "parent": "3.2.1",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "자료의 흩어진 정도를 나타내는 지표은(는) 자료의 흩어진 정도를 나타내는 지표에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152928",
+      "original_content": "자료의 흩어진 정도를 나타내는 지표"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.1.3",
+      "name": "산포도의 종류와 특징",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.1.3",
+        "parent": "3.2.1",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "산포도의 종류와 특징은(는) 산포도의 종류와 특징에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152930",
+      "original_content": "산포도의 종류와 특징"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.1.4",
+      "name": "분포의 모양과 산포도의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.1.4",
+        "parent": "3.2.1",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "분포의 모양과 산포도의 관계은(는) 분포의 모양과 산포도의 관계에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152932",
+      "original_content": "분포의 모양과 산포도의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.2",
+      "name": "편차와 분산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.2",
+        "parent": "3.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "편차와 분산은(는) 편차와 분산에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152933",
+      "original_content": "편차와 분산"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.2.1",
+      "name": "편차(Deviation)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.2.1",
+        "parent": "3.2.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "편차(Deviation)은(는) 개별값 - 평균에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152935",
+      "original_content": "개별값 - 평균"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.2.2",
+      "name": "편차의 합은 항상 0",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.2.2",
+        "parent": "3.2.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "편차의 합은 항상 0은(는) 편차의 합은 항상 0로 계산된다. 이 식을 활용하여 산포도 (Measures of Dispersion) 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152937",
+      "original_content": "편차의 합은 항상 0"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.2.3",
+      "name": "분산(Variance)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.2.3",
+        "parent": "3.2.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "분산(Variance)은(는) 편차 제곱의 평균에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152938",
+      "original_content": "편차 제곱의 평균"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.2.4",
+      "name": "표준편차(Standard Deviation)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.2.4",
+        "parent": "3.2.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "표준편차(Standard Deviation)은(는) 분산의 제곱근에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152940",
+      "original_content": "분산의 제곱근"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.3",
+      "name": "범위와 사분위수",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.3",
+        "parent": "3.2",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "범위와 사분위수은(는) 범위와 사분위수에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152941",
+      "original_content": "범위와 사분위수"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.3.1",
+      "name": "범위(Range)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.3.1",
+        "parent": "3.2.3",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "범위(Range)은(는) 최댓값 - 최솟값에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152943",
+      "original_content": "최댓값 - 최솟값"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.3.2",
+      "name": "사분위수의 개념 (Q1, Q2, Q3)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.3.2",
+        "parent": "3.2.3",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "사분위수의 개념 (Q1, Q2, Q3)은(는) 사분위수의 개념 (Q1, Q2, Q3)로 계산된다. 이 식을 활용하여 산포도 (Measures of Dispersion) 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152945",
+      "original_content": "사분위수의 개념 (Q1, Q2, Q3)"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.3.3",
+      "name": "사분위수 범위(IQR)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.3.3",
+        "parent": "3.2.3",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "사분위수 범위(IQR)은(는) Q3 - Q1로 계산된다. 이 식을 활용하여 산포도 (Measures of Dispersion) 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152947",
+      "original_content": "Q3 - Q1"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.2.3.4",
+      "name": "사분위수를 이용한 이상치 판별",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.2.3.4",
+        "parent": "3.2.3",
+        "parent_name": "산포도 (Measures of Dispersion)"
+      },
+      "content": "사분위수를 이용한 이상치 판별은(는) 사분위수를 이용한 이상치 판별에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152948",
+      "original_content": "사분위수를 이용한 이상치 판별"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.1",
+      "name": "상자그림의 구성요소",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.1",
+        "parent": "3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "상자그림의 구성요소은(는) 상자그림의 구성요소에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152950",
+      "original_content": "상자그림의 구성요소"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.1.1",
+      "name": "최솟값, Q1, Q2(중앙값), Q3, 최댓값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.1.1",
+        "parent": "3.3.1",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "최솟값, Q1, Q2(중앙값), Q3, 최댓값은(는) 최솟값, Q1, Q2(중앙값), Q3, 최댓값로 계산된다. 이 식을 활용하여 상자그림 (Box Plot) 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152951",
+      "original_content": "최솟값, Q1, Q2(중앙값), Q3, 최댓값"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.1.2",
+      "name": "상자(Box)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.1.2",
+        "parent": "3.3.1",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "상자(Box)은(는) Q1에서 Q3까지로 계산된다. 이 식을 활용하여 상자그림 (Box Plot) 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152953",
+      "original_content": "Q1에서 Q3까지"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.1.3",
+      "name": "수염(Whiskers)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.1.3",
+        "parent": "3.3.1",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "수염(Whiskers)은(는) 상자에서 최솟값, 최댓값까지에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152956",
+      "original_content": "상자에서 최솟값, 최댓값까지"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.1.4",
+      "name": "이상치(Outliers) 표시법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.1.4",
+        "parent": "3.3.1",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "이상치(Outliers) 표시법은(는) 이상치(Outliers) 표시법에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152958",
+      "original_content": "이상치(Outliers) 표시법"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.2",
+      "name": "상자그림 해석과 비교",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.2",
+        "parent": "3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "상자그림 해석과 비교은(는) 상자그림 해석과 비교에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152959",
+      "original_content": "상자그림 해석과 비교"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.2.1",
+      "name": "분포의 중심 위치 파악",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.2.1",
+        "parent": "3.3.2",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "분포의 중심 위치 파악은(는) 분포의 중심 위치 파악에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152961",
+      "original_content": "분포의 중심 위치 파악"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.2.2",
+      "name": "분포의 퍼진 정도 비교",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.2.2",
+        "parent": "3.3.2",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "분포의 퍼진 정도 비교은(는) 분포의 퍼진 정도 비교에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152963",
+      "original_content": "분포의 퍼진 정도 비교"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.2.3",
+      "name": "분포의 치우친 정도 (왜도)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.2.3",
+        "parent": "3.3.2",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "분포의 치우친 정도 (왜도)은(는) 분포의 치우친 정도 (왜도)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152964",
+      "original_content": "분포의 치우친 정도 (왜도)"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.2.4",
+      "name": "두 개 이상 분포의 비교 분석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.2.4",
+        "parent": "3.3.2",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "두 개 이상 분포의 비교 분석은(는) 두 개 이상 분포의 비교 분석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152966",
+      "original_content": "두 개 이상 분포의 비교 분석"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.3",
+      "name": "공학 도구를 이용한 상자그림 작성[^5]",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.3",
+        "parent": "3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "공학 도구를 이용한 상자그림 작성[^5]은(는) 공학 도구를 이용한 상자그림 작성[^5]로 계산된다. 이 식을 활용하여 상자그림 (Box Plot) 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152968",
+      "original_content": "공학 도구를 이용한 상자그림 작성[^5]"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.3.1",
+      "name": "계산기를 이용한 상자그림",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.3.1",
+        "parent": "3.3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "계산기를 이용한 상자그림은(는) 계산기를 이용한 상자그림에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152970",
+      "original_content": "계산기를 이용한 상자그림"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.3.2",
+      "name": "컴퓨터 소프트웨어 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.3.2",
+        "parent": "3.3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "컴퓨터 소프트웨어 활용은(는) 컴퓨터 소프트웨어 활용에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152971",
+      "original_content": "컴퓨터 소프트웨어 활용"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.3.3",
+      "name": "온라인 도구를 이용한 분석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.3.3",
+        "parent": "3.3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "온라인 도구를 이용한 분석은(는) 온라인 도구를 이용한 분석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152973",
+      "original_content": "온라인 도구를 이용한 분석"
+    },
+    {
+      "concept_id": "middle-3-2-ch3-3.3.3.4",
+      "name": "상자그림과 히스토그램의 비교",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "3.3.3.4",
+        "parent": "3.3.3",
+        "parent_name": "상자그림 (Box Plot)"
+      },
+      "content": "상자그림과 히스토그램의 비교은(는) 상자그림과 히스토그램의 비교에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152974",
+      "original_content": "상자그림과 히스토그램의 비교"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.1",
+      "name": "모집단과 표본의 개념",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.1",
+        "parent": "4.1",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "모집단과 표본의 개념은(는) 모집단과 표본의 개념에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152976",
+      "original_content": "모집단과 표본의 개념"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.1.1",
+      "name": "모집단(Population)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.1.1",
+        "parent": "4.1.1",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "모집단(Population)은(는) 조사하고자 하는 전체 집단에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152978",
+      "original_content": "조사하고자 하는 전체 집단"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.1.2",
+      "name": "표본(Sample)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.1.2",
+        "parent": "4.1.1",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "표본(Sample)은(는) 모집단에서 선택된 일부에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152979",
+      "original_content": "모집단에서 선택된 일부"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.1.3",
+      "name": "전수조사와 표본조사의 장단점",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.1.3",
+        "parent": "4.1.1",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "전수조사와 표본조사의 장단점은(는) 전수조사와 표본조사의 장단점에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152981",
+      "original_content": "전수조사와 표본조사의 장단점"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.1.4",
+      "name": "표본의 크기와 정확도의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.1.4",
+        "parent": "4.1.1",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "표본의 크기와 정확도의 관계은(는) 표본의 크기와 정확도의 관계에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152983",
+      "original_content": "표본의 크기와 정확도의 관계"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.2",
+      "name": "표본추출방법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.2",
+        "parent": "4.1",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "표본추출방법의 방법으로 해결한다. 단계적인 접근을 통해 정확한 답을 구할 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "method"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152984",
+      "original_content": "표본추출방법"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.2.1",
+      "name": "단순무작위추출 (Simple Random Sampling)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.2.1",
+        "parent": "4.1.2",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "단순무작위추출 (Simple Random Sampling)은(는) 단순무작위추출 (Simple Random Sampling)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152986",
+      "original_content": "단순무작위추출 (Simple Random Sampling)"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.2.2",
+      "name": "층화추출 (Stratified Sampling)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.2.2",
+        "parent": "4.1.2",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "층화추출 (Stratified Sampling)은(는) 층화추출 (Stratified Sampling)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152988",
+      "original_content": "층화추출 (Stratified Sampling)"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.2.3",
+      "name": "집락추출 (Cluster Sampling)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.2.3",
+        "parent": "4.1.2",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "집락추출 (Cluster Sampling)은(는) 집락추출 (Cluster Sampling)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152989",
+      "original_content": "집락추출 (Cluster Sampling)"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.1.2.4",
+      "name": "편의추출과 편향(Bias) 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.1.2.4",
+        "parent": "4.1.2",
+        "parent_name": "표본조사와 모집단"
+      },
+      "content": "편의추출과 편향(Bias) 문제은(는) 편의추출과 편향(Bias) 문제에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152991",
+      "original_content": "편의추출과 편향(Bias) 문제"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.1",
+      "name": "표본통계량과 모수",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.1",
+        "parent": "4.2",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "표본통계량과 모수은(는) 표본통계량과 모수에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152993",
+      "original_content": "표본통계량과 모수"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.1.1",
+      "name": "표본평균과 모평균",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.1.1",
+        "parent": "4.2.1",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "표본평균과 모평균은(는) 표본평균과 모평균에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152994",
+      "original_content": "표본평균과 모평균"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.1.2",
+      "name": "표본비율과 모비율",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.1.2",
+        "parent": "4.2.1",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "표본비율과 모비율은(는) 표본비율과 모비율에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152996",
+      "original_content": "표본비율과 모비율"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.1.3",
+      "name": "표본분산과 모분산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.1.3",
+        "parent": "4.2.1",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "표본분산과 모분산은(는) 표본분산과 모분산에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152997",
+      "original_content": "표본분산과 모분산"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.1.4",
+      "name": "불편추정량의 개념",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.1.4",
+        "parent": "4.2.1",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "불편추정량의 개념은(는) 불편추정량의 개념에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.152999",
+      "original_content": "불편추정량의 개념"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.2",
+      "name": "신뢰구간의 기본 개념 (기초 수준)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.2",
+        "parent": "4.2",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "신뢰구간의 기본 개념 (기초 수준)은(는) 신뢰구간의 기본 개념 (기초 수준)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153001",
+      "original_content": "신뢰구간의 기본 개념 (기초 수준)"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.2.1",
+      "name": "점추정과 구간추정의 차이",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.2.1",
+        "parent": "4.2.2",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "점추정과 구간추 차이은(는) 점추정과 구간추정의 차이로 정의된다. 이는 중학교 3학년 자료와 가능성 (Data and Possibility) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153003",
+      "original_content": "점추정과 구간추정의 차이"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.2.2",
+      "name": "신뢰도와 신뢰구간",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.2.2",
+        "parent": "4.2.2",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "신뢰도와 신뢰구간은(는) 신뢰도와 신뢰구간에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153005",
+      "original_content": "신뢰도와 신뢰구간"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.2.3",
+      "name": "표본의 크기와 신뢰구간의 폭",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.2.3",
+        "parent": "4.2.2",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "표본의 크기와 신뢰구간의 폭은(는) 표본의 크기와 신뢰구간의 폭에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153006",
+      "original_content": "표본의 크기와 신뢰구간의 폭"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.2.2.4",
+      "name": "통계적 추정의 한계점",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.2.2.4",
+        "parent": "4.2.2",
+        "parent_name": "통계적 추정의 기초"
+      },
+      "content": "통계적 추 한계점은(는) 통계적 추정의 한계점로 정의된다. 이는 중학교 3학년 자료와 가능성 (Data and Possibility) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153008",
+      "original_content": "통계적 추정의 한계점"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.1",
+      "name": "통계 그래프의 올바른 해석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.1",
+        "parent": "4.3",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "통계 그래프의 올바른 해석은(는) 통계 그래프의 올바른 해석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153009",
+      "original_content": "통계 그래프의 올바른 해석"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.1.1",
+      "name": "그래프 축의 조작과 왜곡",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.1.1",
+        "parent": "4.3.1",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "그래프 축의 조작과 왜곡은(는) 그래프 축의 조작과 왜곡에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153011",
+      "original_content": "그래프 축의 조작과 왜곡"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.1.2",
+      "name": "3차원 그래프의 시각적 착각",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.1.2",
+        "parent": "4.3.1",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "3차원 그래프의 시각적 착각은(는) 3차원 그래프의 시각적 착각로 계산된다. 이 식을 활용하여 자료의 해석과 비판적 분석 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153012",
+      "original_content": "3차원 그래프의 시각적 착각"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.1.3",
+      "name": "원그래프와 막대그래프의 적절한 사용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.1.3",
+        "parent": "4.3.1",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "원그래프와 막대그래프의 적절한 사용은(는) 원그래프와 막대그래프의 적절한 사용에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153014",
+      "original_content": "원그래프와 막대그래프의 적절한 사용"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.1.4",
+      "name": "시간에 따른 변화 그래프 해석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.1.4",
+        "parent": "4.3.1",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "시간에 따른 변화 그래프 해석은(는) 시간에 따른 변화 그래프 해석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153015",
+      "original_content": "시간에 따른 변화 그래프 해석"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.2",
+      "name": "통계의 오남용 사례 분석[^5]",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.2",
+        "parent": "4.3",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "통계의 오남용 사례 분석[^5]은(는) 통계의 오남용 사례 분석[^5]로 계산된다. 이 식을 활용하여 자료의 해석과 비판적 분석 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153017",
+      "original_content": "통계의 오남용 사례 분석[^5]"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.2.1",
+      "name": "선택편향 (Selection Bias)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.2.1",
+        "parent": "4.3.2",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "선택편향 (Selection Bias)은(는) 선택편향 (Selection Bias)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153019",
+      "original_content": "선택편향 (Selection Bias)"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.2.2",
+      "name": "확증편향 (Confirmation Bias)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.2.2",
+        "parent": "4.3.2",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "확증편향 (Confirmation Bias)은(는) 확증편향 (Confirmation Bias)에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153021",
+      "original_content": "확증편향 (Confirmation Bias)"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.2.3",
+      "name": "상관관계와 인과관계의 혼동",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.2.3",
+        "parent": "4.3.2",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "상관관계와 인과관계의 혼동은(는) 상관관계와 인과관계의 혼동에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153022",
+      "original_content": "상관관계와 인과관계의 혼동"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.3.2.4",
+      "name": "평균의 함정과 심슨의 역설",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.3.2.4",
+        "parent": "4.3.2",
+        "parent_name": "자료의 해석과 비판적 분석"
+      },
+      "content": "평균의 함정과 심슨의 역설은(는) 평균의 함정과 심슨의 역설에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153024",
+      "original_content": "평균의 함정과 심슨의 역설"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.1",
+      "name": "디지털 시대의 데이터",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.1",
+        "parent": "4.4",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "디지털 시대의 데이터은(는) 디지털 시대의 데이터에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153026",
+      "original_content": "디지털 시대의 데이터"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.1.1",
+      "name": "정형 데이터와 비정형 데이터",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.1.1",
+        "parent": "4.4.1",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "정형 데이터와 비정형 데이터은(는) 정형 데이터와 비정형 데이터에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153027",
+      "original_content": "정형 데이터와 비정형 데이터"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.1.2",
+      "name": "개인정보와 데이터 프라이버시",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.1.2",
+        "parent": "4.4.1",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "개인정보와 데이터 프라이버시은(는) 개인정보와 데이터 프라이버시에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153029",
+      "original_content": "개인정보와 데이터 프라이버시"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.1.3",
+      "name": "알고리즘과 데이터 편향성",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.1.3",
+        "parent": "4.4.1",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "알고리즘과 데이터 편향성은(는) 알고리즘과 데이터 편향성에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153031",
+      "original_content": "알고리즘과 데이터 편향성"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.1.4",
+      "name": "데이터 리터러시의 중요성",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.1.4",
+        "parent": "4.4.1",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "데이터 리터러시의 중요성은(는) 데이터 리터러시의 중요성에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153033",
+      "original_content": "데이터 리터러시의 중요성"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.2",
+      "name": "통계적 사고력의 실생활 적용[^5]",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.2",
+        "parent": "4.4",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "통계적 사고력의 실생활 적용[^5]은(는) 통계적 사고력의 실생활 적용[^5]로 계산된다. 이 식을 활용하여 빅데이터와 인공지능 시대의 통계 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153035",
+      "original_content": "통계적 사고력의 실생활 적용[^5]"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.2.1",
+      "name": "뉴스와 광고의 통계 해석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.2.1",
+        "parent": "4.4.2",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "뉴스와 광고의 통계 해석은(는) 뉴스와 광고의 통계 해석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153037",
+      "original_content": "뉴스와 광고의 통계 해석"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.2.2",
+      "name": "의료 정보와 건강 통계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.2.2",
+        "parent": "4.4.2",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "의료 정보와 건강 통계은(는) 의료 정보와 건강 통계에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153038",
+      "original_content": "의료 정보와 건강 통계"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.2.3",
+      "name": "경제 지표와 사회 통계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.2.3",
+        "parent": "4.4.2",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "경제 지표와 사회 통계은(는) 경제 지표와 사회 통계에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153040",
+      "original_content": "경제 지표와 사회 통계"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.4.2.4",
+      "name": "과학적 연구 결과 해석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.4.2.4",
+        "parent": "4.4.2",
+        "parent_name": "빅데이터와 인공지능 시대의 통계"
+      },
+      "content": "과학적 연구 결과 해석은(는) 과학적 연구 결과 해석에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153041",
+      "original_content": "과학적 연구 결과 해석"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.1",
+      "name": "소규모 통계 조사 설계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.1",
+        "parent": "4.5",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "소규모 통계 조사 설계은(는) 소규모 통계 조사 설계에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153043",
+      "original_content": "소규모 통계 조사 설계"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.1.1",
+      "name": "조사 문제 설정과 가설 수립",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.1.1",
+        "parent": "4.5.1",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "조사 문제 설정과 가설 수립은(는) 조사 문제 설정과 가설 수립에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153045",
+      "original_content": "조사 문제 설정과 가설 수립"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.1.2",
+      "name": "적절한 표본 선정과 자료 수집",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.1.2",
+        "parent": "4.5.1",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "적절한 표본 선정과 자료 수집은(는) 적절한 표본 선정과 자료 수집에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153046",
+      "original_content": "적절한 표본 선정과 자료 수집"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.1.3",
+      "name": "수집된 자료의 정리와 분석",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.1.3",
+        "parent": "4.5.1",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "수집된 자료의 정리와 분석이(가) 성립한다는 정리이다. 증명을 통해 이 관계식이 항상 참임을 보일 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "theorem"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153048",
+      "original_content": "수집된 자료의 정리와 분석"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.1.4",
+      "name": "결과 해석과 결론 도출",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.1.4",
+        "parent": "4.5.1",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "결과 해석과 결론 도출은(는) 결과 해석과 결론 도출에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153049",
+      "original_content": "결과 해석과 결론 도출"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.2",
+      "name": "통계 결과의 시각화와 발표",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.2",
+        "parent": "4.5",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "통계 결과의 시각화와 발표은(는) 통계 결과의 시각화와 발표에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153051",
+      "original_content": "통계 결과의 시각화와 발표"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.2.1",
+      "name": "적절한 그래프와 표 선택",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.2.1",
+        "parent": "4.5.2",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "적절한 그래프와 표 선택은(는) 적절한 그래프와 표 선택에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153052",
+      "original_content": "적절한 그래프와 표 선택"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.2.2",
+      "name": "프레젠테이션 자료 제작",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.2.2",
+        "parent": "4.5.2",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "프레젠테이션 자료 제작은(는) 프레젠테이션 자료 제작에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153054",
+      "original_content": "프레젠테이션 자료 제작"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.2.3",
+      "name": "통계 결과의 명확한 전달",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.2.3",
+        "parent": "4.5.2",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "통계 결과의 명확한 전달은(는) 통계 결과의 명확한 전달에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153055",
+      "original_content": "통계 결과의 명확한 전달"
+    },
+    {
+      "concept_id": "middle-3-2-ch4-4.5.2.4",
+      "name": "질문 대응과 토론 능력",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 2,
+      "chapter": {
+        "number": 2,
+        "name": "자료와 가능성 (Data and Possibility)",
+        "name_en": "Data and Possibility"
+      },
+      "section": {
+        "path": "4.5.2.4",
+        "parent": "4.5.2",
+        "parent_name": "통계 프로젝트와 발표"
+      },
+      "content": "질문 대응과 토론 능력은(는) 질문 대응과 토론 능력에 관한 개념이다. 중학교 3학년 자료와 가능성 (Data and Possibility)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.153057",
+      "original_content": "질문 대응과 토론 능력"
+    }
+  ]
+}

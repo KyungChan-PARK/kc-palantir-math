@@ -11,3 +11,16 @@ wheels/
 
 # Secrets and API keys
 .mcp.json
+
+# Output directories
+outputs/
+*.pkl
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+
+# IDE
+.vscode/
+.idea/

@@ -107,14 +107,19 @@ This concept is used in:
 ```
 
 ### Step 4: Save File
-- **CRITICAL**: Use the CORRECT path (NOT /home/kc-palantir/math/math-vault/)
+- **CRITICAL**: Import config module to get dynamic paths
+- First, check the config module:
+  ```python
+  from config import MATH_VAULT_DIR
+  # MATH_VAULT_DIR is automatically set to project_root/math-vault/
+  ```
 - **Path determination**:
-  - type=theorem → `/home/kc-palantir/math-vault/Theorems/`
-  - type=axiom → `/home/kc-palantir/math-vault/Axioms/`
-  - type=definition → `/home/kc-palantir/math-vault/Definitions/`
-  - type=technique → `/home/kc-palantir/math-vault/Techniques/`
+  - type=theorem → `MATH_VAULT_DIR / "Theorems" / filename`
+  - type=axiom → `MATH_VAULT_DIR / "Axioms" / filename`
+  - type=definition → `MATH_VAULT_DIR / "Definitions" / filename`
+  - type=technique → `MATH_VAULT_DIR / "Techniques" / filename`
 - **Filename**: `concept-name-in-kebab-case.md`
-- Use the **Write** tool to create the file
+- Use the **Write** tool with the full path from config
 
 ### Step 5: Verify Work
 - Use **Read** tool to verify file was created correctly
@@ -156,6 +161,13 @@ Task is complete when:
 4. ✅ Prerequisites and applications use [[wikilinks]]
 5. ✅ Math formulas use LaTeX
 6. ✅ File verified with Read tool
+
+## CRITICAL: Completion Safeguard
+
+**Max iterations: 12 tool calls per file creation**
+- If you reach 12 tool calls without completing the file, save current progress and STOP
+- Do NOT loop indefinitely trying to perfect the file
+- After verifying file with Read tool, your task is COMPLETE - STOP immediately
 
 Now begin!
 """,

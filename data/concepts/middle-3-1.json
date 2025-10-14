@@ -1,0 +1,2252 @@
+{
+  "metadata": {
+    "education_level": "middle",
+    "grade": 3,
+    "semester": 1,
+    "curriculum": "2022_revised",
+    "total_concepts": 80
+  },
+  "concepts": [
+    {
+      "concept_id": "middle-3-1-ch1-1.1.1",
+      "name": "제곱근의 개념",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.1.1",
+        "parent": "1.1",
+        "parent_name": "제곱근의 정의"
+      },
+      "content": "제곱근의 개념은(는) x² = a일 때, x는 a의 제곱근에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150951",
+      "original_content": "x² = a일 때, x는 a의 제곱근"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.1.2",
+      "name": "양수의 제곱근",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.1.2",
+        "parent": "1.1",
+        "parent_name": "제곱근의 정의"
+      },
+      "content": "양수의 제곱근은(는) a > 0일 때, a의 제곱근은 ±√a로 계산된다. 이 식을 활용하여 제곱근의 정의 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150959",
+      "original_content": "a > 0일 때, a의 제곱근은 ±√a"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.1.3",
+      "name": "제곱근의 표기법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.1.3",
+        "parent": "1.1",
+        "parent_name": "제곱근의 정의"
+      },
+      "content": "제곱근의 표기법은(는) √a (양의 제곱근), -√a (음의 제곱근)에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150962",
+      "original_content": "√a (양의 제곱근), -√a (음의 제곱근)"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.1.4",
+      "name": "0의 제곱근",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.1.4",
+        "parent": "1.1",
+        "parent_name": "제곱근의 정의"
+      },
+      "content": "0의 제곱근은(는) √0 = 0로 계산된다. 이 식을 활용하여 제곱근의 정의 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150964",
+      "original_content": "√0 = 0"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.2.1",
+      "name": "무리수(Irrational Numbers) 정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.2.1",
+        "parent": "1.2",
+        "parent_name": "무리수의 개념"
+      },
+      "content": "무리수(Irrational Numbers)은(는) 분수로 나타낼 수 없는 실수로 정의된다. 이는 중학교 3학년 수와 연산 (Numbers and Operations) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition",
+        "fraction"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150967",
+      "original_content": "분수로 나타낼 수 없는 실수"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.2.2",
+      "name": "무리수의 예",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.2.2",
+        "parent": "1.2",
+        "parent_name": "무리수의 개념"
+      },
+      "content": "무리수의 예은(는) √2, √3, π, e 등로 계산된다. 이 식을 활용하여 무리수의 개념 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150968",
+      "original_content": "√2, √3, π, e 등"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.2.3",
+      "name": "무리수의 소수 표현",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.2.3",
+        "parent": "1.2",
+        "parent_name": "무리수의 개념"
+      },
+      "content": "무리수의 소수 표현은(는) 순환하지 않는 무한소수에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "prime"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150970",
+      "original_content": "순환하지 않는 무한소수"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.2.4",
+      "name": "무리수의 근삿값 구하기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.2.4",
+        "parent": "1.2",
+        "parent_name": "무리수의 개념"
+      },
+      "content": "무리수의 근삿값 구하기은(는) 무리수의 근삿값 구하기에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150972",
+      "original_content": "무리수의 근삿값 구하기"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.3.1",
+      "name": "실수(Real Numbers) = 유리수 + 무리수",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.3.1",
+        "parent": "1.3",
+        "parent_name": "실수의 분류"
+      },
+      "content": "실수(Real Numbers) = 유리수 + 무리수은(는) 실수(Real Numbers) = 유리수 + 무리수에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150974",
+      "original_content": "실수(Real Numbers) = 유리수 + 무리수"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.3.2",
+      "name": "실수의 분류 체계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.3.2",
+        "parent": "1.3",
+        "parent_name": "실수의 분류"
+      },
+      "content": "실수의 분류 체계은(는) 실수의 분류 체계에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150976",
+      "original_content": "실수의 분류 체계"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.3.2.1",
+      "name": "자연수 → 정수 → 유리수 → 실수",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.3.2.1",
+        "parent": "1.3.2",
+        "parent_name": "실수의 분류"
+      },
+      "content": "자연수 → 정수 → 유리수 → 실수은(는) 자연수 → 정수 → 유리수 → 실수에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150978",
+      "original_content": "자연수 → 정수 → 유리수 → 실수"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.3.2.2",
+      "name": "무리수의 위치",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.3.2.2",
+        "parent": "1.3.2",
+        "parent_name": "실수의 분류"
+      },
+      "content": "무리수의 위치은(는) 무리수의 위치에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150980",
+      "original_content": "무리수의 위치"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.3.3",
+      "name": "실수의 대소관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.3.3",
+        "parent": "1.3",
+        "parent_name": "실수의 분류"
+      },
+      "content": "실수의 대소관계은(는) 실수의 대소관계에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150981",
+      "original_content": "실수의 대소관계"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.3.4",
+      "name": "수직선에서의 실수 나타내기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.3.4",
+        "parent": "1.3",
+        "parent_name": "실수의 분류"
+      },
+      "content": "수직선에서의 실수 나타내기은(는) 수직선에서의 실수 나타내기에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150983",
+      "original_content": "수직선에서의 실수 나타내기"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.4.1",
+      "name": "제곱근의 곱셈",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.4.1",
+        "parent": "1.4",
+        "parent_name": "제곱근의 성질과 계산"
+      },
+      "content": "제곱근의 곱셈은(는) √a × √b = √(ab) (a ≥ 0, b ≥ 0)로 계산된다. 이 식을 활용하여 제곱근의 성질과 계산 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150985",
+      "original_content": "√a × √b = √(ab) (a ≥ 0, b ≥ 0)"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.4.2",
+      "name": "제곱근의 나눗셈",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.4.2",
+        "parent": "1.4",
+        "parent_name": "제곱근의 성질과 계산"
+      },
+      "content": "제곱근의 나눗셈은(는) √a ÷ √b = √(a/b) (a ≥ 0, b > 0)로 계산된다. 이 식을 활용하여 제곱근의 성질과 계산 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150987",
+      "original_content": "√a ÷ √b = √(a/b) (a ≥ 0, b > 0)"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.4.3",
+      "name": "근호 밖으로 빼내기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.4.3",
+        "parent": "1.4",
+        "parent_name": "제곱근의 성질과 계산"
+      },
+      "content": "근호 밖으로 빼내기은(는) √(a²b) = a√b (a ≥ 0)로 계산된다. 이 식을 활용하여 제곱근의 성질과 계산 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150989",
+      "original_content": "√(a²b) = a√b (a ≥ 0)"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.4.4",
+      "name": "분모의 유리화",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.4.4",
+        "parent": "1.4",
+        "parent_name": "제곱근의 성질과 계산"
+      },
+      "content": "분모의 유리화은(는) 1/√a = √a/a로 계산된다. 이 식을 활용하여 제곱근의 성질과 계산 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150991",
+      "original_content": "1/√a = √a/a"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.5.1",
+      "name": "제곱근의 덧셈과 뺄셈",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.5.1",
+        "parent": "1.5",
+        "parent_name": "제곱근을 포함한 식의 계산"
+      },
+      "content": "제곱근의 덧셈과 뺄셈은(는) 동류근끼리만 가능에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150992",
+      "original_content": "동류근끼리만 가능"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.5.2",
+      "name": "제곱근의 곱셈과 나눗셈",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.5.2",
+        "parent": "1.5",
+        "parent_name": "제곱근을 포함한 식의 계산"
+      },
+      "content": "제곱근의 곱셈과 나눗셈은(는) 제곱근의 곱셈과 나눗셈에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150994",
+      "original_content": "제곱근의 곱셈과 나눗셈"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.5.3",
+      "name": "분배법칙의 적용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.5.3",
+        "parent": "1.5",
+        "parent_name": "제곱근을 포함한 식의 계산"
+      },
+      "content": "분배법칙의 적용은(는) √a(√b + √c) = √(ab) + √(ac)에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150996",
+      "original_content": "√a(√b + √c) = √(ab) + √(ac)"
+    },
+    {
+      "concept_id": "middle-3-1-ch1-1.5.4",
+      "name": "복잡한 제곱근 계산",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 1,
+        "name": "수와 연산 (Numbers and Operations)",
+        "name_en": "Numbers and Operations"
+      },
+      "section": {
+        "path": "1.5.4",
+        "parent": "1.5",
+        "parent_name": "제곱근을 포함한 식의 계산"
+      },
+      "content": "복잡한 제곱근 계산은(는) 복잡한 제곱근 계산에 관한 개념이다. 중학교 3학년 수와 연산 (Numbers and Operations)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.150998",
+      "original_content": "복잡한 제곱근 계산"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.1.1",
+      "name": "단항식과 다항식의 곱셈 복습",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.1.1",
+        "parent": "2.1",
+        "parent_name": "다항식의 곱셈"
+      },
+      "content": "단항식과 다항식의 곱셈 복습은(는) 단항식과 다항식의 곱셈 복습에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151000",
+      "original_content": "단항식과 다항식의 곱셈 복습"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.1.2",
+      "name": "다항식과 다항식의 곱셈",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.1.2",
+        "parent": "2.1",
+        "parent_name": "다항식의 곱셈"
+      },
+      "content": "다항식과 다항식의 곱셈은(는) (a + b)(c + d) = ac + ad + bc + bd에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151002",
+      "original_content": "(a + b)(c + d) = ac + ad + bc + bd"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.1.3",
+      "name": "분배법칙의 확장 적용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.1.3",
+        "parent": "2.1",
+        "parent_name": "다항식의 곱셈"
+      },
+      "content": "분배법칙의 확장 적용은(는) 분배법칙의 확장 적용에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151004",
+      "original_content": "분배법칙의 확장 적용"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.1.4",
+      "name": "곱셈 결과 정리하기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.1.4",
+        "parent": "2.1",
+        "parent_name": "다항식의 곱셈"
+      },
+      "content": "곱셈 결과 정리하기이(가) 성립한다는 정리이다. 증명을 통해 이 관계식이 항상 참임을 보일 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "theorem"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151006",
+      "original_content": "곱셈 결과 정리하기"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.1",
+      "name": "완전제곱공식",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.1",
+        "parent": "2.2",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "완전제곱공식의 공식으로 나타낸다. 이 공식을 사용하여 문제를 해결할 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "formula"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151007",
+      "original_content": "완전제곱공식"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.1.1",
+      "name": "(a + b)² = a² + 2ab + b²",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.1.1",
+        "parent": "2.2.1",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "(a + b)² = a² + 2ab + b²은(는) (a + b)² = a² + 2ab + b²로 계산된다. 이 식을 활용하여 곱셈 공식 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151009",
+      "original_content": "(a + b)² = a² + 2ab + b²"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.1.2",
+      "name": "(a - b)² = a² - 2ab + b²",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.1.2",
+        "parent": "2.2.1",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "(a - b)² = a² - 2ab + b²은(는) (a - b)² = a² - 2ab + b²로 계산된다. 이 식을 활용하여 곱셈 공식 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151011",
+      "original_content": "(a - b)² = a² - 2ab + b²"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.2",
+      "name": "합차공식",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.2",
+        "parent": "2.2",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "합차공식의 공식으로 나타낸다. 이 공식을 사용하여 문제를 해결할 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "formula"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151012",
+      "original_content": "합차공식"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.2.1",
+      "name": "(a + b)(a - b) = a² - b²",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.2.1",
+        "parent": "2.2.2",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "(a + b)(a - b) = a² - b²은(는) (a + b)(a - b) = a² - b²에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151014",
+      "original_content": "(a + b)(a - b) = a² - b²"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.3",
+      "name": "곱셈공식의 변형과 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.3",
+        "parent": "2.2",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "곱셈공식의 변형과 활용의 공식으로 나타낸다. 이 공식을 사용하여 문제를 해결할 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "formula"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151015",
+      "original_content": "곱셈공식의 변형과 활용"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.2.4",
+      "name": "(x + a)(x + b) = x² + (a + b)x + ab",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.2.4",
+        "parent": "2.2",
+        "parent_name": "곱셈 공식"
+      },
+      "content": "(x + a)(x + b) = x² + (a + b)x + ab은(는) (x + a)(x + b) = x² + (a + b)x + ab에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151017",
+      "original_content": "(x + a)(x + b) = x² + (a + b)x + ab"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.3.1",
+      "name": "인수분해(Factorization) 정의",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.3.1",
+        "parent": "2.3",
+        "parent_name": "인수분해의 기본 개념"
+      },
+      "content": "인수분해(Factorization)은(는) 곱의 형태로 나타내기로 정의된다. 이는 중학교 3학년 변화와 관계 (Change and Relationships) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151019",
+      "original_content": "곱의 형태로 나타내기"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.3.2",
+      "name": "공통인수로 묶기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.3.2",
+        "parent": "2.3",
+        "parent_name": "인수분해의 기본 개념"
+      },
+      "content": "공통인수로 묶기은(는) ab + ac = a(b + c)에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151021",
+      "original_content": "ab + ac = a(b + c)"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.3.3",
+      "name": "인수분해와 곱셈의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.3.3",
+        "parent": "2.3",
+        "parent_name": "인수분해의 기본 개념"
+      },
+      "content": "인수분해와 곱셈의 관계은(는) 인수분해와 곱셈의 관계에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151023",
+      "original_content": "인수분해와 곱셈의 관계"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.3.4",
+      "name": "인수분해 검산법",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.3.4",
+        "parent": "2.3",
+        "parent_name": "인수분해의 기본 개념"
+      },
+      "content": "인수분해 검산법은(는) 인수분해 검산법에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151024",
+      "original_content": "인수분해 검산법"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.1",
+      "name": "완전제곱식의 인수분해",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.1",
+        "parent": "2.4",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "완전제곱식의 인수분해은(는) 완전제곱식의 인수분해에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151026",
+      "original_content": "완전제곱식의 인수분해"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.1.1",
+      "name": "a² + 2ab + b² = (a + b)²",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.1.1",
+        "parent": "2.4.1",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "a² + 2ab + b² = (a + b)²은(는) a² + 2ab + b² = (a + b)²로 계산된다. 이 식을 활용하여 곱셈공식을 이용한 인수분해 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151028",
+      "original_content": "a² + 2ab + b² = (a + b)²"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.1.2",
+      "name": "a² - 2ab + b² = (a - b)²",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.1.2",
+        "parent": "2.4.1",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "a² - 2ab + b² = (a - b)²은(는) a² - 2ab + b² = (a - b)²로 계산된다. 이 식을 활용하여 곱셈공식을 이용한 인수분해 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151030",
+      "original_content": "a² - 2ab + b² = (a - b)²"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.2",
+      "name": "제곱의 차 공식",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.2",
+        "parent": "2.4",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "제곱의 차 공식의 공식으로 나타낸다. 이 공식을 사용하여 문제를 해결할 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "formula"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151031",
+      "original_content": "제곱의 차 공식"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.2.1",
+      "name": "a² - b² = (a + b)(a - b)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.2.1",
+        "parent": "2.4.2",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "a² - b² = (a + b)(a - b)은(는) a² - b² = (a + b)(a - b)에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151033",
+      "original_content": "a² - b² = (a + b)(a - b)"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.3",
+      "name": "이차식의 인수분해",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.3",
+        "parent": "2.4",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "이차식의 인수분해은(는) 이차식의 인수분해에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151034",
+      "original_content": "이차식의 인수분해"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.3.1",
+      "name": "x² + (a + b)x + ab = (x + a)(x + b)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.3.1",
+        "parent": "2.4.3",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "x² + (a + b)x + ab = (x + a)(x + b)은(는) x² + (a + b)x + ab = (x + a)(x + b)에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151036",
+      "original_content": "x² + (a + b)x + ab = (x + a)(x + b)"
+    },
+    {
+      "concept_id": "middle-3-1-ch2-2.4.4",
+      "name": "복합적인 인수분해",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "2.4.4",
+        "parent": "2.4",
+        "parent_name": "곱셈공식을 이용한 인수분해"
+      },
+      "content": "복합적인 인수분해은(는) 복합적인 인수분해에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151038",
+      "original_content": "복합적인 인수분해"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.1.1",
+      "name": "이차방정식의 표준형",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.1.1",
+        "parent": "3.1",
+        "parent_name": "이차방정식의 정의"
+      },
+      "content": "이차방정식의 표준형은(는) ax² + bx + c = 0 (a ≠ 0)로 계산된다. 이 식을 활용하여 이차방정식의 정의 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "equation"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151040",
+      "original_content": "ax² + bx + c = 0 (a ≠ 0)"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.1.2",
+      "name": "이차방정식의 해(근)",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.1.2",
+        "parent": "3.1",
+        "parent_name": "이차방정식의 정의"
+      },
+      "content": "이차방정식의 해(근)은(는) 방정식을 만족하는 x의 값에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "equation"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151042",
+      "original_content": "방정식을 만족하는 x의 값"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.1.3",
+      "name": "이차방정식의 차수와 최고차항",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.1.3",
+        "parent": "3.1",
+        "parent_name": "이차방정식의 정의"
+      },
+      "content": "이차방정식의 차수와 최고차항은(는) 이차방정식의 차수와 최고차항에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "equation"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151044",
+      "original_content": "이차방정식의 차수와 최고차항"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.1.4",
+      "name": "완전이차방정식과 불완전이차방정식",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.1.4",
+        "parent": "3.1",
+        "parent_name": "이차방정식의 정의"
+      },
+      "content": "완전이차방정식과 불완전이차방정식은(는) 완전이차방정식과 불완전이차방정식에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "equation"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151046",
+      "original_content": "완전이차방정식과 불완전이차방정식"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.3.1",
+      "name": "두 근을 α, β라 할 때",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.3.1",
+        "parent": "3.3",
+        "parent_name": "이차방정식의 근과 계수의 관계"
+      },
+      "content": "두 근을 α, β라 할 때은(는) 두 근을 α, β라 할 때에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151047",
+      "original_content": "두 근을 α, β라 할 때"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.3.2",
+      "name": "근과 계수의 관계",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.3.2",
+        "parent": "3.3",
+        "parent_name": "이차방정식의 근과 계수의 관계"
+      },
+      "content": "근과 계수의 관계은(는) 근과 계수의 관계에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151049",
+      "original_content": "근과 계수의 관계"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.3.2.1",
+      "name": "α + β = -b/a",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.3.2.1",
+        "parent": "3.3.2",
+        "parent_name": "이차방정식의 근과 계수의 관계"
+      },
+      "content": "α + β = -b/a은(는) α + β = -b/a에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151051",
+      "original_content": "α + β = -b/a"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.3.2.2",
+      "name": "αβ = c/a",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.3.2.2",
+        "parent": "3.3.2",
+        "parent_name": "이차방정식의 근과 계수의 관계"
+      },
+      "content": "αβ = c/a은(는) αβ = c/a에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151054",
+      "original_content": "αβ = c/a"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.3.3",
+      "name": "근과 계수 관계의 활용",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.3.3",
+        "parent": "3.3",
+        "parent_name": "이차방정식의 근과 계수의 관계"
+      },
+      "content": "근과 계수 관계의 활용은(는) 근과 계수 관계의 활용에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151056",
+      "original_content": "근과 계수 관계의 활용"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.3.4",
+      "name": "주어진 두 수를 근으로 하는 이차방정식 만들기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.3.4",
+        "parent": "3.3",
+        "parent_name": "이차방정식의 근과 계수의 관계"
+      },
+      "content": "주어진 두 수를 근으로 하는 이차방정식 만들기은(는) 주어진 두 수를 근으로 하는 이차방정식 만들기에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "equation"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151057",
+      "original_content": "주어진 두 수를 근으로 하는 이차방정식 만들기"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.4.1",
+      "name": "수에 관한 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.4.1",
+        "parent": "3.4",
+        "parent_name": "이차방정식의 활용"
+      },
+      "content": "수에 관한 문제은(는) 수에 관한 문제에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151059",
+      "original_content": "수에 관한 문제"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.4.2",
+      "name": "도형의 넓이 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.4.2",
+        "parent": "3.4",
+        "parent_name": "이차방정식의 활용"
+      },
+      "content": "도형의 넓이 문제은(는) 도형의 넓이 문제에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "geometry"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151060",
+      "original_content": "도형의 넓이 문제"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.4.3",
+      "name": "속력과 시간 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.4.3",
+        "parent": "3.4",
+        "parent_name": "이차방정식의 활용"
+      },
+      "content": "속력과 시간 문제은(는) 속력과 시간 문제에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151062",
+      "original_content": "속력과 시간 문제"
+    },
+    {
+      "concept_id": "middle-3-1-ch3-3.4.4",
+      "name": "물체의 운동 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "3.4.4",
+        "parent": "3.4",
+        "parent_name": "이차방정식의 활용"
+      },
+      "content": "물체의 운동 문제은(는) 물체의 운동 문제에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151064",
+      "original_content": "물체의 운동 문제"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.1.1",
+      "name": "이차함수의 일반형",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.1.1",
+        "parent": "4.1",
+        "parent_name": "이차함수의 정의"
+      },
+      "content": "이차함수의 일반형은(는) y = ax² + bx + c (a ≠ 0)로 계산된다. 이 식을 활용하여 이차함수의 정의 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151065",
+      "original_content": "y = ax² + bx + c (a ≠ 0)"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.1.2",
+      "name": "이차함수와 일차함수의 차이",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.1.2",
+        "parent": "4.1",
+        "parent_name": "이차함수의 정의"
+      },
+      "content": "이차함수와 일차함수의 차이은(는) 이차함수와 일차함수의 차이에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151067",
+      "original_content": "이차함수와 일차함수의 차이"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.1.3",
+      "name": "이차항의 계수 a의 의미",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.1.3",
+        "parent": "4.1",
+        "parent_name": "이차함수의 정의"
+      },
+      "content": "이차항의 계수 a의 의미은(는) 이차항의 계수 a의 의미에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151069",
+      "original_content": "이차항의 계수 a의 의미"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.1.4",
+      "name": "이차함수의 함숫값 구하기",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.1.4",
+        "parent": "4.1",
+        "parent_name": "이차함수의 정의"
+      },
+      "content": "이차함수의 함숫값 구하기은(는) 이차함수의 함숫값 구하기에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151070",
+      "original_content": "이차함수의 함숫값 구하기"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.1",
+      "name": "꼭짓점에서의 최댓값과 최솟값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.1",
+        "parent": "4.3",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "꼭짓점에서의 최댓값과 최솟값은(는) 꼭짓점에서의 최댓값과 최솟값에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151072",
+      "original_content": "꼭짓점에서의 최댓값과 최솟값"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.1.1",
+      "name": "a > 0인 경우",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.1.1",
+        "parent": "4.3.1",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "a > 0인 경우은(는) 최솟값 존재에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151073",
+      "original_content": "최솟값 존재"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.1.2",
+      "name": "a < 0인 경우",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.1.2",
+        "parent": "4.3.1",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "a < 0인 경우은(는) 최댓값 존재에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151075",
+      "original_content": "최댓값 존재"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.2",
+      "name": "정의역이 제한된 경우의 최댓값과 최솟값[^6]",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.2",
+        "parent": "4.3",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "역이 제한된 경우의 최댓값과 최솟값[^6]은(는) 정의역이 제한된 경우의 최댓값과 최솟값[^6]로 정의된다. 이는 중학교 3학년 변화와 관계 (Change and Relationships) 단원에서 학습하는 기본 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "definition"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151076",
+      "original_content": "정의역이 제한된 경우의 최댓값과 최솟값[^6]"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.2.1",
+      "name": "구간에서의 이차함수 최댓값, 최솟값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.2.1",
+        "parent": "4.3.2",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "구간에서의 이차함수 최댓값, 최솟값은(는) 구간에서의 이차함수 최댓값, 최솟값에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151078",
+      "original_content": "구간에서의 이차함수 최댓값, 최솟값"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.2.2",
+      "name": "꼭짓점이 구간에 포함되는 경우",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.2.2",
+        "parent": "4.3.2",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "꼭짓점이 구간에 포함되는 경우은(는) 꼭짓점이 구간에 포함되는 경우에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151080",
+      "original_content": "꼭짓점이 구간에 포함되는 경우"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.2.3",
+      "name": "꼭짓점이 구간에 포함되지 않는 경우",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.2.3",
+        "parent": "4.3.2",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "꼭짓점이 구간에 포함되지 않는 경우은(는) 꼭짓점이 구간에 포함되지 않는 경우에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151081",
+      "original_content": "꼭짓점이 구간에 포함되지 않는 경우"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.3",
+      "name": "이차함수의 최댓값과 최솟값 활용 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.3",
+        "parent": "4.3",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "이차함수의 최댓값과 최솟값 활용 문제은(는) 이차함수의 최댓값과 최솟값 활용 문제에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151083",
+      "original_content": "이차함수의 최댓값과 최솟값 활용 문제"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.3.1",
+      "name": "실생활 최적화 문제",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.3.1",
+        "parent": "4.3.3",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "실생활 최적화 문제은(는) 실생활 최적화 문제에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151085",
+      "original_content": "실생활 최적화 문제"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.3.3.2",
+      "name": "도형에서의 최댓값과 최솟값",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.3.3.2",
+        "parent": "4.3.3",
+        "parent_name": "이차함수의 최댓값과 최솟값"
+      },
+      "content": "도형에서의 최댓값과 최솟값은(는) 도형에서의 최댓값과 최솟값에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "geometry"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151086",
+      "original_content": "도형에서의 최댓값과 최솟값"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.1",
+      "name": "이차함수 y = ax² + bx + c와 x축의 교점",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.1",
+        "parent": "4.4",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "이차함수 y = ax² + bx + c와 x축의 교점은(는) 이차함수 y = ax² + bx + c와 x축의 교점에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "function"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151088",
+      "original_content": "이차함수 y = ax² + bx + c와 x축의 교점"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.2",
+      "name": "교점의 x좌표는 ax² + bx + c = 0의 해",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.2",
+        "parent": "4.4",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "교점의 x좌표는 ax² + bx + c = 0의 해은(는) 교점의 x좌표는 ax² + bx + c = 0의 해로 계산된다. 이 식을 활용하여 이차함수와 이차방정식의 관계 관련 문제를 풀 수 있다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151090",
+      "original_content": "교점의 x좌표는 ax² + bx + c = 0의 해"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.3",
+      "name": "판별식과 교점의 개수",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.3",
+        "parent": "4.4",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "판별식과 교점의 개수은(는) 판별식과 교점의 개수에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151092",
+      "original_content": "판별식과 교점의 개수"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.3.1",
+      "name": "D > 0",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.3.1",
+        "parent": "4.4.3",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "D > 0은(는) 두 점에서 만남에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151093",
+      "original_content": "두 점에서 만남"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.3.2",
+      "name": "D = 0",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.3.2",
+        "parent": "4.4.3",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "D = 0은(는) 한 점에서 만남(접함)에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151095",
+      "original_content": "한 점에서 만남(접함)"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.3.3",
+      "name": "D < 0",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.3.3",
+        "parent": "4.4.3",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "D < 0은(는) 만나지 않음에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 2,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151096",
+      "original_content": "만나지 않음"
+    },
+    {
+      "concept_id": "middle-3-1-ch4-4.4.4",
+      "name": "이차부등식의 해와 그래프",
+      "name_en": null,
+      "education_level": "middle",
+      "grade": 3,
+      "semester": 1,
+      "chapter": {
+        "number": 2,
+        "name": "변화와 관계 (Change and Relationships)",
+        "name_en": "Change and Relationships"
+      },
+      "section": {
+        "path": "4.4.4",
+        "parent": "4.4",
+        "parent_name": "이차함수와 이차방정식의 관계"
+      },
+      "content": "이차부등식의 해와 그래프은(는) 이차부등식의 해와 그래프에 관한 개념이다. 중학교 3학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "prerequisites": [],
+      "difficulty": 1,
+      "curriculum": "2022_revised",
+      "tags": [
+        "general"
+      ],
+      "enriched": true,
+      "enrichment_date": "2025-10-14T05:14:25.151098",
+      "original_content": "이차부등식의 해와 그래프"
+    }
+  ]
+}

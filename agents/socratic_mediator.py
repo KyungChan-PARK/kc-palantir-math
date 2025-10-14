@@ -20,6 +20,7 @@ from datetime import datetime
 from typing import List, Dict, Any, Optional
 from agents.improvement_models import IssueReport, RootCauseAnalysis
 from agents.ask_agent_tool import ask_agent_tool
+from config import DEPENDENCY_MAP_DIR
 
 
 class SocraticMediator:
@@ -211,7 +212,7 @@ Query History: {len(self.query_history)} questions asked
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         agent_name = issue_report.agent_name.replace('/', '_')
 
-        log_dir = Path("/home/kc-palantir/math/dependency-map")
+        log_dir = DEPENDENCY_MAP_DIR
         log_dir.mkdir(parents=True, exist_ok=True)
 
         filepath = log_dir / f"socratic_log_{timestamp}_{agent_name}.md"

@@ -181,6 +181,13 @@ Validation is complete when:
 3. ✅ Actionable feedback provided (if issues found)
 4. ✅ Overall assessment (PASS/FAIL/NEEDS_IMPROVEMENT) given
 
+## CRITICAL: Completion Safeguard
+
+**Max iterations: 15 tool calls per validation**
+- If you reach 15 tool calls without completing validation, generate report with current findings and STOP
+- Do NOT loop indefinitely checking the same conditions
+- After generating final validation report, your task is COMPLETE - STOP immediately
+
 Now begin validation!
 """,
 

@@ -10,9 +10,12 @@ Architecture:
 - Subagents: knowledge-builder, quality-agent, research-agent,
              example-generator, dependency-mapper, socratic-planner
 
-VERSION: 2.0.0 - Integrated infrastructure modules
+VERSION: 2.1.0 - Real LLM Integration
 """
 
+import os
+import sys
+from dotenv import load_dotenv
 from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions
 from agents import (
     meta_orchestrator,
@@ -22,6 +25,8 @@ from agents import (
     example_generator,
     dependency_mapper,
     socratic_planner,
+    socratic_mediator_agent,
+    self_improver_agent,
 )
 from agents.structured_logger import StructuredLogger, set_trace_id
 from agents.performance_monitor import PerformanceMonitor
@@ -35,11 +40,24 @@ import logging
 
 
 async def main():
+    # Load environment variables from .env file
+    load_dotenv()
+
+    # Check for API key (optional for Claude Code users)
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+
     # Initialize infrastructure
     print("=" * 80)
-    print("Math Education Multi-Agent System v2.0")
+    print("Math Education Multi-Agent System v2.1")
     print("=" * 80)
-    print("\n[Infrastructure] Initializing logging and monitoring...\n")
+    print("\n[Infrastructure] Initializing logging and monitoring...")
+
+    if api_key:
+        print(f"[Auth] Anthropic API Key: {'*' * 8}{api_key[-4:]} ✓")
+    else:
+        print("[Auth] Using Claude Code authentication (API key not required) ✓")
+        print("       Note: If you need API-based access, create .env with ANTHROPIC_API_KEY")
+    print()
 
     # Setup structured logger
     from datetime import datetime
@@ -89,7 +107,7 @@ async def main():
             'mcp__memory-keeper__context_search',
         ],
 
-        # All subagent definitions (6 agents)
+        # All subagent definitions (8 agents: 6 specialized + 2 self-improvement)
         agents={
             "meta-orchestrator": meta_orchestrator,
             "knowledge-builder": knowledge_builder,
@@ -98,6 +116,8 @@ async def main():
             "example-generator": example_generator,
             "dependency-mapper": dependency_mapper,
             "socratic-planner": socratic_planner,
+            "socratic-mediator": socratic_mediator_agent,
+            "self-improver": self_improver_agent,
         },
 
         # MCP servers

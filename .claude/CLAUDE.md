@@ -1,8 +1,8 @@
 # Claude Sonnet 4.5 - Palantir Math System Configuration
 
 **Model**: `claude-sonnet-4-5-20250929`
-**Version**: 4.0 (MCP Memory-Keeper Edition)
-**Last Updated**: 2025-10-12
+**Version**: 5.0 (Memory-Keeper Only Edition)
+**Last Updated**: 2025-10-14
 
 ---
 
@@ -115,17 +115,18 @@ mcp_context_get(
 )
 ```
 
+**Search Context:**
+```python
+mcp_context_search(
+    query: "agent performance",
+    category: "progress",
+    limit: 20
+)
+```
+
 **List Sessions:**
 ```python
 mcp_context_session_list(limit: 20)
-```
-
-### Fallback: File-Based Checkpoints
-
-For local project snapshots, use file tools:
-```python
-Read(".claude/memories/phase-progress/current-state.json")
-Write(".claude/memories/phase-progress/checkpoint-name.json", json_data)
 ```
 
 ### Parallel Tool Calls
@@ -146,7 +147,7 @@ Read("file1.py") → wait → Read("file2.py")
 
 ## 📁 Memory System Architecture
 
-### Primary: MCP Memory-Keeper (SQLite)
+### MCP Memory-Keeper (SQLite) - Primary & Only Storage
 ```
 ~/.config/mcp-memory-keeper/context.db  (user-scope)
 ├── Sessions table
@@ -160,19 +161,7 @@ Read("file1.py") → wait → Read("file2.py")
 - Advanced querying (category, priority, time)
 - Git integration
 - User-scope visibility
-
-### Fallback: Local File Storage
-```
-.claude/memories/
-└── phase-progress/          # Project-specific snapshots
-    ├── current-state.json   # Latest local state
-    └── checkpoint-*.json    # Named snapshots
-```
-
-**Use for:**
-- Project-specific backups
-- Git version control
-- Human-readable archives
+- No local file dependencies
 
 ---
 
@@ -181,18 +170,14 @@ Read("file1.py") → wait → Read("file2.py")
 ### Session Start
 
 ```
-1. Load State: Read(".claude/memories/phase-progress/current-state.json")
-2. Resume: Continue from checkpoint
-```
+1. Start memory-keeper session
+   mcp_context_session_start(...)
 
-Example checkpoint:
-```json
-{
-    "phase": "Phase 1: Infrastructure",
-    "completed_tasks": ["Task 1", "Task 2"],
-    "next_tasks": ["Task 3"],
-    "timestamp": "2025-10-12T16:30:00"
-}
+2. Retrieve last context
+   mcp_context_get(category: "session-state", ...)
+
+3. Resume from context
+   Continue work based on retrieved state
 ```
 
 ### During Work
@@ -200,25 +185,24 @@ Example checkpoint:
 ```
 Critical milestone reached
   ↓
-Create named checkpoint (Write)
-  ↓
-Update current-state.json (Write)
+Save to memory-keeper (mcp_context_save)
   ↓
 Continue work
   ↓
-140K tokens → Manual checkpoint recommended
+140K tokens → Save context checkpoint
   ↓
 150K tokens → Context editing
   ↓
-Next session → Load current-state.json → Resume
+Next session → Load from memory-keeper → Resume
 ```
 
 ### Context Reset Recovery
 
 ```
 1. Context edited (150K+ tokens)
-2. Next session: Read current-state.json
-3. Resume from checkpoint
+2. Next session: Start memory-keeper session
+3. Retrieve latest context from SQLite
+4. Resume from checkpoint automatically
 ```
 
 ---
@@ -251,7 +235,7 @@ last_context = mcp_context_get(
 ### Use Sequential Thinking for Complex Tasks
 
 ```python
-# Automatically stores to memory
+# Automatically stores reasoning to memory
 mcp__sequential-thinking__sequentialthinking({
     "thought": "Need to analyze...",
     "thought_number": 1,
@@ -274,11 +258,8 @@ mcp_context_save(
     priority: "high",
     channel: "main-workflow",
     tags: ["phase1", "infrastructure"],
-    metadata: {"timestamp": "2025-10-12"}
+    metadata: {"timestamp": "2025-10-14"}
 )
-
-# Optional: Also save to local file for backup
-Write(".claude/memories/phase-progress/checkpoint-phase1-complete.json", json.dumps(...))
 ```
 
 ### ⚠️ CRITICAL: Context Organization
@@ -338,29 +319,48 @@ mcp_context_save(
 
 ## 🚨 Troubleshooting
 
-### Memory Not Found
+### Memory-Keeper Not Responding
 
 ```bash
-# Initialize if needed
-mkdir -p .claude/memories/phase-progress
+# Check MCP connection
+claude mcp list | grep memory-keeper
 
-# Create initial state
-cat > .claude/memories/phase-progress/current-state.json << 'EOF'
-{
-    "phase": "Starting",
-    "completed_tasks": [],
-    "next_tasks": ["Initialize"]
-}
-EOF
+# Should show: ✓ Connected
+# If not, reinstall:
+claude mcp add --scope user memory-keeper npx mcp-memory-keeper
 ```
 
-### Context Lost
+### Context Not Found (First Session)
 
 ```python
-# Load from checkpoint
-checkpoint = Read(".claude/memories/phase-progress/current-state.json")
-state = json.loads(checkpoint)
-# Continue from state
+# Normal for first session - start fresh
+mcp_context_session_start(
+    name: "math-system-initial",
+    projectDir: "/home/kc-palantir/math"
+)
+
+# Save initial state
+mcp_context_save(
+    key: "initial-state",
+    value: {"phase": "Starting", "tasks": []},
+    category: "session-state",
+    priority: "high"
+)
+```
+
+### Context Recovery After Reset
+
+```python
+# Automatic recovery
+# 1. Start new session (memory-keeper auto-connects)
+# 2. Query for last state
+last_state = mcp_context_get(
+    category: "session-state",
+    sortBy: "timestamp",
+    sortOrder: "desc",
+    limit: 1
+)
+# 3. Resume from last_state
 ```
 
 ---
@@ -369,6 +369,7 @@ state = json.loads(checkpoint)
 
 - memory-keeper save: ~150 tokens/call
 - memory-keeper get: ~100 tokens/call
+- memory-keeper search: ~120 tokens/call
 - Context recovery: Immediate (SQLite query)
 - Token budget: 200K total
 - Storage: Persistent across ALL projects (user-scope)
@@ -382,13 +383,7 @@ state = json.loads(checkpoint)
 - ✅ Complete thinking process preserved
 - ✅ All decisions traceable
 - ✅ Token usage optimized (<150K)
-
----
-
-## 📝 Related Documents
-
-- **PROJECT_CONTEXT.md** - Overall project architecture
-- **QUICKSTART.md** - Quick reference for new sessions
+- ✅ No file-based dependencies
 
 ---
 
@@ -404,13 +399,16 @@ state = json.loads(checkpoint)
 # View sessions
 "List recent memory-keeper sessions"
 
-# View local checkpoints
-ls -lt .claude/memories/phase-progress/
+# Search context
+"Search memory-keeper for [query]"
+
+# View session status
+"Show memory-keeper session status"
 ```
 
 ---
 
-**Memory System**: MCP Memory-Keeper (SQLite) + Local Files
-**Primary Storage**: `~/.config/mcp-memory-keeper/context.db` (user-scope)
-**Backup Storage**: `.claude/memories/phase-progress/` (project-scope)
-**Recovery**: SQLite query + file fallback
+**Memory System**: MCP Memory-Keeper (SQLite) ONLY
+**Storage**: `~/.config/mcp-memory-keeper/context.db` (user-scope)
+**Recovery**: SQLite query (automatic)
+**No File Dependencies**: All context in memory-keeper
