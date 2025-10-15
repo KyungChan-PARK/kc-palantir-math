@@ -10,9 +10,15 @@ This project implements a comprehensive mathematics education system using Claud
 
 ## 📚 Documentation
 
+### Core Documentation
 - **[CLAUDE-IMPLEMENTATION-STANDARDS.md](./CLAUDE-IMPLEMENTATION-STANDARDS.md)** - MANDATORY standards for all code
 - **[CLAUDE-FEATURES-ANALYSIS-REPORT.md](./CLAUDE-FEATURES-ANALYSIS-REPORT.md)** - Comprehensive feature analysis
 - **[.claude.md](./.claude.md)** - Claude Max x20 configuration guide
+
+### Agent Architecture & Analysis
+- **[AGENT-DEPENDENCY-GRAPH.md](./AGENT-DEPENDENCY-GRAPH.md)** - Complete agent interaction analysis (39KB, 16 sections)
+- **[AGENT-ANALYSIS-SUMMARY.md](./AGENT-ANALYSIS-SUMMARY.md)** - Executive summary & quick reference (12KB)
+- **[docs/agent-interaction-diagrams.md](./docs/agent-interaction-diagrams.md)** - Visual diagrams (23KB, 10 Mermaid charts)
 
 ## 🤖 Agents
 
