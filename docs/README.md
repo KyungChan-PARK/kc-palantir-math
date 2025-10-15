@@ -13,7 +13,7 @@
 ### 1. System Overview
 - **[SYSTEM-ARCHITECTURE.md](./SYSTEM-ARCHITECTURE.md)**
   - 전체 시스템 아키텍처
-  - 9개 에이전트 레지스트리
+  - 10개 에이전트 레지스트리
   - 기술 스택 (Claude Agent SDK, NetworkX, MCP)
   - 파일 구조 및 critical design decisions
   - 성능 특성 (latency, scalability, memory)
@@ -64,6 +64,17 @@
   - Alternative classifications (if confidence < 0.90)
   - OntoClean-inspired validation (transitivity, symmetry, acyclicity)
 
+#### Workflow 5: Tools & Utilities Layer
+- **[WORKFLOW-5-TOOLS-UTILITIES.md](./WORKFLOW-5-TOOLS-UTILITIES.md)**
+- **도구:** concept_parser, batch_parser, content_enricher, auto_enricher
+- **Duration:** ~3초 (parse 841 concepts + enrich 715)
+- **주요 특징:**
+  - Universal markdown parser (초등/중등/고등/대학 지원)
+  - Batch processing (6 files → 841 concepts)
+  - Template-based enrichment (85% short content → detailed)
+  - Automatic backup (timestamped)
+  - Data pipeline: Markdown → JSON → Agent processing
+
 ---
 
 ### 3. Infrastructure Layer
@@ -93,11 +104,11 @@
 
 ## 🔍 Quick Reference
 
-### Agent Registry (9 agents)
+### Agent Registry (10 agents)
 
 | Agent | Role | Tools | Criticality |
 |-------|------|-------|-------------|
-| meta-orchestrator | Coordinator | Task, Read, Write, TodoWrite, Sequential-Thinking, MCP Memory | 10/10 (Mission-critical) |
+| meta-orchestrator | Coordinator | Task, Read, Write, Edit, Grep, Glob, TodoWrite, Sequential-Thinking, MCP Memory | 10/10 (Mission-critical) |
 | socratic-planner | Clarifier | Read, Write, TodoWrite, Sequential-Thinking | 5/10 |
 | research-agent | Researcher | Brave Search, Context7, Read, Write, TodoWrite | 6/10 |
 | knowledge-builder | Creator | Read, Write, Edit, Grep, Glob, TodoWrite | 8/10 (Core) |
@@ -106,7 +117,7 @@
 | dependency-mapper | Analyzer | Read, Write, Grep, Glob, TodoWrite | 6/10 |
 | socratic-mediator | Diagnostician | Task, Read, Write, Grep, Glob, TodoWrite | 8/10 (Core) |
 | self-improver | Modifier | Read, Write, Edit, Grep, Glob, TodoWrite | 9/10 (Core) |
-| relationship-definer | Classifier | Claude Opus 4 API | 9/10 (Core) |
+| relationship-definer | Classifier | Claude Opus 4 API, Read, Write, TodoWrite | 9/10 (Core) |
 
 ---
 
@@ -151,6 +162,7 @@ Duration:       ~2.3 hours
 ```python
 Core Framework:
   - claude-agent-sdk >= 0.1.3
+  - anthropic >= 0.69.0 (Claude API direct access)
   - Python >= 3.13
 
 MCP Servers:
@@ -163,7 +175,12 @@ Dependencies:
   - networkx >= 3.5 (dependency graphs)
   - httpx >= 0.28.1 (async HTTP)
   - pytest >= 8.4.2 (testing)
+  - pytest-asyncio >= 1.2.0 (async testing)
+  - python-dotenv >= 1.1.0 (env management)
   - pyyaml >= 6.0.3 (YAML parsing)
+  - urllib3 >= 2.5.0 (HTTP client)
+  - mcp >= 1.17.0 (MCP protocol)
+  - nest-asyncio >= 1.6.0 (nested async)
 ```
 
 ---
@@ -172,16 +189,17 @@ Dependencies:
 
 ```
 /home/kc-palantir/math/
-├── main.py                    # Entry point (232 lines)
-├── config.py                  # Dynamic paths (123 lines)
+├── main.py                    # Entry point (232 lines, v2.1.0)
+├── config.py                  # Dynamic paths (123 lines, v1.0.0)
 ├── pyproject.toml             # Dependencies
+├── LICENSE                    # Project license
 │
-├── agents/                    # 23 Python files
-│   ├── meta_orchestrator.py  (1147 lines) ⭐ Critical
-│   ├── knowledge_builder.py  (192 lines)
-│   ├── quality_agent.py      (206 lines)
-│   ├── research_agent.py     (244 lines)
-│   ├── example_generator.py  (289 lines)
+├── agents/                    # 22 Python files (excluding __init__.py)
+│   ├── meta_orchestrator.py  (1147 lines, v2.0.1) ⭐ Critical
+│   ├── knowledge_builder.py  (192 lines, v1.1.0)
+│   ├── quality_agent.py      (206 lines, v1.0.0)
+│   ├── research_agent.py     (244 lines, v1.0.0)
+│   ├── example_generator.py  (289 lines, v1.0.0)
 │   ├── dependency_mapper.py  (365 lines)
 │   ├── socratic_planner.py   (371 lines)
 │   ├── socratic_mediator_agent.py (330 lines)
@@ -189,8 +207,8 @@ Dependencies:
 │   ├── self_improver_agent.py (348 lines)
 │   ├── self_improver.py      (299 lines)
 │   ├── dependency_agent.py   (535 lines)
-│   ├── relationship_definer.py (545 lines)
-│   ├── relationship_ontology.py (268 lines)
+│   ├── relationship_definer.py (545 lines, v1.0.0)
+│   ├── relationship_ontology.py (268 lines, v1.0.0)
 │   ├── improvement_models.py (204 lines) ⭐ Critical
 │   ├── improvement_manager.py (226 lines)
 │   ├── criticality_config.py (114 lines)
@@ -200,17 +218,26 @@ Dependencies:
 │   ├── performance_monitor.py (347 lines)
 │   └── context_manager.py    (491 lines)
 │
-├── tools/                     # Utility scripts
-│   ├── auto_enrich_concepts.py
-│   ├── content_enricher.py
-│   ├── concept_parser.py
-│   └── batch_parse_middle_school.py
+├── tools/                     # 4 utility scripts + 1 MCP server
+│   ├── auto_enrich_concepts.py      (273 lines, v1.0.0)
+│   ├── content_enricher.py          (150 lines, v1.0.0)
+│   ├── concept_parser.py            (360 lines, universal parser)
+│   ├── batch_parse_middle_school.py (150 lines)
+│   └── obsidian-mcp-server/
+│       └── server.py                (MCP server implementation)
 │
 ├── tests/                     # 15+ test files
 │   ├── test_meta_orchestrator.py
 │   ├── test_self_improvement_v4.py
 │   ├── test_phase3_integration.py
+│   ├── test_e2e_v4.py
 │   └── ... (more tests)
+│
+├── data/                      # Parsed concept data
+│   └── concepts/
+│       ├── middle-1-1.json    # 중1-1학기 (841 concepts total)
+│       ├── middle-1-2.json
+│       └── ... (6 files)
 │
 ├── outputs/
 │   ├── dependency-map/        # Socratic dialogue logs (Markdown)
@@ -221,6 +248,9 @@ Dependencies:
 │   ├── Definitions/
 │   └── Resources/Mathematics/Topology/
 │
+├── math-concepts-mapping-prep/ # Source markdown files
+│   └── 중학교 *.md            # 6 curriculum files
+│
 └── docs/                      # This documentation
     ├── README.md (this file)
     ├── SYSTEM-ARCHITECTURE.md
@@ -228,6 +258,7 @@ Dependencies:
     ├── WORKFLOW-2-DEPENDENCY-MAPPING.md
     ├── WORKFLOW-3-SELF-IMPROVEMENT.md
     ├── WORKFLOW-4-RELATIONSHIP-DEFINITION.md
+    ├── WORKFLOW-5-TOOLS-UTILITIES.md (NEW)
     └── INFRASTRUCTURE-LAYER.md
 ```
 
@@ -370,8 +401,11 @@ Total Documents Created:
 3. ✅ WORKFLOW-2-DEPENDENCY-MAPPING.md (650 lines)
 4. ✅ WORKFLOW-3-SELF-IMPROVEMENT.md (800 lines)
 5. ✅ WORKFLOW-4-RELATIONSHIP-DEFINITION.md (700 lines)
-6. ✅ INFRASTRUCTURE-LAYER.md (500 lines)
-7. ✅ README.md (this file, 450 lines)
+6. ✅ WORKFLOW-5-TOOLS-UTILITIES.md (850 lines) **NEW**
+7. ✅ INFRASTRUCTURE-LAYER.md (500 lines)
+8. ✅ README.md (this file, 500 lines)
 
-**Total:** ~4,000 lines of senior-developer-level technical documentation
+**Total:** ~4,900 lines of senior-developer-level technical documentation
+
+**Last Sync:** 2025-10-14 (코드베이스와 완전 동기화 완료)
 
