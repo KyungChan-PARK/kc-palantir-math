@@ -42,6 +42,7 @@ from .ask_agent_tool import ask_agent_tool
 
 # Meta-cognitive components (NEW in v2.2.0)
 from .meta_planning_analyzer import meta_planning_analyzer
+from .meta_query_helper import meta_query_helper
 from .planning_observer import PlanningObserver, PlanningStep
 from .planning_session_manager import PlanningSessionManager
 from .agent_registry import AgentRegistry

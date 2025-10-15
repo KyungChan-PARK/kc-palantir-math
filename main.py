@@ -28,6 +28,7 @@ from agents import (
     socratic_requirements_agent,  # NEW: Replaces socratic-planner and socratic-mediator
 )
 from agents.meta_planning_analyzer import meta_planning_analyzer
+from agents.meta_query_helper import meta_query_helper
 from agents.agent_registry import AgentRegistry
 from agents.structured_logger import StructuredLogger, set_trace_id
 from agents.performance_monitor import PerformanceMonitor
@@ -127,12 +128,13 @@ async def main():
             'mcp__memory-keeper__context_search',
         ],
 
-        # All subagent definitions (10 agents: 6 specialized + 2 self-improvement + 1 meta-cognitive + meta-orchestrator)
+        # All subagent definitions (11 agents: 6 specialized + 3 meta-cognitive + 1 self-improvement + meta-orchestrator)
         # Using dynamic discovery, but can override with manual entries
         agents={
             **discovered_agents,  # All auto-discovered agents
-            # Ensure meta-planning-analyzer is registered
+            # Ensure meta-cognitive agents are registered
             "meta-planning-analyzer": meta_planning_analyzer,
+            "meta-query-helper": meta_query_helper,
         },
 
         # ✅ STANDARD 3 & 4: MCP servers configuration
@@ -284,12 +286,41 @@ async def main():
                         )
                 
                 else:
-                    # ⚠️ FALLBACK MODE: SDK doesn't support streaming
-                    print("\n⚠️  SDK streaming not available, using blocking mode\n")
+                    # Agent SDK message-level async (not token-level streaming)
+                    # But can still parse and display Extended Thinking from message blocks
                     await client.query(user_input)
                     
+                    from claude_agent_sdk import types
+                    
                     async for message in client.receive_response():
-                        print(message)
+                        if isinstance(message, types.AssistantMessage):
+                            # Parse content blocks to display Extended Thinking and response separately
+                            for block in message.content:
+                                if isinstance(block, types.ThinkingBlock):
+                                    print(f"\n🧠 [Extended Thinking]")
+                                    print("─" * 70)
+                                    print(block.thinking)
+                                    print("─" * 70)
+                                
+                                elif isinstance(block, types.TextBlock):
+                                    print(f"\n📝 [Response]")
+                                    print("─" * 70)
+                                    print(block.text)
+                                    print("─" * 70)
+                                
+                                elif isinstance(block, types.ToolUseBlock):
+                                    print(f"\n🔧 [Using Tool: {block.name}]")
+                        
+                        elif isinstance(message, types.ResultMessage):
+                            print(f"\n✅ Complete (Duration: {message.duration_ms}ms, Turns: {message.num_turns})")
+                        
+                        elif isinstance(message, types.SystemMessage):
+                            # Skip system messages (init, etc.)
+                            pass
+                        
+                        else:
+                            # Fallback for unknown message types
+                            print(message)
                 
                 query_success = True
 
