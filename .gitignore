@@ -11,6 +11,7 @@ wheels/
 
 # Secrets and API keys
 .mcp.json
+.env
 
 # Output directories
 outputs/
@@ -234,4 +235,3 @@ __marimo__/
 .pytest_cache/
 *.pyc
 __pycache__/
-.cursor/mcp_settings.json
