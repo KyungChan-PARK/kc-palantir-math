@@ -1,414 +1,259 @@
-# Claude Sonnet 4.5 - Palantir Math System Configuration
+# Project Context and Guidelines
 
-**Model**: `claude-sonnet-4-5-20250929`
-**Version**: 5.0 (Memory-Keeper Only Edition)
-**Last Updated**: 2025-10-14
-
----
-
-## 🎯 Core Principles
-
-### 1. Memory-First Approach
-
-**ALWAYS check memory at session start:**
-
-```
-SESSION START PROTOCOL:
-1. Start memory-keeper session:
-   mcp_context_session_start(
-     name: "math-system-[date]",
-     projectDir: "/home/kc-palantir/math"
-   )
-
-2. Retrieve previous context:
-   mcp_context_get(
-     category: "session-state",
-     sortBy: "timestamp",
-     sortOrder: "desc",
-     limit: 1
-   )
-
-3. Resume work:
-   Continue from last saved context
-```
-
-**During work:**
-- Save context at critical milestones using `mcp_context_save()`
-- Categories: "session-state", "decisions", "tasks", "progress", "architecture"
-- Priority levels: "high", "medium", "low"
-- Persistent storage in SQLite (context.db)
-
-### 2. Sequential Thinking Integration
-
-Use `mcp__sequential-thinking__sequentialthinking` for complex tasks:
-
-```python
-mcp__sequential-thinking__sequentialthinking({
-    "thought": "First, analyze the problem...",
-    "thought_number": 1,
-    "total_thoughts": 5
-})
-```
-
-### 3. Autonomous Agent Behavior
-
-- Work autonomously for extended periods
-- Use parallel tool calls when independent
-- Provide fact-based updates only
-- Track token usage (200K budget)
-
-### 4. Context Management
-
-**Thresholds:**
-- 0-139K tokens: ✅ Normal work
-- 140K tokens: ⚠️ Save context with mcp_context_save()
-- 150K tokens: 🚨 Context editing triggered
-
-**Recovery:** Load from memory-keeper SQLite database at next session start
-
-**Benefits:**
-- Persistent across all projects (user-scope)
-- Advanced filtering (category, priority, time-based)
-- Git branch tracking
-- Metadata and tags support
+**Project**: Multi-Agent Math Education System  
+**Version**: 2.2.0  
+**Date**: 2025-10-15
 
 ---
 
-## 🛠️ Tool Usage
+## CRITICAL: Research Methodology
 
-### Memory-Keeper Context Management
+### Hypothesis Requirement
 
-**Start Session:**
-```python
-mcp_context_session_start(
-    name: "math-system-session",
-    description: "Multi-agent math education system",
-    projectDir: "/home/kc-palantir/math",
-    defaultChannel: "main-workflow"
-)
+**ALL research must start with explicit hypotheses.**
+
+**Pattern**:
+```
+1. Formulate hypothesis based on current understanding
+2. Document hypothesis BEFORE research begins
+3. Conduct research to validate/refine/reject
+4. Document validation results
+5. Update hypothesis or confirm
+
+Example (Palantir research):
+H1: Semantic tier = static definitions
+Evidence: agents/*.py, hooks/*.py structure
+Research: Palantir docs, projects, academic papers
+Validation: Compare official definition with H1
+Result: CONFIRMED (95% match) or REFINED (adjust H1)
 ```
 
-**Save Context:**
-```python
-mcp_context_save(
-    key: "current-phase",
-    value: {
-        "phase": "Phase 3: Specialized Agents",
-        "completed": ["task1", "task2"],
-        "next": ["task3"]
-    },
-    category: "session-state",
-    priority: "high",
-    channel: "main-workflow",
-    metadata: {"agent_count": 6}
-)
-```
+**Why This Matters**:
+- Ensures focused investigation
+- Provides clear success criteria
+- Enables measurable progress
+- Supports falsifiability
 
-**Retrieve Context:**
-```python
-mcp_context_get(
-    category: "session-state",
-    priorities: ["high"],
-    sortBy: "timestamp",
-    sortOrder: "desc",
-    limit: 10
-)
-```
-
-**Search Context:**
-```python
-mcp_context_search(
-    query: "agent performance",
-    category: "progress",
-    limit: 20
-)
-```
-
-**List Sessions:**
-```python
-mcp_context_session_list(limit: 20)
-```
-
-### Parallel Tool Calls
-
-```python
-# ✅ CORRECT: Independent operations in parallel
-[
-    Read("file1.py"),
-    Read("file2.py"),
-    Bash("git status")
-]
-
-# ❌ WRONG: Sequential when parallel possible
-Read("file1.py") → wait → Read("file2.py")
-```
+**Never research without hypothesis.** This prevents unfocused exploration and ensures productive learning.
 
 ---
 
-## 📁 Memory System Architecture
+## Meta-Cognitive Learning Patterns
 
-### MCP Memory-Keeper (SQLite) - Primary & Only Storage
+### Pattern 1: Execution vs Recall Distinction
+
+**Context**: User request interpretation
+
+**Decision Tree**:
 ```
-~/.config/mcp-memory-keeper/context.db  (user-scope)
-├── Sessions table
-├── Context entries (categorized, prioritized)
-├── Channels (topic-based organization)
-└── Metadata & tags
+User says "너가 진행하면 같은 모델":
+├─ WRONG: "Use my training data knowledge" (passive recall)
+├─ WRONG: "제 지식으로..." (explanation only)
+└─ CORRECT: Execute actual work via tools (active execution)
 ```
 
-**Benefits:**
-- Persistent across ALL projects
-- Advanced querying (category, priority, time)
-- Git integration
-- User-scope visibility
-- No local file dependencies
+**Learning**: User wants EXECUTION, not EXPLANATION  
+**Application**: Perform actual work (write files, delegate to agents, run tools)  
+**Evidence**: Session 2025-10-15, Socratic clarification 4 rounds  
+**Confidence**: 0.98
 
 ---
 
-## 🔄 Session Workflow
+### Pattern 2: Documentation-First Protocol
 
-### Session Start
-
-```
-1. Start memory-keeper session
-   mcp_context_session_start(...)
-
-2. Retrieve last context
-   mcp_context_get(category: "session-state", ...)
-
-3. Resume from context
-   Continue work based on retrieved state
-```
-
-### During Work
+**Before any SDK/library integration**:
 
 ```
-Critical milestone reached
-  ↓
-Save to memory-keeper (mcp_context_save)
-  ↓
-Continue work
-  ↓
-140K tokens → Save context checkpoint
-  ↓
-150K tokens → Context editing
-  ↓
-Next session → Load from memory-keeper → Resume
+1. Read relevant documentation FIRST
+2. Extract proven patterns
+3. Apply patterns (don't assume)
+4. Verify with documentation
+
+DON'T:
+- Assume from experience → Leads to TypeError
+- Guess from examples → Leads to rework
+
+DO:
+- Read docs → Extract patterns → Apply correctly
 ```
 
-### Context Reset Recovery
+**Evidence**: Deduplication workflow
+- Read docs AFTER → 70s wasted (sequential execution)
+- Should have read FIRST → Would use parallel (7s, 90% faster)
+- 2 TypeErrors from SDK assumptions
 
-```
-1. Context edited (150K+ tokens)
-2. Next session: Start memory-keeper session
-3. Retrieve latest context from SQLite
-4. Resume from checkpoint automatically
-```
+**Impact if applied**: 90% error prevention, 67% rework reduction
 
 ---
 
-## 💡 Best Practices
+### Pattern 3: Parallel > Sequential (ALWAYS)
 
-### Always Check Memory First
+**For independent operations**:
 
-```python
-# At start of ANY session
+```
+RULE: If tasks are independent, execute in parallel.
 
-# 1. Start memory-keeper session
-mcp_context_session_start(
-    name: f"math-session-{date}",
-    projectDir: "/home/kc-palantir/math"
-)
+Example:
+❌ Sequential: read_file("a") → wait → read_file("b") → wait (10x slower)
+✅ Parallel: read_file("a"), read_file("b") in single batch (90% faster)
 
-# 2. Retrieve last context
-last_context = mcp_context_get(
-    category: "session-state",
-    sortBy: "timestamp",
-    sortOrder: "desc",
-    limit: 1
-)
-
-# 3. Resume from context
-# Process retrieved context and continue work
+Evidence: claude-code-2-0-deduplicated-final.md line 12471
+Proof: Deduplication workflow 70s → 7s
 ```
 
-### Use Sequential Thinking for Complex Tasks
+**Enforcement**: PreToolUse hook detects sequential patterns, suggests parallelization
 
-```python
-# Automatically stores reasoning to memory
-mcp__sequential-thinking__sequentialthinking({
-    "thought": "Need to analyze...",
-    "thought_number": 1,
-    "total_thoughts": 5
-})
+---
+
+## Prompt Template Best Practices
+
+**From claude-code-2-0-deduplicated-final.md lines 25796-25898**:
+
+### Use {{variable}} Placeholders
+
+```
+Template format:
+Analyze {{CONCEPT}} using {{METHOD}}.
+
+Context from past successes:
+- Pattern: {{SUCCESSFUL_PATTERN}}
+- Avoid: {{KNOWN_PITFALL}}
+
+Expected: {{SUCCESS_CRITERIA}}
 ```
 
-### Save Context at Milestones
+### Store Successful Templates
 
-```python
-# For critical milestones
-mcp_context_save(
-    key: "phase1-complete",
-    value: {
-        "phase": "Phase 1",
-        "completed_tasks": [...],
-        "state": {...}
-    },
-    category: "milestone",
-    priority: "high",
-    channel: "main-workflow",
-    tags: ["phase1", "infrastructure"],
-    metadata: {"timestamp": "2025-10-14"}
-)
+When a prompt produces high-quality results (effectiveness ≥ 9.0):
+1. Extract as template
+2. Identify {{variables}}
+3. Save to memory-keeper with effectiveness score
+4. Retrieve via context_search for similar future tasks
+
+### Template Benefits
+- **Consistency**: Same structure across sessions
+- **Efficiency**: Reuse proven prompts
+- **Quality**: Templates have verified effectiveness
+- **Learning**: Continuously improve template library
+
+---
+
+## Feedback Loop Protocol
+
+### User Feedback Collection
+
+**After task completion, request structured feedback**:
+
+```
+평가해주세요:
+- 정확도 (1-10): 
+- 효율성 (1-10):
+
+또는 "정확합니다" = 10/10
 ```
 
-### ⚠️ CRITICAL: Context Organization
+**Use feedback for**:
+- Quality score calculation (multi-dimensional)
+- Pattern effectiveness validation
+- Template ranking
 
-**Categories (use consistently):**
-- `session-state`: Current phase, tasks, progress
-- `decisions`: Architecture choices, design decisions
-- `tasks`: TODO items, next steps
-- `progress`: Completed work, metrics
-- `architecture`: System design, agent definitions
-- `milestone`: Major achievements
-- `debug`: Issues, errors, solutions
+### Background Optimization
 
-**Priority Levels:**
-- `high`: Critical state, blocking issues
-- `medium`: Important context, decisions
-- `low`: Nice-to-have, reference info
+**Adaptive triggers** (based on effectiveness score):
 
-**Channels (topic-based):**
-- `main-workflow`: Primary development flow
-- `agent-development`: Agent implementation
-- `documentation`: Docs and guides
-- `testing`: Test results, debugging
-
-**Best Practices:**
 ```python
-# Save with rich metadata
-mcp_context_save(
-    key: "descriptive-key",
-    value: {...},
-    category: "session-state",
-    priority: "high",
-    channel: "main-workflow",
-    tags: ["phase3", "agents"],
-    metadata: {"agent": "meta-orchestrator"}
-)
+if score >= 9.5:
+    optimize_immediately()  # High value
+elif score >= 8.0:
+    queue_for_batch()  # Medium value
+else:
+    keep_raw_only()  # Low value
+```
+
+**Optimization layers**:
+1. Raw log (complete data)
+2. Compressed (key points only)
+3. Patterns (reusable insights)
+4. Templates (proven prompts)
+
+---
+
+## Reminder System
+
+### Deferred Tasks
+
+**Task**: Implement similarity calculation for log deduplication  
+**Trigger**: After Palantir 3-tier ontology research complete  
+**Priority**: High  
+**Context**: Q3-1 deferred - requires ontology-based semantic understanding  
+**Estimated**: Week 2
+
+**Action Required**:
+- Choose similarity method (Semantic embedding vs Pattern overlap)
+- Implement based on Palantir ontology semantic tier
+- Integrate into MetaCognitiveLogManager
+
+---
+
+## Project Structure
+
+```
+/home/kc-palantir/math/
+├── agents/                    # Agent definitions
+│   ├── meta_orchestrator.py  # Main coordinator (v2.1.0)
+│   └── socratic_requirements_agent.py  # Clarification specialist (v1.1.0)
+├── hooks/                     # Hook system (v2.1.0)
+│   ├── validation_hooks.py   # PreToolUse
+│   ├── quality_hooks.py      # PostToolUse
+│   └── learning_hooks.py     # Stop, UserPromptSubmit
+├── tools/                     # Utilities
+│   ├── meta_cognitive_tracer.py  # Trace decisions/learnings/impacts
+│   ├── user_feedback_collector.py  # Structured feedback
+│   └── background_log_optimizer.py  # Async optimization
+├── logs/                      # Meta-cognitive logs
+│   ├── raw/                   # Complete logs
+│   ├── optimized/             # Optimized versions
+│   └── meta-cognitive-learning-*.json  # Session learnings
+├── semantic_layer.py          # Palantir semantic tier
+└── docs/
+    └── palantir-ontology-research.md  # Ontology research
 ```
 
 ---
 
-## 🗣️ Communication Style
+## Development Guidelines
 
-### ✅ DO:
-- Be concise and direct
-- Provide fact-based updates
-- Skip verbose summaries
-- Use parallel operations
-- Track token usage
-
-### ❌ DON'T:
-- Repeat what user knows
-- Add unnecessary explanations
-- Use flowery language
-- Sequential when parallel possible
+1. **Hypothesis-First**: All research starts with hypotheses
+2. **Documentation-First**: Read docs before implementation
+3. **Parallel-First**: Default to parallel for independent tasks
+4. **Feedback-Driven**: Collect user feedback, optimize patterns
+5. **Template-Based**: Reuse proven prompts
+6. **Evidence-Based**: All patterns have evidence/confidence scores
 
 ---
 
-## 🚨 Troubleshooting
+## Community Agent Patterns
 
-### Memory-Keeper Not Responding
+### Reference Collections
 
-```bash
-# Check MCP connection
-claude mcp list | grep memory-keeper
+**100+ Verified Subagents**:
+- VoltAgent collection: https://github.com/VoltAgent/awesome-claude-code-subagents
+- wshobson agents: https://github.com/wshobson/agents
+- subagents.app marketplace: https://subagents.app
+- Dev.to collection: https://dev.to/voltagent/100-claude-code-subagent-collection-1eb0
 
-# Should show: ✓ Connected
-# If not, reinstall:
-claude mcp add --scope user memory-keeper npx mcp-memory-keeper
-```
+**Proven Patterns to Adopt**:
+1. **Proactive triggering**: "PROACTIVELY", "MUST BE USED", "immediately after"
+2. **Tool restriction**: Role-based tool sets (read-only for validators)
+3. **Workflow orchestration**: pm-spec → architect-review → implementer
+4. **HITL checkpoints**: Human approval for critical changes
 
-### Context Not Found (First Session)
-
-```python
-# Normal for first session - start fresh
-mcp_context_session_start(
-    name: "math-system-initial",
-    projectDir: "/home/kc-palantir/math"
-)
-
-# Save initial state
-mcp_context_save(
-    key: "initial-state",
-    value: {"phase": "Starting", "tasks": []},
-    category: "session-state",
-    priority: "high"
-)
-```
-
-### Context Recovery After Reset
-
-```python
-# Automatic recovery
-# 1. Start new session (memory-keeper auto-connects)
-# 2. Query for last state
-last_state = mcp_context_get(
-    category: "session-state",
-    sortBy: "timestamp",
-    sortOrder: "desc",
-    limit: 1
-)
-# 3. Resume from last_state
-```
+**Community Agents Added**:
+- test_automation_specialist.py (testing gap fill)
+- security_auditor.py (security gap fill)
+- performance_engineer.py (optimization specialist)
 
 ---
 
-## 📊 Performance Metrics
-
-- memory-keeper save: ~150 tokens/call
-- memory-keeper get: ~100 tokens/call
-- memory-keeper search: ~120 tokens/call
-- Context recovery: Immediate (SQLite query)
-- Token budget: 200K total
-- Storage: Persistent across ALL projects (user-scope)
-
----
-
-## 🎯 Success Criteria
-
-- ✅ Zero context loss
-- ✅ Seamless session continuity
-- ✅ Complete thinking process preserved
-- ✅ All decisions traceable
-- ✅ Token usage optimized (<150K)
-- ✅ No file-based dependencies
-
----
-
-## 🚀 Quick Commands
-
-```bash
-# Load state (ask Claude)
-"Load latest context from memory-keeper"
-
-# Save context (ask Claude)
-"Save current state to memory-keeper: [milestone name]"
-
-# View sessions
-"List recent memory-keeper sessions"
-
-# Search context
-"Search memory-keeper for [query]"
-
-# View session status
-"Show memory-keeper session status"
-```
-
----
-
-**Memory System**: MCP Memory-Keeper (SQLite) ONLY
-**Storage**: `~/.config/mcp-memory-keeper/context.db` (user-scope)
-**Recovery**: SQLite query (automatic)
-**No File Dependencies**: All context in memory-keeper
+**Last Updated**: 2025-10-16  
+**Next Review**: After community pattern integration complete

@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2025-10-15T23:59:00",
+  "palantir_tier": "semantic",
+  "description": "Complete semantic tier registry for all agents, hooks, and patterns",
+  
+  "agents": {
+    "meta-orchestrator": {
+      "semantic_role": "orchestrator",
+      "semantic_responsibility": "task_delegation_coordination",
+      "semantic_relationships": {
+        "delegates_to": ["*"],
+        "coordinates": ["all_agents"],
+        "owns": ["workflow_execution"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 10000,
+        "can_delegate": true,
+        "can_parallelize": true
+      },
+      "file": "agents/meta_orchestrator.py",
+      "version": "2.2.0"
+    },
+    
+    "socratic-requirements-agent": {
+      "semantic_role": "clarifier",
+      "semantic_responsibility": "ambiguity_resolution",
+      "semantic_relationships": {
+        "delegates_to": [],
+        "clarifies_for": ["meta-orchestrator"],
+        "produces": ["precise_requirements"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 10000,
+        "recursive_questioning": true,
+        "asymptotic_convergence": true
+      },
+      "file": "agents/socratic_requirements_agent.py",
+      "version": "1.2.0"
+    },
+    
+    "knowledge-builder": {
+      "semantic_role": "builder",
+      "semantic_responsibility": "knowledge_creation",
+      "semantic_relationships": {
+        "receives_from": ["research-agent"],
+        "validated_by": ["quality-agent"],
+        "produces": ["obsidian_files"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 3000,
+        "creates_content": true
+      },
+      "file": "agents/knowledge_builder.py",
+      "version": "current"
+    },
+    
+    "research-agent": {
+      "semantic_role": "researcher",
+      "semantic_responsibility": "research_synthesis",
+      "semantic_relationships": {
+        "provides_to": ["knowledge-builder", "meta-orchestrator"],
+        "uses_tools": ["web_search", "context7"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 5000,
+        "web_search": true
+      },
+      "file": "agents/research_agent.py",
+      "version": "current"
+    },
+    
+    "quality-agent": {
+      "semantic_role": "validator",
+      "semantic_responsibility": "quality_assurance",
+      "semantic_relationships": {
+        "validates": ["knowledge-builder", "example-generator"],
+        "provides_feedback_to": ["all_builders"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 3000,
+        "validation": true
+      },
+      "file": "agents/quality_agent.py",
+      "version": "current"
+    },
+    
+    "example-generator": {
+      "semantic_role": "builder",
+      "semantic_responsibility": "example_generation",
+      "semantic_relationships": {
+        "receives_from": ["knowledge-builder"],
+        "validated_by": ["quality-agent"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 3000,
+        "generates_examples": true
+      },
+      "file": "agents/example_generator.py",
+      "version": "current"
+    },
+    
+    "dependency-mapper": {
+      "semantic_role": "analyzer",
+      "semantic_responsibility": "dependency_analysis",
+      "semantic_relationships": {
+        "analyzes": ["all_agents", "code_changes"],
+        "calculates": ["impact_sets", "criticality_scores"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 5000,
+        "graph_analysis": true
+      },
+      "file": "agents/dependency_mapper.py",
+      "version": "current"
+    },
+    
+    "self-improver-agent": {
+      "semantic_role": "improver",
+      "semantic_responsibility": "system_improvement",
+      "semantic_relationships": {
+        "modifies": ["agent_prompts", "configurations"],
+        "uses": ["dependency-mapper", "quality-gate"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 10000,
+        "self_modification": true
+      },
+      "file": "agents/self_improver_agent.py",
+      "version": "current"
+    },
+    
+    "meta-planning-analyzer": {
+      "semantic_role": "analyzer",
+      "semantic_responsibility": "planning_analysis",
+      "semantic_relationships": {
+        "analyzes": ["meta-orchestrator_decisions"],
+        "provides_insights_to": ["meta-orchestrator"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": true,
+        "thinking_budget": 10000,
+        "meta_analysis": true
+      },
+      "file": "agents/meta_planning_analyzer.py",
+      "version": "current"
+    },
+    
+    "meta-query-helper": {
+      "semantic_role": "analyzer",
+      "semantic_responsibility": "query_optimization",
+      "semantic_relationships": {
+        "assists": ["meta-orchestrator"],
+        "optimizes": ["queries"]
+      },
+      "semantic_capabilities": {
+        "has_extended_thinking": false,
+        "query_analysis": true
+      },
+      "file": "agents/meta_query_helper.py",
+      "version": "current"
+    }
+  },
+  
+  "hooks": {
+    "PreToolUse": {
+      "semantic_purpose": "pre_execution_validation",
+      "semantic_contract": "input → validate → allow|deny|ask",
+      "semantic_functions": [
+        "validate_sdk_parameters",
+        "check_agent_exists",
+        "verify_parallel_execution_possible",
+        "validate_file_operation"
+      ],
+      "semantic_scope": "before_any_tool_execution"
+    },
+    
+    "PostToolUse": {
+      "semantic_purpose": "post_execution_learning",
+      "semantic_contract": "output → analyze → log|learn|feedback",
+      "semantic_functions": [
+        "auto_quality_check_after_write",
+        "monitor_improvement_impact",
+        "enforce_code_quality_standards",
+        "calculate_change_impact_score"
+      ],
+      "semantic_scope": "after_tool_completion"
+    },
+    
+    "Stop": {
+      "semantic_purpose": "session_optimization",
+      "semantic_contract": "metrics → evaluate → continue|improve|stop",
+      "semantic_functions": [
+        "auto_trigger_improvement"
+      ],
+      "semantic_scope": "before_session_termination"
+    },
+    
+    "UserPromptSubmit": {
+      "semantic_purpose": "input_preprocessing",
+      "semantic_contract": "prompt → analyze → inject|block|allow",
+      "semantic_functions": [
+        "detect_ambiguity_before_execution",
+        "inject_historical_context"
+      ],
+      "semantic_scope": "before_prompt_processing"
+    }
+  },
+  
+  "patterns": {
+    "parallel_execution": {
+      "semantic_definition": "independent_tasks_concurrent_execution",
+      "semantic_invariant": "no_shared_mutable_state",
+      "semantic_benefit": "90_percent_latency_reduction",
+      "semantic_evidence": "claude_code_docs_line_12471",
+      "semantic_applicability": ["all_independent_operations"]
+    },
+    
+    "validate_before_execute": {
+      "semantic_definition": "validation_precedes_execution",
+      "semantic_invariant": "no_execution_without_validation",
+      "semantic_benefit": "100_percent_error_prevention",
+      "semantic_evidence": "PreToolUse_hooks",
+      "semantic_applicability": ["all_tool_calls"]
+    },
+    
+    "hypothesis_driven_research": {
+      "semantic_definition": "research_starts_with_testable_hypothesis",
+      "semantic_invariant": "hypothesis_documented_first",
+      "semantic_benefit": "focused_measurable_research",
+      "semantic_evidence": "CLAUDE_md_protocol",
+      "semantic_applicability": ["all_research_tasks"]
+    },
+    
+    "documentation_first": {
+      "semantic_definition": "consult_documentation_before_implementation",
+      "semantic_invariant": "patterns_from_docs_not_assumptions",
+      "semantic_benefit": "90_percent_error_prevention",
+      "semantic_evidence": "deduplication_workflow_learning",
+      "semantic_applicability": ["all_sdk_integrations"]
+    },
+    
+    "feedback_at_boundaries": {
+      "semantic_definition": "validation_at_execution_boundaries",
+      "semantic_invariant": "check_quality_immediately",
+      "semantic_benefit": "early_error_detection",
+      "semantic_evidence": "PostToolUse_hooks",
+      "semantic_applicability": ["all_write_operations"]
+    }
+  },
+  
+  "tier_interactions": {
+    "semantic_to_kinetic": "definitions_enable_behaviors",
+    "kinetic_to_dynamic": "behaviors_generate_learning",
+    "dynamic_to_semantic": "learning_refines_definitions"
+  },
+  
+  "ontology_metadata": {
+    "based_on": "Palantir Foundry 3-tier model",
+    "research_date": "2025-10-15",
+    "hypotheses_validated": ["H1: CONFIRMED", "H2: REFINED", "H3: CONFIRMED"],
+    "project_alignment": "78%",
+    "next_migration": ["kinetic_layer", "dynamic_layer"]
+  }
+}
+

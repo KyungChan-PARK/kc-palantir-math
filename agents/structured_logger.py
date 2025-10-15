@@ -231,8 +231,13 @@ class StructuredLogger:
 
     def _write_log(self, entry: LogEntry):
         """Write log entry to JSONL file"""
-        with open(self.log_file, 'a', encoding='utf-8') as f:
-            f.write(entry.to_json() + '\n')
+        try:
+            with open(self.log_file, 'a', encoding='utf-8', errors='replace') as f:
+                f.write(entry.to_json() + '\n')
+        except UnicodeEncodeError:
+            # Fallback: sanitize and retry
+            with open(self.log_file, 'a', encoding='utf-8', errors='ignore') as f:
+                f.write(entry.to_json() + '\n')
 
     def agent_start(
         self,

@@ -10,7 +10,7 @@ Architecture:
 - Subagents: knowledge-builder, quality-agent, research-agent,
              example-generator, dependency-mapper, socratic-planner
 
-VERSION: 2.1.0 - Real LLM Integration
+VERSION: 2.2.0 - Real LLM Integration + Hook System + Semantic Layer
 """
 
 import os
@@ -34,6 +34,21 @@ from agents.structured_logger import StructuredLogger, set_trace_id
 from agents.performance_monitor import PerformanceMonitor
 from agents.context_manager import ContextManager
 from agents.error_handler import ErrorTracker
+
+# Hook integration (v2.2.0)
+try:
+    from hooks.hook_integrator import (
+        get_default_meta_orchestrator_hooks,
+        get_default_socratic_agent_hooks
+    )
+    HOOKS_AVAILABLE = True
+except ImportError:
+    HOOKS_AVAILABLE = False
+    
+    def get_default_meta_orchestrator_hooks():
+        return {}
+    def get_default_socratic_agent_hooks():
+        return {}
 
 import asyncio
 import uuid
@@ -97,6 +112,19 @@ async def main():
     print(f"Total: {len(discovered_agents)} agents")
     print(f"Extended Thinking: {len(registry.get_agents_with_extended_thinking())} agents")
     print(f"Prompt Caching: {len(registry.get_agents_with_caching())} agents")
+    
+    # Hook system status
+    if HOOKS_AVAILABLE:
+        print("\n🔗 Hook System Active:")
+        print("──────────────────────────────────────────────────────────────────────")
+        print("  ✅ PreToolUse: SDK validation, agent checks, parallel detection")
+        print("  ✅ PostToolUse: Quality gates, metrics logging, impact analysis")
+        print("  ✅ Stop: Auto-improvement trigger (success_rate < 70%)")
+        print("  ✅ UserPromptSubmit: Ambiguity detection (>30% triggers Socratic)")
+        print("──────────────────────────────────────────────────────────────────────")
+    else:
+        print("\n⚠️ Hook System: Not available")
+    
     print("\nType 'exit' to quit\n")
 
     # Configure agent options

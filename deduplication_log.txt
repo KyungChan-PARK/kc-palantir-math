@@ -1,0 +1,11 @@
+DEDUPLICATION LOG
+================================================================================
+
+Source file: /home/kc-palantir/math/claude-code-2-0.md
+Output file: /home/kc-palantir/math/claude-code-2-0-deduplicated.md
+Original lines: 61,279
+Removed lines: 37,359
+Final lines: 23,920
+Reduction: 61.0%
+
+Total line numbers removed: 37,359
