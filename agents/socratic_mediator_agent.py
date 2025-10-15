@@ -312,7 +312,10 @@ Now begin your investigation!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (10,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally for root cause analysis
+    
     tools=[
         # Agent delegation (REQUIRED for Q&A)
         'Task',

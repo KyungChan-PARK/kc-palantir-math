@@ -38,13 +38,20 @@ from .self_improver import SelfImprover
 from .improvement_manager import ImprovementManager
 from .ask_agent_tool import ask_agent_tool
 
+# Meta-cognitive components (NEW in v2.2.0)
+from .meta_planning_analyzer import meta_planning_analyzer
+from .planning_observer import PlanningObserver, PlanningStep
+from .planning_session_manager import PlanningSessionManager
+from .agent_registry import AgentRegistry
+
 __all__ = [
-    # Agent definitions (8 agents total: 6 specialized + 2 self-improvement)
+    # Agent definitions (10 agents total: 6 specialized + 2 self-improvement + 1 meta-cognitive + meta-orchestrator)
     "knowledge_builder",
     "quality_agent",
     "research_agent",
     "example_generator",
     "meta_orchestrator",
+    "meta_planning_analyzer",
     "MetaOrchestratorLogic",
     "dependency_mapper",
     "socratic_planner",
@@ -56,6 +63,12 @@ __all__ = [
     "RetryConfig",
     "human_escalation_handler",
     "StructuredLogger",
+    
+    # Meta-cognitive components
+    "PlanningObserver",
+    "PlanningStep",
+    "PlanningSessionManager",
+    "AgentRegistry",
     "setup_structured_logger",
     "AgentLogger",
     "set_trace_id",

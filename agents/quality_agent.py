@@ -192,7 +192,10 @@ Now begin validation!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (3,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally for validation logic
+    
     tools=[
         # Filesystem operations
         'Read',

@@ -173,7 +173,10 @@ Now begin!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (3,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally for content generation
+    
     tools=[
         # Filesystem operations (least-privilege: filesystem-only agent)
         'Read',

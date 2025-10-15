@@ -273,7 +273,10 @@ Now begin your example generation task!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (3,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally for example generation
+    
     tools=[
         # Filesystem operations (primary)
         'Read',

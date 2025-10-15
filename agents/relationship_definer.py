@@ -324,6 +324,171 @@ Return a JSON array of relationships:
 - Confidence score must reflect actual certainty
 """
 
+    def analyze_concept_relationships_streaming(
+        self,
+        source_concept: Dict,
+        all_concepts: List[Dict],
+        max_relationships: int = 20,
+        show_thinking: bool = False
+    ) -> List[Dict]:
+        """
+        Analyze relationships with streaming, Extended Thinking, and Prompt Caching.
+        
+        This is the PREFERRED method for Claude Max x20 users.
+        Benefits:
+        - Real-time progress visibility
+        - Extended Thinking for better accuracy
+        - Prompt Caching for 85% cost savings (after first request)
+        
+        Args:
+            source_concept: The concept to analyze
+            all_concepts: All 841 concepts to compare against
+            max_relationships: Maximum relationships to return
+            show_thinking: Whether to display thinking process (default: False for batch)
+        
+        Returns:
+            List of relationship dictionaries
+        """
+        # Build user prompt
+        user_prompt = f"""## SOURCE CONCEPT
+
+```json
+{{
+  "concept_id": "{source_concept['concept_id']}",
+  "name": "{source_concept['name']}",
+  "content": "{source_concept['content']}",
+  "grade": {source_concept['grade']},
+  "semester": {source_concept['semester']},
+  "chapter": "{source_concept['chapter']['name']}",
+  "section": "{source_concept['section'].get('parent_name', '')}",
+  "tags": {json.dumps(source_concept.get('tags', []), ensure_ascii=False)}
+}}
+```
+
+## ALL CONCEPTS (Context)
+
+Total concepts: {len(all_concepts)}
+
+Sample of nearby concepts:
+```json
+{json.dumps(all_concepts[:10], ensure_ascii=False, indent=2)}
+```
+
+## TASK
+
+Analyze the SOURCE CONCEPT and identify ALL meaningful relationships with other concepts in the full list.
+
+Focus on concepts that are:
+1. In the same chapter or adjacent chapters (strong candidates)
+2. In prerequisite grade levels (for prerequisite relationships)
+3. In the same mathematical domain (for domain membership)
+4. Structurally similar (for complementary/parallel relationships)
+
+Return relationships in JSON format as specified in the system prompt.
+
+Limit to top {max_relationships} most important relationships, ordered by confidence.
+"""
+
+        if show_thinking:
+            print(f"\n🔍 Analyzing: {source_concept['name']}")
+        
+        # Call Claude API with streaming
+        try:
+            with self.client.messages.stream(
+                model=self.model,
+                max_tokens=16_000,
+                temperature=0.0,
+                
+                # ✅ STANDARD 2: Extended Thinking
+                thinking={
+                    "type": "enabled",
+                    "budget_tokens": 10_000
+                },
+                
+                # ✅ STANDARD 3: Prompt Caching
+                system=[
+                    {
+                        "type": "text",
+                        "text": self._build_system_prompt(),
+                        "cache_control": {"type": "ephemeral"}
+                    }
+                ],
+                
+                messages=[{"role": "user", "content": user_prompt}]
+            ) as stream:
+                
+                thinking_parts = []
+                response_parts = []
+                
+                for event in stream:
+                    if event.type == "content_block_start":
+                        if event.content_block.type == "thinking" and show_thinking:
+                            print("  🧠 [Thinking] ", end="", flush=True)
+                    
+                    elif event.type == "content_block_delta":
+                        if event.delta.type == "thinking_delta":
+                            if show_thinking:
+                                print(event.delta.thinking, end="", flush=True)
+                            thinking_parts.append(event.delta.thinking)
+                        
+                        elif event.delta.type == "text_delta":
+                            response_parts.append(event.delta.text)
+                    
+                    elif event.type == "content_block_stop":
+                        if thinking_parts and show_thinking:
+                            print()  # Newline after thinking
+                
+                # Get final message for usage stats
+                final_msg = stream.get_final_message()
+                
+                # Log cache performance
+                if hasattr(final_msg.usage, 'cache_read_input_tokens'):
+                    cache_read = final_msg.usage.cache_read_input_tokens
+                    if cache_read > 0 and show_thinking:
+                        print(f"  💾 Cache hit: {cache_read:,} tokens")
+                
+                # Parse JSON from response
+                response_text = "".join(response_parts)
+                relationships = self._parse_json_response(response_text)
+                
+                if show_thinking:
+                    print(f"  ✅ Found {len(relationships)} relationships\n")
+                
+                return relationships
+                
+        except Exception as e:
+            print(f"Streaming API call error: {e}")
+            # Fallback to non-streaming method
+            return self.analyze_concept_relationships(source_concept, all_concepts, max_relationships)
+    
+    def _parse_json_response(self, response_text: str) -> List[Dict]:
+        """
+        Parse JSON from response text, handling markdown code blocks.
+        
+        Args:
+            response_text: Raw response text
+        
+        Returns:
+            Parsed relationships list
+        """
+        # Try to parse JSON (handle markdown code blocks)
+        if "```json" in response_text:
+            json_start = response_text.find("```json") + 7
+            json_end = response_text.find("```", json_start)
+            response_text = response_text[json_start:json_end].strip()
+        elif "```" in response_text:
+            json_start = response_text.find("```") + 3
+            json_end = response_text.find("```", json_start)
+            response_text = response_text[json_start:json_end].strip()
+        
+        try:
+            relationships = json.loads(response_text)
+            return relationships
+        except json.JSONDecodeError as e:
+            print(f"JSON parsing error: {e}")
+            print(f"Response text: {response_text[:500]}...")
+            return []
+    
     def analyze_concept_relationships(
         self,
         source_concept: Dict,
@@ -386,14 +551,44 @@ Limit to top {max_relationships} most important relationships, ordered by confid
         try:
             response = self.client.messages.create(
                 model=self.model,
-                max_tokens=8000,
+                max_tokens=16_000,  # Increased for Extended Thinking output
                 temperature=0.0,  # Deterministic for consistency
-                system=self._build_system_prompt(),
+                
+                # ✅ STANDARD 2: Extended Thinking for relationship analysis
+                # Relationship classification requires multi-step reasoning,
+                # uncertainty analysis, and chain-of-thought validation
+                thinking={
+                    "type": "enabled",
+                    "budget_tokens": 10_000
+                },
+                
+                # ✅ STANDARD 3: Prompt Caching for static content
+                # System prompt contains taxonomy + examples (~15k tokens)
+                # This is reused across all 841 concepts
+                system=[
+                    {
+                        "type": "text",
+                        "text": self._build_system_prompt(),
+                        "cache_control": {"type": "ephemeral"}
+                    }
+                ],
+                
                 messages=[{
                     "role": "user",
                     "content": user_prompt
                 }]
             )
+            
+            # Log cache performance (for monitoring)
+            if hasattr(response, 'usage'):
+                cache_creation = getattr(response.usage, 'cache_creation_input_tokens', 0)
+                cache_read = getattr(response.usage, 'cache_read_input_tokens', 0)
+                
+                if cache_creation > 0:
+                    print(f"  📝 Cache write: {cache_creation:,} tokens")
+                if cache_read > 0:
+                    savings = cache_read * 0.9 * 0.000003  # 90% savings at $3/MTok
+                    print(f"  💾 Cache hit: {cache_read:,} tokens (saved ${savings:.4f})")
 
             # Extract JSON from response
             response_text = response.content[0].text

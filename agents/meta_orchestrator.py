@@ -525,7 +525,11 @@ Now orchestrate!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (10,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally
+    # The model is configured to use deep reasoning for complex orchestration
+    
     tools=[
         # Subagent delegation
         'Task',

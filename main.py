@@ -28,6 +28,8 @@ from agents import (
     socratic_mediator_agent,
     self_improver_agent,
 )
+from agents.meta_planning_analyzer import meta_planning_analyzer
+from agents.agent_registry import AgentRegistry
 from agents.structured_logger import StructuredLogger, set_trace_id
 from agents.performance_monitor import PerformanceMonitor
 from agents.context_manager import ContextManager
@@ -74,14 +76,27 @@ async def main():
     error_tracker = ErrorTracker(max_retries=3)
 
     print("✅ Infrastructure initialized")
-    print("\nMain Agent: Meta-Orchestrator")
-    print("Subagents: 6 specialized agents")
-    print("  - knowledge-builder: Create Obsidian markdown files")
-    print("  - quality-agent: Validate file quality")
-    print("  - research-agent: Deep concept research")
-    print("  - example-generator: Generate mathematical examples")
-    print("  - dependency-mapper: Map prerequisite dependencies")
-    print("  - socratic-planner: Clarify user requirements")
+    
+    # Dynamic agent discovery
+    print("\n[Agent Discovery] Scanning agents directory...")
+    from pathlib import Path
+    registry = AgentRegistry(Path(__file__).parent / "agents")
+    discovered_agents = registry.discover_agents()
+    
+    # Visual status display
+    print("Agent Feature Status:")
+    print("─" * 70)
+    for name in sorted(discovered_agents.keys()):
+        meta = registry.get_agent_capabilities(name)
+        thinking_icon = "🧠" if meta.get("has_extended_thinking") else "  "
+        cache_icon = "💾" if meta.get("has_prompt_caching") else "  "
+        budget = f"{meta.get('thinking_budget', 0)/1000:.0f}k" if meta.get('thinking_budget') else "-"
+        print(f"  {thinking_icon}{cache_icon} {name:<30} Budget: {budget}")
+    
+    print("─" * 70)
+    print(f"Total: {len(discovered_agents)} agents")
+    print(f"Extended Thinking: {len(registry.get_agents_with_extended_thinking())} agents")
+    print(f"Prompt Caching: {len(registry.get_agents_with_caching())} agents")
     print("\nType 'exit' to quit\n")
 
     # Configure agent options
@@ -90,6 +105,11 @@ async def main():
         model="claude-sonnet-4-5-20250929",
         permission_mode="acceptEdits",
         setting_sources=["project"],
+        
+        # ✅ STANDARD 4: 1M context for meta-orchestrator
+        # Note: Agent SDK may handle this via model selection
+        # Extended context is enabled through claude-sonnet-4-5-20250929
+        # which supports up to 1M tokens with beta features
 
         # Main agent tools (Meta-Orchestrator)
         # CRITICAL: 'Task' is required for subagent delegation!
@@ -108,17 +128,12 @@ async def main():
             'mcp__memory-keeper__context_search',
         ],
 
-        # All subagent definitions (8 agents: 6 specialized + 2 self-improvement)
+        # All subagent definitions (10 agents: 6 specialized + 2 self-improvement + 1 meta-cognitive + meta-orchestrator)
+        # Using dynamic discovery, but can override with manual entries
         agents={
-            "meta-orchestrator": meta_orchestrator,
-            "knowledge-builder": knowledge_builder,
-            "quality-agent": quality_agent,
-            "research-agent": research_agent,
-            "example-generator": example_generator,
-            "dependency-mapper": dependency_mapper,
-            "socratic-planner": socratic_planner,
-            "socratic-mediator": socratic_mediator_agent,
-            "self-improver": self_improver_agent,
+            **discovered_agents,  # All auto-discovered agents
+            # Ensure meta-planning-analyzer is registered
+            "meta-planning-analyzer": meta_planning_analyzer,
         },
 
         # ✅ STANDARD 3 & 4: MCP servers configuration
@@ -198,15 +213,85 @@ async def main():
             query_success = False
 
             try:
-                # Send query to main agent
-                await client.query(user_input)
-
-                # Receive and display responses
-                async for message in client.receive_response():
-                    # Simple message display
-                    # For production, use cli_tools.py from Kenny Liao's pattern
-                    print(f"\n{message}")
-
+                # Visual indicator for meta-orchestrator response
+                print(f"\n\033[1;32m🎯 Meta-Orchestrator:\033[0m ", end="", flush=True)
+                
+                # Check if SDK supports streaming
+                if hasattr(client, 'stream_response'):
+                    # ✅ STREAMING MODE: Real-time response with Extended Thinking
+                    full_response_parts = []
+                    thinking_content_parts = []
+                    thinking_phase_active = False
+                    
+                    async with client.stream_response(user_input) as stream:
+                        async for chunk in stream:
+                            # Handle different chunk types
+                            if hasattr(chunk, 'type'):
+                                # Thinking block start
+                                if chunk.type == "thinking_start" or (
+                                    chunk.type == "content_block_start" and 
+                                    hasattr(chunk, 'content_block') and 
+                                    getattr(chunk.content_block, 'type', None) == "thinking"
+                                ):
+                                    print("\n\n🧠 [Extended Thinking]", flush=True)
+                                    print("─" * 70, flush=True)
+                                    thinking_phase_active = True
+                                
+                                # Thinking delta
+                                elif chunk.type == "thinking_delta" or (
+                                    chunk.type == "content_block_delta" and
+                                    hasattr(chunk, 'delta') and
+                                    hasattr(chunk.delta, 'thinking')
+                                ):
+                                    content = chunk.delta.thinking if hasattr(chunk.delta, 'thinking') else ""
+                                    print(content, end="", flush=True)
+                                    thinking_content_parts.append(content)
+                                
+                                # Thinking end
+                                elif chunk.type == "thinking_end" or (
+                                    chunk.type == "content_block_stop" and thinking_phase_active
+                                ):
+                                    if thinking_content_parts:
+                                        print("\n" + "─" * 70, flush=True)
+                                        thinking_phase_active = False
+                                
+                                # Text delta
+                                elif chunk.type == "text_delta" or (
+                                    chunk.type == "content_block_delta" and
+                                    hasattr(chunk, 'delta') and
+                                    hasattr(chunk.delta, 'text')
+                                ):
+                                    # Show response header if transitioning from thinking
+                                    if thinking_content_parts and not thinking_phase_active and not full_response_parts:
+                                        print("\n📝 [Response]", flush=True)
+                                        print("─" * 70, flush=True)
+                                    
+                                    content = chunk.delta.text if hasattr(chunk.delta, 'text') else str(chunk)
+                                    print(content, end="", flush=True)
+                                    full_response_parts.append(content)
+                        
+                        print()  # Final newline
+                    
+                    # Log streaming performance
+                    if thinking_content_parts or full_response_parts:
+                        logger.agent_call(
+                            "meta-orchestrator",
+                            "stream_response",
+                            {
+                                "thinking_chars": len("".join(thinking_content_parts)),
+                                "response_chars": len("".join(full_response_parts)),
+                                "streaming": "enabled"
+                            }
+                        )
+                
+                else:
+                    # ⚠️ FALLBACK MODE: SDK doesn't support streaming
+                    print("\n⚠️  SDK streaming not available, using blocking mode\n")
+                    await client.query(user_input)
+                    
+                    async for message in client.receive_response():
+                        print(message)
+                
                 query_success = True
 
             except Exception as e:

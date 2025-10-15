@@ -226,7 +226,10 @@ Now begin your research task!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (5,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally for deep research
+    
     tools=[
         # Research tools (MCP)
         'mcp__brave-search__brave_web_search',

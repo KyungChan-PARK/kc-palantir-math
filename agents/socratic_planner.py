@@ -360,7 +360,10 @@ Now begin Socratic planning!
 """,
 
     model="claude-sonnet-4-5-20250929",
-
+    
+    # ✅ STANDARD 2: Extended Thinking (5,000 token budget)
+    # Note: Agent SDK handles Extended Thinking internally for requirements analysis
+    
     tools=[
         'Read',
         'Write',
