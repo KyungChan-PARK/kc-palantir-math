@@ -1,10 +1,14 @@
 {
   "mcpServers": {
+    "memory-keeper": {
+      "command": "npx",
+      "args": ["-y", "mcp-memory-keeper"]
+    },
     "obsidian": {
       "command": "uv",
       "args": ["run", "python", "obsidian-mcp-server/server.py"],
       "env": {
-        "OBSIDIAN_API_KEY": "your-api-key-here",
+        "OBSIDIAN_API_KEY": "${OBSIDIAN_API_KEY}",
         "OBSIDIAN_API_URL": "https://127.0.0.1:27124"
       }
     },
@@ -12,7 +16,7 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-github"],
       "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "your-github-token-here"
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
       }
     }
   }
