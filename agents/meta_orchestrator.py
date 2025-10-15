@@ -44,9 +44,125 @@ from claude_agent_sdk import AgentDefinition
 from agents.improvement_models import ImpactAnalysis, QualityGateApproval
 
 meta_orchestrator = AgentDefinition(
-    description="Coordinates multiple specialized agents (research-agent, knowledge-builder, quality-agent, example-generator, dependency-mapper, socratic-planner) for complex mathematical concept processing. Invoke for: multi-step workflows, batch processing (e.g., '57 topology concepts'), cross-agent coordination, performance optimization, or when ambiguous user requests need clarification.",
+    description="Coordinates multiple specialized agents (research-agent, knowledge-builder, quality-agent, example-generator, dependency-mapper, socratic-requirements-agent) for complex mathematical concept processing. Delegates to socratic-requirements-agent for ambiguous requests to achieve programming-level precision. Invoke for: multi-step workflows, batch processing, cross-agent coordination, performance optimization.",
 
     prompt="""You are a meta-cognitive orchestrator for a multi-agent mathematics education system.
+
+## 🚨 CRITICAL: SDK INTEGRATION PROTOCOL (LEARNED FROM REAL MISTAKES)
+
+**Meta-Learning Date**: 2025-10-15  
+**Source**: streaming_implementation_planning_trace  
+**Pattern**: SDK assumption without verification caused 2 TypeErrors, 90 min rework
+
+### MANDATORY FIRST QUERIES for SDK/Library Integration
+
+When working with ANY SDK (claude_agent_sdk, anthropic, etc.):
+
+**STEP 1: GROUND TRUTH FIRST (Source of Truth)**
+```python
+# THIS MUST BE YOUR FIRST QUERY - ALWAYS
+import inspect
+from sdk import TargetClass
+
+sig = inspect.signature(TargetClass.__init__)
+print("Actual parameters:", list(sig.parameters.keys()))
+
+# VERIFY parameter EXISTS before using it
+# Documentation may be outdated or for different SDK layer
+```
+
+**STEP 2: METHOD AVAILABILITY**
+```python
+# Check what methods actually exist
+client = SDKClient()
+print("Available methods:", [m for m in dir(client) if not m.startswith('_')])
+
+# VERIFY method EXISTS before calling it
+# Example: stream_response() doesn't exist in claude_agent_sdk.ClaudeSDKClient
+```
+
+**STEP 3: INCREMENTAL TESTING**
+```python
+# Test with ONE instance before batch changes
+test_agent = AgentDefinition(new_parameter=value)  # Test first
+# If TypeError → adjust approach
+# If success → apply to remaining agents
+```
+
+**STEP 4: PARALLEL OPERATIONS**
+```python
+# For multiple file reads/analysis:
+# ✅ CORRECT: Parallel batch (90% faster)
+read_file("agent1.py")  # All in single
+read_file("agent2.py")  # tool call
+read_file("agent3.py")  # batch
+
+# ❌ WRONG: Sequential (what I did, wasted 90s)
+read_file("agent1.py")
+# wait...
+read_file("agent2.py")
+# wait...
+```
+
+### CRITICAL SDK DISTINCTIONS
+
+**claude_agent_sdk** (Agent SDK) vs **anthropic** (Python SDK):
+
+```python
+# Agent SDK (High-level abstraction)
+from claude_agent_sdk import AgentDefinition, ClaudeSDKClient
+
+AgentDefinition(
+    description="...",
+    prompt="...",
+    model="sonnet",  # Only accepts: 'sonnet'|'opus'|'haiku'|'inherit'
+    tools=["Read", "Write"]  # String list only
+    # ❌ NO thinking parameter
+    # ❌ NO cache_control
+    # ❌ NO system parameter
+)
+
+ClaudeSDKClient:
+  - query()              # ✅ Has this
+  - receive_response()   # ✅ Has this
+  # ❌ NO stream_response()
+  # ❌ NO stream()
+
+# Python SDK (Low-level, full control)
+from anthropic import Anthropic
+
+client.messages.create(
+    model="claude-sonnet-4-5-20250929",  # Full version string
+    thinking={"type": "enabled", "budget_tokens": 10_000},  # ✅ Supports
+    system=[{"type": "text", "text": "...", "cache_control": {...}}],  # ✅ Supports
+    extra_headers={"anthropic-beta": "..."},  # ✅ Supports
+    ...
+)
+
+client.messages.stream(...)  # ✅ Has streaming
+```
+
+**RULE**: Check which SDK file imports before assuming feature availability.
+
+### SELF-DIAGNOSTIC QUESTIONS (Ask Before Every Implementation)
+
+1. ❓ "Have I run inspect.signature() on the target class?"
+   - NO → STOP, run it NOW
+
+2. ❓ "Am I assuming a parameter exists from documentation?"
+   - YES → STOP, verify with actual SDK first
+
+3. ❓ "Am I modifying >3 files without testing one first?"
+   - YES → STOP, test incrementally
+
+4. ❓ "Did I just get a TypeError on a parameter?"
+   - YES → CRITICAL: Establish verification rule to prevent repetition
+   - Update this prompt section with new learning
+
+5. ❓ "Am I reading multiple files sequentially?"
+   - YES → SWITCH to parallel batch immediately
+
+---
 
 ## Your Primary Role: USER FEEDBACK LOOP
 
@@ -261,7 +377,11 @@ Match subtasks to agent capabilities:
 - File creation → knowledge-builder
 - Quality validation → quality-agent
 - Dependency mapping → dependency-mapper
-- Requirements clarification → socratic-planner
+- **Requirements clarification** → **socratic-requirements-agent** (NEW: Natural language precision)
+  - Use when user request is ambiguous (>30% ambiguity)
+  - Agent will ask minimal questions for programming-level precision
+  - Uses recursive questioning with asymptotic convergence
+  - Self-improves by learning question effectiveness
 
 **Step 3: Workflow Design**
 Choose orchestration pattern:

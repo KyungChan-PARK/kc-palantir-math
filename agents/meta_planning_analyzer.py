@@ -45,6 +45,141 @@ Observe AI planning traces and provide real-time feedback to improve:
 3. **Alternative exploration** - Are better approaches considered?
 4. **Planning structure** - Is the process systematic?
 
+## 🚨 LEARNED PATTERNS TO DETECT (From Real Session Analysis)
+
+### CRITICAL ANTI-PATTERN: SDK Assumption Without Verification
+
+**Detected When**:
+- Planning trace shows SDK feature implementation
+- NO prior query showing `inspect.signature()` or `dir()`
+- Directly uses parameters from documentation examples
+
+**Example from 2025-10-15 session**:
+```
+Step 5: Read documentation showing thinking={...}
+Step 6: Add thinking to AgentDefinition  # ❌ NO VERIFICATION QUERY
+Result: TypeError, 90 min rework
+```
+
+**Correct Pattern**:
+```
+Step 1: Run inspect.signature(AgentDefinition.__init__)  # ✅ VERIFY FIRST
+Step 2: Confirm parameter exists in actual SDK
+Step 3: Then implement
+Result: No errors
+```
+
+**Feedback to Provide**:
+```json
+{
+  "inefficiencies_detected": [{
+    "step": 6,
+    "issue": "CRITICAL: Added SDK parameter without prior verification query",
+    "suggestion": "Insert verification query BEFORE step 6: inspect.signature(AgentDefinition.__init__)",
+    "impact": "HIGH - prevents TypeError and rework",
+    "severity": "CRITICAL"
+  }]
+}
+```
+
+### ANTI-PATTERN: Sequential File Reads
+
+**Detected When**:
+- Multiple read_file queries in sequence
+- Files are related/independent
+- Could be parallelized
+
+**Example**:
+```
+Step 3: read_file("agent1.py")
+Step 4: read_file("agent2.py")  # ❌ SEQUENTIAL
+Step 5: read_file("agent3.py")
+Time: 90 seconds
+```
+
+**Correct Pattern**:
+```
+Step 3: read_file("agent1.py")  # Batch in single
+        read_file("agent2.py")  # tool call
+        read_file("agent3.py")
+Time: 10 seconds (90% faster)
+```
+
+**Feedback**:
+```json
+{
+  "improvement_suggestions": [{
+    "current_approach": "Sequential reads (steps 3-5)",
+    "better_approach": "Parallel batch: all 3 reads in step 3",
+    "benefit": "90% time reduction (90s → 10s)",
+    "implementation": "Use multiple read_file calls in same tool invocation"
+  }]
+}
+```
+
+### ANTI-PATTERN: Batch Changes Without Incremental Test
+
+**Detected When**:
+- Many files modified with same change
+- No test query between modification and final test
+- First test happens after all changes complete
+
+**Example**:
+```
+Step 10: Modify all 10 agent files  # ❌ BATCH WITHOUT TEST
+Step 11: Run test
+Result: TypeError in all 10 files, must rollback all
+```
+
+**Correct Pattern**:
+```
+Step 10: Modify 1 agent file (smallest)
+Step 11: Test that 1 file
+Step 12: If success → modify remaining 9
+```
+
+**Feedback**:
+```json
+{
+  "inefficiencies_detected": [{
+    "step": 10,
+    "issue": "Batch modification without incremental testing",
+    "suggestion": "Modify 1 file first, test, then proceed to batch",
+    "impact": "HIGH - prevents cascading errors",
+    "prevention": "ALWAYS test with n=1 before batch"
+  }]
+}
+```
+
+### ANTI-PATTERN: Repeating Same Mistake
+
+**Detected When**:
+- Error occurred in earlier step (e.g., TypeError)
+- Similar approach used in later step
+- Same error pattern repeated
+
+**Example from session**:
+```
+Step 6: Add thinking={...} → TypeError
+Step 9: Add extra_headers={...} → TypeError AGAIN  # ❌ REPEATED
+Pattern: Assumption without verification (twice!)
+```
+
+**Feedback**:
+```json
+{
+  "critical_inefficiencies": [{
+    "issue": "REPEATED MISTAKE PATTERN: SDK assumption without verification",
+    "occurrences": ["step 6", "step 9"],
+    "severity": "CRITICAL - indicates meta-cognitive failure",
+    "suggestion": "After step 6 error, should have established: 'Always verify SDK before implementing'. But didn't. Need stronger meta-cognitive check.",
+    "meta_learning": "If same mistake repeats in session, trigger immediate intervention"
+  }]
+}
+```
+
+---
+
 ## Input Format
 
 You receive **PlanningTrace** with:

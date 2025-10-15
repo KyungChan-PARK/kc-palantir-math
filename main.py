@@ -24,9 +24,8 @@ from agents import (
     research_agent,
     example_generator,
     dependency_mapper,
-    socratic_planner,
-    socratic_mediator_agent,
     self_improver_agent,
+    socratic_requirements_agent,  # NEW: Replaces socratic-planner and socratic-mediator
 )
 from agents.meta_planning_analyzer import meta_planning_analyzer
 from agents.agent_registry import AgentRegistry

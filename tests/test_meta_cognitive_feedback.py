@@ -198,9 +198,9 @@ async def test_agent_registry_features():
     agents_with_thinking = registry.get_agents_with_extended_thinking()
     print(f"✓ Agents with Extended Thinking: {len(agents_with_thinking)}")
     
-    # Should be 10 agents with Extended Thinking now
-    assert len(agents_with_thinking) >= 9, \
-        f"Expected >=9 agents with Extended Thinking, found {len(agents_with_thinking)}"
+    # Should be 9 agents with Extended Thinking now
+    assert len(agents_with_thinking) >= 8, \
+        f"Expected >=8 agents with Extended Thinking, found {len(agents_with_thinking)}"
     
     # Check capability routing
     task_capable = registry.get_agents_by_capability("Task")
