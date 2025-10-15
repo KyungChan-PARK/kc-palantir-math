@@ -8,10 +8,14 @@ VERSION: 3.0.0 - Added Self-Improvement System v4.0
 from .knowledge_builder import knowledge_builder
 from .quality_agent import quality_agent
 from .research_agent import research_agent
-from .example_generator import example_generator
 from .meta_orchestrator import meta_orchestrator, MetaOrchestratorLogic
-from .dependency_mapper import dependency_mapper
 from .self_improver_agent import self_improver_agent
+
+# Math Education System Agents (NEW)
+from .neo4j_query_agent import neo4j_query_agent
+from .problem_decomposer_agent import problem_decomposer_agent
+from .problem_scaffolding_generator_agent import problem_scaffolding_generator_agent
+from .personalization_engine_agent import personalization_engine_agent
 
 # Socratic Requirements Agent (REPLACED socratic-planner and socratic-mediator)
 # Purpose: Natural language → Programming-level precision
@@ -48,17 +52,20 @@ from .planning_session_manager import PlanningSessionManager
 from .agent_registry import AgentRegistry
 
 __all__ = [
-    # Agent definitions (9 agents total: 5 specialized + 2 meta-cognitive + 1 self-improvement + meta-orchestrator)
+    # Agent definitions (18 agents total)
     "knowledge_builder",
     "quality_agent",
     "research_agent",
-    "example_generator",
     "meta_orchestrator",
     "meta_planning_analyzer",
-    "socratic_requirements_agent",  # REPLACED socratic-planner and socratic-mediator
+    "socratic_requirements_agent",
     "MetaOrchestratorLogic",
-    "dependency_mapper",
     "self_improver_agent",
+    # Math Education Agents (NEW)
+    "neo4j_query_agent",
+    "problem_decomposer_agent",
+    "problem_scaffolding_generator_agent",
+    "personalization_engine_agent",
     # Infrastructure
     "ErrorTracker",
     "resilient_task",
