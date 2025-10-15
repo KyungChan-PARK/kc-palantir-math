@@ -28,13 +28,14 @@ This project implements a comprehensive mathematics education system using Claud
 
 ## ⚡ Features
 
-- ✅ Claude Sonnet 4.5 (claude-sonnet-4-5-20250929)
+- ✅ Claude Sonnet 4.5 (claude-sonnet-4-5-20250929) - All 9 agents
 - ✅ Extended Thinking for complex reasoning
 - ✅ Prompt Caching for cost optimization
 - ✅ 1M Context window for meta-orchestrator
 - ✅ Streaming responses for better UX
 - ✅ MCP integration (memory-keeper, sequential-thinking)
 - ✅ Self-improvement system v4.0
+- ✅ Automated CI/CD with standards enforcement
 
 ## 🛠️ Tech Stack
 
@@ -42,6 +43,7 @@ This project implements a comprehensive mathematics education system using Claud
 - **AI**: Claude Agent SDK 0.1.3+
 - **MCP Servers**: memory-keeper, obsidian, github
 - **Testing**: pytest, pytest-asyncio
+- **CI/CD**: GitHub Actions (validate, lint, standards-check)
 
 ## 📖 Getting Started
 

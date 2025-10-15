@@ -96,7 +96,20 @@ class YourClass:
    
    **Expected result:** NO MATCHES
 
-2. **Verify specific version:**
+2. **CI Automated Verification:**
+   ```yaml
+   # .github/workflows/ci.yml automatically checks:
+   # - No model aliases in agents/
+   # - All agents use claude-sonnet-4-5-20250929
+   # - Documentation exists and is up-to-date
+   ```
+   
+   **CI will FAIL if:**
+   - Any agent uses `model="sonnet"` alias
+   - Missing CLAUDE-IMPLEMENTATION-STANDARDS.md
+   - Missing .claude.md configuration
+
+3. **Verify specific version:**
    ```bash
    grep -r 'model.*=.*"claude-sonnet-4-5-20250929"' agents/
    ```
@@ -1664,6 +1677,12 @@ def test_agent_standards_compliance(agent):
 ---
 
 ## Version History
+
+### v1.0.1 (2025-10-15)
+- **CI Enforcement Added**: Automated standards checking in GitHub Actions
+- **Model Version Fix**: Updated all 9 agents from `model="sonnet"` to `model="claude-sonnet-4-5-20250929"`
+- **CI Workflow**: Simplified to validate, lint, and standards-check jobs
+- **Verification**: CI now automatically blocks model alias usage
 
 ### v1.0.0 (2025-10-15)
 - Initial standards document

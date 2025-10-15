@@ -1,10 +1,11 @@
-# Text files => LF 고정
+# Text files => LF normalization
 * text=auto eol=lf
-# 바이너리는 변환 금지
+
+# Binary files (no LFS needed for this project)
 *.png binary
 *.jpg binary
+*.jpeg binary
 *.pdf binary
-*.pt filter=lfs diff=lfs merge=lfs -text
-*.bin filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.tar.zst filter=lfs diff=lfs merge=lfs -text
+*.mp4 binary
+*.zip binary
+*.tar.gz binary
