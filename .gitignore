@@ -234,3 +234,4 @@ __marimo__/
 .pytest_cache/
 *.pyc
 __pycache__/
+.cursor/mcp_settings.json
