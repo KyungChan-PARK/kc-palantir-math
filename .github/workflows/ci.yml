@@ -11,10 +11,100 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-          cache: "pip"
-      - run: pip install -r requirements.txt || true
-      - run: pip install pytest
-      - run: pytest -q
+          python-version: "3.13"
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      
+      - name: Install dependencies
+        run: |
+          uv pip install --system -e .
+      
+      - name: Run tests
+        run: |
+          uv run pytest -v --tb=short
+        env:
+          # CI environment flag for tests
+          CI: true
+  
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      
+      - name: Install dependencies
+        run: |
+          uv pip install --system -e .
+          uv pip install --system ruff
+      
+      - name: Check code formatting with ruff
+        run: |
+          ruff check . --select E,F,I --ignore E501
+        continue-on-error: true
+  
+  standards-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check CLAUDE-IMPLEMENTATION-STANDARDS compliance
+        run: |
+          echo "🔍 Checking Claude Implementation Standards..."
+          
+          # Check 1: No model aliases
+          if grep -r 'model.*=.*"sonnet"' agents/ 2>/dev/null; then
+            echo "❌ FAIL: Found model alias 'sonnet'"
+            echo "   Use: model=\"claude-sonnet-4-5-20250929\""
+            exit 1
+          fi
+          echo "✅ Model version check passed"
+          
+          # Check 2: Extended Thinking present
+          if ! grep -r "thinking" agents/ 2>/dev/null | grep -q "="; then
+            echo "⚠️  WARNING: No Extended Thinking configuration found"
+            echo "   This may be intentional, but verify it's documented"
+          else
+            echo "✅ Extended Thinking configuration found"
+          fi
+          
+          # Check 3: Prompt Caching present
+          if ! grep -r "cache_control" agents/ 2>/dev/null | grep -q "ephemeral"; then
+            echo "⚠️  WARNING: No Prompt Caching implementation found"
+            echo "   All agents should cache static content"
+          else
+            echo "✅ Prompt Caching implementation found"
+          fi
+          
+          # Check 4: Meta-orchestrator has 1M context
+          if ! grep -r "context-1m" agents/meta_orchestrator.py main.py 2>/dev/null | grep -q "2025-08-07"; then
+            echo "⚠️  WARNING: Meta-orchestrator missing 1M context configuration"
+            echo "   This should be enabled per CLAUDE-IMPLEMENTATION-STANDARDS.md"
+          else
+            echo "✅ 1M context configuration found"
+          fi
+          
+          # Check 5: Documentation exists
+          if [ ! -f "CLAUDE-IMPLEMENTATION-STANDARDS.md" ]; then
+            echo "❌ FAIL: CLAUDE-IMPLEMENTATION-STANDARDS.md not found"
+            exit 1
+          fi
+          echo "✅ Implementation standards document exists"
+          
+          echo ""
+          echo "✅ All critical standards checks passed!"
