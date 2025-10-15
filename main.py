@@ -86,7 +86,8 @@ async def main():
 
     # Configure agent options
     options = ClaudeAgentOptions(
-        model="sonnet",
+        # ✅ STANDARD 1: Specific model version (MANDATORY)
+        model="claude-sonnet-4-5-20250929",
         permission_mode="acceptEdits",
         setting_sources=["project"],
 
@@ -120,10 +121,33 @@ async def main():
             "self-improver": self_improver_agent,
         },
 
-        # MCP servers
-        # Note: Assumes brave-search, context7, memory-keeper, sequential-thinking
-        # are already installed globally via claude mcp
-        mcp_servers={}
+        # ✅ STANDARD 3 & 4: MCP servers configuration
+        # Load from .mcp.json for proper MCP tool integration
+        mcp_servers={
+            "memory-keeper": {
+                "command": "npx",
+                "args": ["-y", "mcp-memory-keeper"]
+            },
+            "sequential-thinking": {
+                "command": "npx",
+                "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+            },
+            "obsidian": {
+                "command": "uv",
+                "args": ["run", "python", "tools/obsidian-mcp-server/server.py"],
+                "env": {
+                    "OBSIDIAN_API_KEY": os.getenv("OBSIDIAN_API_KEY", ""),
+                    "OBSIDIAN_API_URL": os.getenv("OBSIDIAN_API_URL", "https://127.0.0.1:27124")
+                }
+            },
+            "github": {
+                "command": "npx",
+                "args": ["-y", "@modelcontextprotocol/server-github"],
+                "env": {
+                    "GITHUB_PERSONAL_ACCESS_TOKEN": os.getenv("GITHUB_TOKEN", "")
+                }
+            }
+        }
     )
 
     # Create client and start conversation loop

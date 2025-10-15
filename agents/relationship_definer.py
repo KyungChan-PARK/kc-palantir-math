@@ -54,7 +54,8 @@ class RelationshipDefiner:
             raise ValueError("ANTHROPIC_API_KEY not found in environment or provided")
 
         self.client = Anthropic(api_key=self.api_key)
-        self.model = "claude-opus-4-20250514"  # Claude Max
+        # ✅ STANDARD 1: Specific model version (MANDATORY)
+        self.model = "claude-sonnet-4-5-20250929"
 
         # Load taxonomy and examples
         self.taxonomy = self._load_taxonomy()
