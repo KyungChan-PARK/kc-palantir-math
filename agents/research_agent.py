@@ -225,7 +225,7 @@ Next step: Delegate to knowledge-builder with this research report.
 Now begin your research task!
 """,
 
-    model="sonnet",  # claude-sonnet-4-5-20250929
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Research tools (MCP)

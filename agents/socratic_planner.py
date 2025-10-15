@@ -359,7 +359,7 @@ Planning is complete when:
 Now begin Socratic planning!
 """,
 
-    model="sonnet",
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         'Read',

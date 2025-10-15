@@ -172,7 +172,7 @@ Task is complete when:
 Now begin!
 """,
 
-    model="sonnet",  # claude-sonnet-4-5-20250930
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Filesystem operations (least-privilege: filesystem-only agent)

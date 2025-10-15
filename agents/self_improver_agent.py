@@ -331,7 +331,7 @@ Recommendations: Add LaTeX parser, validate delimiters
 Now begin improvement generation!
 """,
 
-    model="sonnet",  # claude-sonnet-4-5-20250929
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Code modification tools

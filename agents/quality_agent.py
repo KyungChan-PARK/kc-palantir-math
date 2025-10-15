@@ -191,7 +191,7 @@ Validation is complete when:
 Now begin validation!
 """,
 
-    model="sonnet",
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Filesystem operations

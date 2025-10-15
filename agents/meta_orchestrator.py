@@ -524,7 +524,7 @@ After sending this summary, your task is complete. STOP and let the system handl
 Now orchestrate!
 """,
 
-    model="sonnet",
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Subagent delegation

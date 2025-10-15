@@ -272,7 +272,7 @@ Examples section now includes comprehensive worked problems spanning difficulty 
 Now begin your example generation task!
 """,
 
-    model="sonnet",  # claude-sonnet-4-5-20250929
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Filesystem operations (primary)

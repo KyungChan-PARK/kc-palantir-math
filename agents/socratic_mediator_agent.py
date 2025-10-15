@@ -311,7 +311,7 @@ Recommendations:
 Now begin your investigation!
 """,
 
-    model="sonnet",  # claude-sonnet-4-5-20250929
+    model="claude-sonnet-4-5-20250929",
 
     tools=[
         # Agent delegation (REQUIRED for Q&A)
