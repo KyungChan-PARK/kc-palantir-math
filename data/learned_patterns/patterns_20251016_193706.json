@@ -1,0 +1,44 @@
+[
+  {
+    "pattern_id": "lp_20251016_193706_2",
+    "type": "question_improvement",
+    "rule": "Improve step 2: Should emphasize smallest prime",
+    "confidence": 1.0,
+    "applicable_concepts": [
+      "middle-1-1-ch1-1.3.1"
+    ],
+    "improvement_rate": null,
+    "reuse_count": 0,
+    "examples": [
+      {
+        "before": "60을 2로 나누면?",
+        "after": "60을 가장 작은 소수로 나누면?"
+      }
+    ],
+    "discovered_date": "2025-10-16T19:37:06.209815",
+    "source": "teacher_kc",
+    "tested": false,
+    "auto_apply": false
+  },
+  {
+    "pattern_id": "lp_add_why_questions_20251016_193706",
+    "type": "conceptual_depth",
+    "rule": "Insert 'why' questions between mechanical steps",
+    "confidence": 0.85,
+    "applicable_concepts": [
+      "all"
+    ],
+    "improvement_rate": null,
+    "reuse_count": 0,
+    "examples": [
+      {
+        "insert_after": "calculation_step",
+        "question": "왜 이렇게 계산하는지 생각해보세요"
+      }
+    ],
+    "discovered_date": "2025-10-16T19:37:06.228268",
+    "source": "teacher_kc",
+    "tested": false,
+    "auto_apply": false
+  }
+]

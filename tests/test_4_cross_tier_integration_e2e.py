@@ -28,7 +28,7 @@ class TestCrossTierIntegration:
         print("TEST 1: Semantic → Kinetic Flow")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         from semantic_layer import SemanticRole
         
         # Semantic tier: Agent has role="orchestrator"
@@ -52,7 +52,7 @@ class TestCrossTierIntegration:
         print("="*80)
         
         # Kinetic tier: Workflow execution (meta_orchestrator)
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         prompt = meta_orchestrator.prompt
         
         # Should reference learning
@@ -82,7 +82,7 @@ class TestCrossTierIntegration:
         print("TEST 3: Dynamic → Semantic Flow")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         # Dynamic tier: Learning exists
         prompt = meta_orchestrator.prompt
@@ -129,7 +129,7 @@ class TestCrossTierIntegration:
         print("TEST 5: Cross-Agent Learning")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         from agents.socratic_requirements_agent import socratic_requirements_agent
         
         # Both agents should reference memory-keeper for learning

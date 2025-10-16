@@ -1,0 +1,171 @@
+{
+  "problem_id": "prob_20251016_214610",
+  "problem_text": "Q3 그림과 같이 좌표평면에서 두 점 \\( \\mathrm{A}(2,6), \\mathrm{B}(8,0) \\) 에 대하여 일차함수 \\( y=\\frac{1}{2} x+\\frac{1}{2} \\) 의 그래 프가 \\( x \\) 축과 만나는 점을 C , 선분 AB 와 만나는 점을 D 라 할 때, 삼각형 CBD 의 넓이는?",
+  "concepts": [
+    {
+      "concept_id": "middle-1-1-ch5-5.1.2",
+      "name": "좌표평면의 구성",
+      "content": "좌표평면의 구성은(는) x축, y축, 원점에 관한 개념이다. 중학교 1학년 변화와 관계에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "grade": 1,
+      "semester": 1,
+      "chapter": "변화와 관계",
+      "tags": [
+        "general"
+      ],
+      "relevance_score": 1.0
+    },
+    {
+      "concept_id": "middle-1-1-ch5-5.1.4",
+      "name": "점의 좌표 나타내기",
+      "content": "점의 좌표 나타내기은(는) 점의 좌표 나타내기에 관한 개념이다. 중학교 1학년 변화와 관계에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "grade": 1,
+      "semester": 1,
+      "chapter": "변화와 관계",
+      "tags": [
+        "general"
+      ],
+      "relevance_score": 1.0
+    },
+    {
+      "concept_id": "middle-2-1-ch4-4.1.4",
+      "name": "좌표평면에서의 기하학적 의미",
+      "content": "좌표평면에서의 기하학적 의미은(는) 좌표평면에서의 기하학적 의미에 관한 개념이다. 중학교 2학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "grade": 2,
+      "semester": 1,
+      "chapter": "변화와 관계 (Change and Relationships)",
+      "tags": [
+        "general"
+      ],
+      "relevance_score": 1.0
+    },
+    {
+      "concept_id": "middle-2-1-ch6-6.2.2",
+      "name": "교점의 좌표와 연립방정식의 해",
+      "content": "교점의 좌표와 연립방정식의 해은(는) 교점의 좌표와 연립방정식의 해에 관한 개념이다. 중학교 2학년 변화와 관계 (Change and Relationships)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "grade": 2,
+      "semester": 1,
+      "chapter": "변화와 관계 (Change and Relationships)",
+      "tags": [
+        "equation"
+      ],
+      "relevance_score": 1.0
+    },
+    {
+      "concept_id": "middle-2-2-ch3-3.4.1.4",
+      "name": "좌표평면에서 두 점 사이의 거리",
+      "content": "좌표평면에서 두 점 사이의 거리은(는) 좌표평면에서 두 점 사이의 거리에 관한 개념이다. 중학교 2학년 도형과 측정 (Geometry and Measurement)에서 중요하게 다루어지는 내용으로, 관련된 문제 해결에 필수적인 개념이다.",
+      "grade": 2,
+      "semester": 2,
+      "chapter": "도형과 측정 (Geometry and Measurement)",
+      "tags": [
+        "general"
+      ],
+      "relevance_score": 1.0
+    }
+  ],
+  "applied_patterns": [],
+  "steps": [
+    {
+      "step_id": 1,
+      "question": "주어진 정보를 정리해보세요: 점 A, B의 좌표는?",
+      "expected_answer": "A(2,6), B(8,0)",
+      "hint": "문제에서 주어진 좌표를 찾으세요",
+      "cognitive_type": "comprehension",
+      "difficulty": 1,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 2,
+      "question": "일차함수 y=1/2x+1/2가 x축과 만나는 점 C를 구하려면 y=?를 대입해야 하나요?",
+      "expected_answer": "y=0",
+      "hint": "x축 위의 점은 y좌표가 0입니다",
+      "cognitive_type": "concept_application",
+      "difficulty": 2,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 3,
+      "question": "0=1/2x+1/2를 풀면 x=?",
+      "expected_answer": "x=-1",
+      "hint": "양변에 2를 곱하면 0=x+1",
+      "cognitive_type": "calculation",
+      "difficulty": 2,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 4,
+      "question": "따라서 점 C의 좌표는?",
+      "expected_answer": "C(-1,0)",
+      "hint": "x축 위이므로 y=0",
+      "cognitive_type": "synthesis",
+      "difficulty": 2,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 5,
+      "question": "직선 AB의 방정식을 구하려면 기울기는 어떻게 구하나요?",
+      "expected_answer": "(y2-y1)/(x2-x1)",
+      "hint": "두 점을 지나는 직선의 기울기 공식",
+      "cognitive_type": "concept_recall",
+      "difficulty": 2,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 6,
+      "question": "AB의 기울기 m = (0-6)/(8-2) = ?",
+      "expected_answer": "-1",
+      "hint": "-6/6 = -1",
+      "cognitive_type": "calculation",
+      "difficulty": 2,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 7,
+      "question": "점 D는 두 직선의 교점이므로 y=1/2x+1/2와 y=-x+b의 교점입니다. 직선 AB의 y절편 b는?",
+      "expected_answer": "12",
+      "hint": "점 B(8,0)을 대입: 0=-8+b",
+      "cognitive_type": "equation_solving",
+      "difficulty": 3,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 8,
+      "question": "삼각형 CBD의 넓이를 구하는 공식은?",
+      "expected_answer": "1/2 × 밑변 × 높이",
+      "hint": "삼각형 넓이 공식",
+      "cognitive_type": "concept_recall",
+      "difficulty": 1,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 9,
+      "question": "점 C와 B 사이의 거리(밑변)는?",
+      "expected_answer": "9",
+      "hint": "C(-1,0)과 B(8,0)은 같은 x축 위: 8-(-1)=9",
+      "cognitive_type": "calculation",
+      "difficulty": 2,
+      "variation_focus": "metacognition_strategy"
+    },
+    {
+      "step_id": 10,
+      "question": "점 D의 y좌표(높이)를 구하려면?",
+      "expected_answer": "두 식을 연립하여 교점 구하기",
+      "hint": "y=1/2x+1/2와 y=-x+12를 같다고 놓기",
+      "cognitive_type": "problem_solving",
+      "difficulty": 3,
+      "variation_focus": "metacognition_strategy"
+    }
+  ],
+  "generated_at": "2025-10-16T21:46:10.572186",
+  "variation_dimension": "metacognitive",
+  "variation_iteration": 4,
+  "pedagogy_style": "metacognition_strategy",
+  "difficulty_modifier": 1.0,
+  "dimension_instructions": [
+    "Include 'why' questions after each major step",
+    "Prompt strategy selection: 'What approach would work here?'",
+    "Encourage reflection: 'What did you learn from this step?'",
+    "Highlight common mistakes and how to avoid them",
+    "Ask students to explain their reasoning process"
+  ]
+}

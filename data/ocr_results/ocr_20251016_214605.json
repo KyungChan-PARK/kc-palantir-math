@@ -1,0 +1,23 @@
+{
+  "text": "Q3 그림과 같이 좌표평면에서 두 점 \\( \\mathrm{A}(2,6), \\mathrm{B}(8,0) \\) 에 대하여 일차함수 \\( y=\\frac{1}{2} x+\\frac{1}{2} \\) 의 그래 프가 \\( x \\) 축과 만나는 점을 C , 선분 AB 와 만나는 점을 D 라 할 때, 삼각형 CBD 의 넓이는?",
+  "latex": "",
+  "data": [],
+  "chart": null,
+  "confidence": 0.9990234375,
+  "success": true,
+  "has_graph": false,
+  "raw_response": {
+    "request_id": "2025_10_16_d8cd0ecb972028fc4f06g",
+    "version": "SuperNet-107p1",
+    "is_printed": true,
+    "is_handwritten": false,
+    "auto_rotate_confidence": 0,
+    "auto_rotate_degrees": 0,
+    "image_height": 144,
+    "image_width": 1418,
+    "confidence": 0.9990234375,
+    "confidence_rate": 0.9999943195530651,
+    "text": "Q3 그림과 같이 좌표평면에서 두 점 \\( \\mathrm{A}(2,6), \\mathrm{B}(8,0) \\) 에 대하여 일차함수 \\( y=\\frac{1}{2} x+\\frac{1}{2} \\) 의 그래 프가 \\( x \\) 축과 만나는 점을 C , 선분 AB 와 만나는 점을 D 라 할 때, 삼각형 CBD 의 넓이는?",
+    "data": []
+  }
+}

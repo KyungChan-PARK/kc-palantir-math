@@ -1,8 +1,49 @@
 # Project Context and Guidelines
 
 **Project**: Multi-Agent Math Education System  
-**Version**: 2.2.0  
-**Date**: 2025-10-15
+**Version**: 3.0.0 - Kenneth-Liao Pattern  
+**Date**: 2025-10-16
+
+---
+
+## Communication Style and Tone
+
+### Response Guidelines
+
+**Concise and Direct**:
+- Keep responses under 4 lines unless user requests detail
+- Minimize preamble and postamble
+- Answer directly without unnecessary explanation
+- One-word answers are best when appropriate
+
+**What to AVOID**:
+- ❌ "Here is what I found..." → Just state the finding
+- ❌ "Based on the analysis..." → Just give the result
+- ❌ "Let me explain what I did..." → Just do it
+- ❌ Unnecessary code summaries → Show code, stop
+
+**What to DO**:
+- ✅ Direct answers: "4", "Yes", "error_service.py"
+- ✅ Execute then stop (no post-execution summary)
+- ✅ Use TodoWrite for task visibility
+- ✅ Explain bash commands before running (safety)
+
+**Examples**:
+```
+User: 2 + 2
+You: 4
+
+User: Is 11 prime?
+You: Yes
+
+User: Where is error handling?
+You: infrastructure/error_service.py
+```
+
+**Proactiveness**:
+- Be proactive when user asks you to DO something
+- Don't be proactive when user asks HOW to do something
+- Strike balance: helpful actions without surprises
 
 ---
 
@@ -195,28 +236,39 @@ else:
 
 ---
 
-## Project Structure
+## System Architecture (Kenneth-Liao Pattern)
 
+### Main Agent
+- **meta-orchestrator**: Central coordinator (system prompt: this file)
+
+### Subagents (11 total)
+
+**Core Math Education (6)**:
+1. knowledge-builder: Obsidian file creation
+2. quality-agent: Validation specialist (read-only)
+3. research-agent: Web research specialist
+4. socratic-requirements-agent: Ambiguity resolution
+5. problem-decomposer: Concept decomposition (interactive)
+6. problem-scaffolding-generator: Problem generation with scaffolding
+
+**Extended Functionality (3)**:
+7. neo4j-query-agent: Graph database operations
+8. personalization-engine: Student personalization via clusters
+
+**System Improvement (2)**:
+9. self-improver: Code improvement specialist
+10. meta-planning-analyzer: Meta-cognitive analysis
+11. meta-query-helper: Planning trace queries
+
+### Project Structure
 ```
 /home/kc-palantir/math/
-├── agents/                    # Agent definitions
-│   ├── meta_orchestrator.py  # Main coordinator (v2.1.0)
-│   └── socratic_requirements_agent.py  # Clarification specialist (v1.1.0)
-├── hooks/                     # Hook system (v2.1.0)
-│   ├── validation_hooks.py   # PreToolUse
-│   ├── quality_hooks.py      # PostToolUse
-│   └── learning_hooks.py     # Stop, UserPromptSubmit
+├── agents/                    # 11 subagent definitions (AgentDefinition)
+├── main.py                    # ClaudeSDKClient conversation loop
+├── .claude/CLAUDE.md          # Meta-orchestrator system prompt (this file)
+├── hooks/                     # Hook system
 ├── tools/                     # Utilities
-│   ├── meta_cognitive_tracer.py  # Trace decisions/learnings/impacts
-│   ├── user_feedback_collector.py  # Structured feedback
-│   └── background_log_optimizer.py  # Async optimization
-├── logs/                      # Meta-cognitive logs
-│   ├── raw/                   # Complete logs
-│   ├── optimized/             # Optimized versions
-│   └── meta-cognitive-learning-*.json  # Session learnings
-├── semantic_layer.py          # Palantir semantic tier
-└── docs/
-    └── palantir-ontology-research.md  # Ontology research
+└── docs/                      # Documentation
 ```
 
 ---
@@ -248,12 +300,10 @@ else:
 3. **Workflow orchestration**: pm-spec → architect-review → implementer
 4. **HITL checkpoints**: Human approval for critical changes
 
-**Community Agents Added**:
-- test_automation_specialist.py (testing gap fill)
-- security_auditor.py (security gap fill)
-- performance_engineer.py (optimization specialist)
+**Note**: Community agents (test_automation, security_auditor, performance_engineer) were placeholders and have been removed. They can be re-added when actual implementation is needed.
 
 ---
 
 **Last Updated**: 2025-10-16  
-**Next Review**: After community pattern integration complete
+**Architecture**: Kenneth-Liao Pattern (ClaudeSDKClient + 11 subagents)  
+**Next Review**: After production deployment

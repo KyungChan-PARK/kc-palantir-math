@@ -4,7 +4,7 @@
 
 > **Claude Sonnet 4.5 powered mathematics education platform with Palantir 3-tier ontology and multi-agent architecture**
 
-**Version 3.0.0** - System Enhancement Complete (65% → 95% effectiveness)
+**Version 3.1.0** - Kenneth-Liao Pattern + Directory Optimization Complete
 
 ## 🎯 System Transformation
 
@@ -70,33 +70,30 @@ pytest tests/ -v
 - Workflow optimization
 - Continuous improvement
 
-### Core Agents (13+)
+### Agent Architecture (Kenneth-Liao Pattern)
 
-#### Meta-Cognitive Layer
-1. **meta-orchestrator** - Primary coordinator with meta-cognitive learnings
-2. **meta-planning-analyzer** - Planning and execution analysis
-3. **meta-query-helper** - Query optimization
+**Main Agent (1)**:
+- **meta-orchestrator** - Central coordinator (system prompt in .claude/CLAUDE.md)
 
-#### Math Education Layer (NEW in v3.0)
-4. **problem-decomposer** - Interactive concept decomposition with user approval
-5. **problem-scaffolding-generator** - Problem generation with integrated scaffolding
-6. **personalization-engine** - Graph-based personalization via clusters
-7. **dynamic-learning-agent** - Cross-agent learning and model selection
-8. **neo4j-query-agent** - Graph database operations (direct Python client)
+**Subagents (12)**:
 
-#### Content & Quality Layer
-9. **knowledge-builder** - Creates Obsidian markdown files
-10. **quality-agent** - Validates content quality
-11. **research-agent** - Deep concept research
+#### Core Math Education (6)
+1. **knowledge-builder** - Obsidian file creation
+2. **quality-agent** - Validation specialist (read-only)
+3. **research-agent** - Web research specialist
+4. **socratic-requirements-agent** - Ambiguity resolution
+5. **problem-decomposer** - Interactive concept decomposition
+6. **problem-scaffolding-generator** - Problem generation with scaffolding
 
-#### Support Layer
-12. **socratic-requirements-agent** - Requirements clarification
-13. **self-improver-agent** - Automated code improvement with CIA protocol
+#### Extended Functionality (4)
+7. **neo4j-query-agent** - Graph database operations
+8. **personalization-engine** - Student personalization via clusters
+9. **feedback-learning-agent** - Pattern mining from human feedback
 
-#### Community Agents
-- **test-automation-specialist** - Testing gap coverage
-- **security-auditor** - Security analysis
-- **performance-engineer** - Performance optimization
+#### System Improvement (2)
+10. **self-improver** - Code improvement with CIA protocol
+11. **meta-planning-analyzer** - Meta-cognitive analysis
+12. **meta-query-helper** - Planning trace queries
 
 ## ⚡ Features
 
@@ -107,7 +104,7 @@ pytest tests/ -v
 
 ### v3.0 High-Priority Improvements
 - ✅ **Neo4j Direct Client** - Simpler, faster (removed MCP abstraction)
-- ✅ **R-G-G Persona Pattern** - Role-Goal-Guardrails in all 11 agents
+- ✅ **R-G-G Persona Pattern** - Role-Goal-Guardrails in all 12 agents
 - ✅ **PreToolUse "ask" Pattern** - Human-in-the-loop for destructive operations
 - ✅ **Test Coverage 95%** - Unit + Integration + E2E tests
 
@@ -225,7 +222,8 @@ pytest tests/ --cov=agents --cov=hooks --cov-report=html
 
 **High-Priority Improvements (P1)**:
 - Neo4j MCP → Direct Python client
-- R-G-G persona pattern (11 agents)
+- R-G-G persona pattern (12 agents)
+- Feedback loop integration (Mathpix OCR, Pattern Learning)
 - PreToolUse "ask" pattern (HITL safety)
 - Test coverage 95% (16 new tests)
 

@@ -12,7 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from agents.meta_orchestrator import MetaOrchestratorLogic
+from lib.orchestrator_utils import MetaOrchestratorLogic
 
 
 def test_complete_3_tier_integration():

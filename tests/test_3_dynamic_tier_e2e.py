@@ -29,10 +29,10 @@ class TestDynamicTier:
         print("TEST 1: Meta-Cognitive Tracer")
         print("="*80)
         
-        from tools.meta_cognitive_tracer import MetaCognitiveTracer
+        from tools.decision_tracer_tool import DecisionTracer
         
         # Verify class exists and instantiable
-        tracer = MetaCognitiveTracer()
+        tracer = DecisionTracer()
         
         # Verify key methods (check actual method names)
         methods = [m for m in dir(tracer) if not m.startswith('_')]
@@ -41,7 +41,7 @@ class TestDynamicTier:
         # Core functionality should exist (even if method names differ)
         assert hasattr(tracer, 'trace_to_file') or 'trace' in str(methods)
         
-        print(f"  ✓ MetaCognitiveTracer importable")
+        print(f"  ✓ DecisionTracer importable")
         print(f"  ✓ Public methods: {len(methods)}")
         print(f"  ✓ Core tracing functionality present")
         
@@ -53,16 +53,16 @@ class TestDynamicTier:
         print("TEST 2: User Feedback Collector")
         print("="*80)
         
-        from tools.user_feedback_collector import UserFeedbackCollector
+        from tools.feedback_collector_tool import FeedbackCollector
         
         # Verify class
-        collector = UserFeedbackCollector()
+        collector = FeedbackCollector()
         
         # Verify methods (check actual names)
         methods = [m for m in dir(collector) if not m.startswith('_')]
         assert len(methods) > 0, "No public methods found"
         
-        print(f"  ✓ UserFeedbackCollector importable")
+        print(f"  ✓ FeedbackCollector importable")
         print(f"  ✓ Public methods: {len(methods)}")
         
         print(f"\n✅ TEST 2 PASSED: User feedback collector validated")
@@ -73,16 +73,16 @@ class TestDynamicTier:
         print("TEST 3: Background Log Optimizer")
         print("="*80)
         
-        from tools.background_log_optimizer import BackgroundLogOptimizer
+        from tools.log_optimizer_tool import LogOptimizer
         
         # Verify class
-        optimizer = BackgroundLogOptimizer()
+        optimizer = LogOptimizer()
         
         # Verify methods (check actual names)
         methods = [m for m in dir(optimizer) if not m.startswith('_')]
         assert len(methods) > 0, "No public methods found"
         
-        print(f"  ✓ BackgroundLogOptimizer importable")
+        print(f"  ✓ LogOptimizer importable")
         print(f"  ✓ Public methods: {len(methods)}")
         
         print(f"\n✅ TEST 3 PASSED: Background optimizer validated")
@@ -93,10 +93,10 @@ class TestDynamicTier:
         print("TEST 4: Dynamic Weight Calculator")
         print("="*80)
         
-        from tools.dynamic_weight_calculator import DynamicWeightCalculator
+        from tools.weight_calculator_tool import WeightCalculator
         
         # Verify class
-        calculator = DynamicWeightCalculator()
+        calculator = WeightCalculator()
         
         # Verify method
         assert hasattr(calculator, 'calculate_weights')
@@ -107,7 +107,7 @@ class TestDynamicTier:
         assert hasattr(weights, 'efficiency')
         assert weights.quality > weights.efficiency  # Quality prioritized
         
-        print(f"  ✓ DynamicWeightCalculator importable")
+        print(f"  ✓ WeightCalculator importable")
         print(f"  ✓ High error (0.25) → Quality: {weights.quality}")
         print(f"  ✓ High error (0.25) → Efficiency: {weights.efficiency}")
         
@@ -179,7 +179,7 @@ class TestDynamicTier:
         print("TEST 7: Self-Improvement Trigger")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         

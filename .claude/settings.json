@@ -1,0 +1,153 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/pre_tool_validation.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/pre_tool_use_security.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type PreToolUse --summarize"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/semantic_tier_guard.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/post_tool_learning.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/post_tool_use_logging.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type PostToolUse --summarize"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/session_metrics_reporter.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/stop_enhanced.py --chat"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type Stop --add-chat"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/user_prompt_submit.py --log-only"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type UserPromptSubmit --summarize"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/subagent_stop.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type SubagentStop"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/session_start.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type SessionStart"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/session_end.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type SessionEnd"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/pre_compact.py"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type PreCompact"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/notification.py --notify"
+          },
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/send_event_observability.py --source-app math-feedback-loop --event-type Notification --summarize"
+          }
+        ]
+      }
+    ]
+  }
+}

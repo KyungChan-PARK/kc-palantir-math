@@ -1,0 +1,43 @@
+{
+  "session_id": "fs_test_001",
+  "timestamp": "2025-10-16T10:30:00Z",
+  "problem_instance": "prob_test_001",
+  "image_source": "sample.png",
+  "ocr_result": {
+    "text": "60을 소인수분해하시오",
+    "latex": "60 = 2^2 \\times 3 \\times 5",
+    "confidence": 0.95
+  },
+  "concepts_identified": [
+    {
+      "concept_id": "middle-1-1-ch1-1.3.1",
+      "name": "소인수분해",
+      "relevance_score": 0.92
+    }
+  ],
+  "generated_steps": [
+    {
+      "step_id": 1,
+      "question": "60은 짝수인가요?",
+      "feedback": {
+        "rating": 5,
+        "comment": "Clear",
+        "suggested_improvement": null
+      }
+    },
+    {
+      "step_id": 2,
+      "question": "60을 2로 나누면?",
+      "feedback": {
+        "rating": 3,
+        "comment": "Should emphasize smallest prime",
+        "suggested_improvement": "60을 가장 작은 소수로 나누면?"
+      }
+    }
+  ],
+  "overall_feedback": {
+    "scaffolding_level": "appropriate",
+    "pacing": "good",
+    "conceptual_depth": "needs_more"
+  }
+}

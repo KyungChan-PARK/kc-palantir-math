@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  observability-server:
+    build: ./observability-server
+    container_name: math-obs-server
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./observability-server/data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - math-network
+
+  math-agent-system:
+    build: .
+    container_name: math-agents
+    depends_on:
+      - observability-server
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OBS_EVENTS_URL=http://observability-server:4000/events
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./math-vault:/app/math-vault
+      - ./data:/app/data
+      - ./logs:/tmp/math-agent-logs
+    restart: unless-stopped
+    networks:
+      - math-network
+    stdin_open: true
+    tty: true
+
+networks:
+  math-network:
+    driver: bridge
+

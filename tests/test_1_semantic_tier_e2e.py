@@ -1,213 +1,197 @@
 """
-Tier 1: Semantic Layer E2E Tests
+Tier 1: Semantic Layer E2E Tests - Kenneth-Liao Pattern
 
-Tests the Palantir semantic tier implementation:
-- Agent roles and responsibilities
-- Semantic relationships
-- Schema export
-- Migration status
+Tests the refactored kenneth-liao pattern implementation with new directory structure:
+- Subagents in subagents/
+- Infrastructure in infrastructure/
+- Lib utilities in lib/
 
-VERSION: 1.0.0
+VERSION: 3.1.0 - Directory Optimization
 DATE: 2025-10-16
 """
 
 import pytest
 import sys
 from pathlib import Path
-import json
 
-# Add project root
 sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from semantic_layer import (
-    SemanticAgentDefinition,
-    SemanticRole,
-    SemanticResponsibility,
-    PalantirTierOrchestrator
-)
 
 
 class TestSemanticTier:
-    """Semantic tier validation tests."""
+    """Semantic tier validation tests for optimized directory structure."""
     
-    def test_1_all_agents_have_semantic_roles(self):
-        """Test: All migrated agents have semantic roles."""
+    def test_1_subagents_importable(self):
+        """Test: All 11 subagents can be imported from subagents/."""
         print("\n" + "="*80)
-        print("TEST 1: Semantic Roles Validation")
+        print("TEST 1: Subagent Imports from subagents/")
         print("="*80)
         
-        # Import migrated agents
-        from agents.meta_orchestrator import meta_orchestrator, SEMANTIC_LAYER_AVAILABLE
-        from agents.socratic_requirements_agent import socratic_requirements_agent
-        from agents.test_automation_specialist import test_automation_specialist
-        from agents.security_auditor import security_auditor
-        from agents.performance_engineer import performance_engineer
-        
-        assert SEMANTIC_LAYER_AVAILABLE, "Semantic layer not available"
-        
-        # Verify semantic roles
-        agents_to_test = [
-            ("meta_orchestrator", meta_orchestrator, SemanticRole.ORCHESTRATOR),
-            ("socratic_agent", socratic_requirements_agent, SemanticRole.CLARIFIER),
-            ("test_specialist", test_automation_specialist, SemanticRole.SPECIALIST),
-            ("security_auditor", security_auditor, SemanticRole.VALIDATOR),
-            ("performance_engineer", performance_engineer, SemanticRole.ANALYZER),
-        ]
-        
-        for name, agent, expected_role in agents_to_test:
-            assert hasattr(agent, 'semantic_role'), f"{name} missing semantic_role"
-            assert agent.semantic_role == expected_role, f"{name} has wrong role"
-            print(f"  ✓ {name}: {agent.semantic_role.value}")
-        
-        print(f"\n✅ TEST 1 PASSED: All 5 migrated agents have correct semantic roles")
-    
-    def test_2_semantic_responsibilities_defined(self):
-        """Test: All agents have semantic responsibilities."""
-        print("\n" + "="*80)
-        print("TEST 2: Semantic Responsibilities")
-        print("="*80)
-        
-        from agents.meta_orchestrator import meta_orchestrator
-        from agents.socratic_requirements_agent import socratic_requirements_agent
-        
-        # Verify responsibilities
-        assert hasattr(meta_orchestrator, 'semantic_responsibility')
-        assert meta_orchestrator.semantic_responsibility == SemanticResponsibility.TASK_DELEGATION
-        print(f"  ✓ meta_orchestrator: {meta_orchestrator.semantic_responsibility.value}")
-        
-        assert hasattr(socratic_requirements_agent, 'semantic_responsibility')
-        assert socratic_requirements_agent.semantic_responsibility == SemanticResponsibility.AMBIGUITY_RESOLUTION
-        print(f"  ✓ socratic_agent: {socratic_requirements_agent.semantic_responsibility.value}")
-        
-        print(f"\n✅ TEST 2 PASSED: Semantic responsibilities correctly defined")
-    
-    def test_3_semantic_relationships_consistent(self):
-        """Test: Semantic relationships are consistent."""
-        print("\n" + "="*80)
-        print("TEST 3: Semantic Relationships")
-        print("="*80)
-        
-        # Load schema
-        schema_file = Path(__file__).parent.parent / "semantic_schema.json"
-        assert schema_file.exists(), "semantic_schema.json not found"
-        
-        with open(schema_file) as f:
-            schema = json.load(f)
-        
-        # Verify structure
-        assert 'agents' in schema
-        assert 'hooks' in schema
-        assert 'patterns' in schema
-        
-        # Check relationships
-        agents = schema['agents']
-        meta = agents.get('meta-orchestrator', {})
-        
-        assert 'semantic_relationships' in meta
-        relationships = meta['semantic_relationships']
-        
-        assert 'delegates_to' in relationships
-        assert relationships['delegates_to'] == ["*"]  # Can delegate to any
-        
-        print(f"  ✓ Schema structure valid")
-        print(f"  ✓ Relationships defined: {list(relationships.keys())}")
-        print(f"\n✅ TEST 3 PASSED: Semantic relationships are consistent")
-    
-    def test_4_semantic_schema_export(self):
-        """Test: Agents can export semantic schema."""
-        print("\n" + "="*80)
-        print("TEST 4: Schema Export Functionality")
-        print("="*80)
-        
-        from agents.meta_orchestrator import meta_orchestrator
-        
-        # Export schema
-        schema = meta_orchestrator.to_semantic_schema()
-        
-        # Verify structure
-        assert isinstance(schema, dict)
-        assert 'role' in schema
-        assert 'responsibility' in schema
-        assert 'relationships' in schema
-        assert 'capabilities' in schema
-        
-        # Verify content
-        assert schema['role'] == 'orchestrator'
-        assert schema['responsibility'] == 'task_delegation_coordination'
-        
-        print(f"  ✓ Schema export successful")
-        print(f"  ✓ Role: {schema['role']}")
-        print(f"  ✓ Responsibility: {schema['responsibility']}")
-        print(f"  ✓ Keys: {list(schema.keys())}")
-        
-        print(f"\n✅ TEST 4 PASSED: Schema export works correctly")
-    
-    def test_5_semantic_migration_status(self):
-        """Test: Track migration progress."""
-        print("\n" + "="*80)
-        print("TEST 5: Migration Status")
-        print("="*80)
-        
-        from semantic_layer import SemanticAgentDefinition
         from claude_agent_sdk import AgentDefinition
+        from subagents import (
+            knowledge_builder,
+            quality_agent,
+            research_agent,
+            socratic_requirements_agent,
+            neo4j_query_agent,
+            problem_decomposer_agent,
+            problem_scaffolding_generator_agent,
+            personalization_engine_agent,
+            self_improver_agent,
+            meta_planning_analyzer,
+            meta_query_helper,
+        )
         
-        # Count migrated agents
-        migrated_agents = []
-        non_migrated_agents = []
-        
-        agent_files = [
-            'meta_orchestrator',
-            'socratic_requirements_agent',
-            'test_automation_specialist',
-            'security_auditor',
-            'performance_engineer',
-            'knowledge_builder',
-            'research_agent',
-            'quality_agent'
+        agents = [
+            ("knowledge_builder", knowledge_builder),
+            ("quality_agent", quality_agent),
+            ("research_agent", research_agent),
+            ("socratic_requirements_agent", socratic_requirements_agent),
+            ("neo4j_query_agent", neo4j_query_agent),
+            ("problem_decomposer_agent", problem_decomposer_agent),
+            ("problem_scaffolding_generator_agent", problem_scaffolding_generator_agent),
+            ("personalization_engine_agent", personalization_engine_agent),
+            ("self_improver_agent", self_improver_agent),
+            ("meta_planning_analyzer", meta_planning_analyzer),
+            ("meta_query_helper", meta_query_helper),
         ]
         
-        for agent_name in agent_files:
-            try:
-                module = __import__(f'agents.{agent_name}', fromlist=[agent_name])
-                agent = getattr(module, agent_name)
-                
-                if isinstance(agent, SemanticAgentDefinition):
-                    migrated_agents.append(agent_name)
-                else:
-                    non_migrated_agents.append(agent_name)
-            except:
-                pass
+        for name, agent in agents:
+            assert isinstance(agent, AgentDefinition), f"{name} is not AgentDefinition"
+            print(f"  ✓ {name}")
         
-        print(f"  ✓ Migrated to SemanticAgentDefinition: {len(migrated_agents)}")
-        for name in migrated_agents:
-            print(f"    - {name}")
+        print(f"\n✅ TEST 1 PASSED: All 11 subagents importable from subagents/")
+    
+    def test_2_infrastructure_importable(self):
+        """Test: Infrastructure modules importable from infrastructure/."""
+        print("\n" + "="*80)
+        print("TEST 2: Infrastructure Imports from infrastructure/")
+        print("="*80)
         
-        print(f"  ✓ Still using AgentDefinition: {len(non_migrated_agents)}")
-        for name in non_migrated_agents:
-            print(f"    - {name}")
+        from infrastructure import (
+            ErrorTracker,
+            StructuredLogger,
+            PerformanceMonitor,
+            ContextManager,
+            AgentRegistry
+        )
         
-        # Should have at least 5 migrated
-        assert len(migrated_agents) >= 5, f"Expected >=5 migrated, got {len(migrated_agents)}"
+        # Verify instantiation
+        error_tracker = ErrorTracker(max_retries=3)
+        logger = StructuredLogger(log_dir="/tmp/test")
+        perf_monitor = PerformanceMonitor()
         
-        print(f"\n✅ TEST 5 PASSED: Migration tracking working ({len(migrated_agents)} migrated)")
+        print(f"  ✓ ErrorTracker")
+        print(f"  ✓ StructuredLogger")
+        print(f"  ✓ PerformanceMonitor")
+        print(f"  ✓ ContextManager")
+        print(f"  ✓ AgentRegistry")
+        
+        print(f"\n✅ TEST 2 PASSED: Infrastructure modules importable")
+    
+    def test_3_lib_utilities_importable(self):
+        """Test: Lib utilities importable from lib/."""
+        print("\n" + "="*80)
+        print("TEST 3: Lib Utilities from lib/")
+        print("="*80)
+        
+        from lib import (
+            MetaOrchestratorLogic,
+            DependencyAgent,
+            SelfImprover,
+            ImprovementManager,
+        )
+        
+        # Verify instantiation
+        logic = MetaOrchestratorLogic()
+        
+        print(f"  ✓ MetaOrchestratorLogic")
+        print(f"  ✓ DependencyAgent")
+        print(f"  ✓ SelfImprover")
+        print(f"  ✓ ImprovementManager")
+        
+        print(f"\n✅ TEST 3 PASSED: Lib utilities importable")
+    
+    def test_4_directory_structure_clean(self):
+        """Test: Directory structure is optimized."""
+        print("\n" + "="*80)
+        print("TEST 4: Directory Structure Optimization")
+        print("="*80)
+        
+        project_root = Path(__file__).parent.parent
+        
+        # Verify new directories exist
+        assert (project_root / "subagents").exists(), "subagents/ missing"
+        assert (project_root / "infrastructure").exists(), "infrastructure/ missing"
+        assert (project_root / "lib").exists(), "lib/ missing"
+        
+        # Verify old agents/ directory removed
+        assert not (project_root / "agents").exists(), "agents/ should be removed"
+        
+        # Count files in each directory
+        subagent_count = len(list((project_root / "subagents").glob("*.py"))) - 1  # Exclude __init__.py
+        infra_count = len(list((project_root / "infrastructure").glob("*.py"))) - 1
+        lib_count = len(list((project_root / "lib").glob("*.py"))) - 1
+        
+        print(f"  ✓ subagents/: {subagent_count} files")
+        print(f"  ✓ infrastructure/: {infra_count} files")
+        print(f"  ✓ lib/: {lib_count} files")
+        print(f"  ✓ agents/: removed")
+        
+        assert subagent_count == 11, f"Expected 11 subagents, found {subagent_count}"
+        
+        print(f"\n✅ TEST 4 PASSED: Directory structure optimized")
+    
+    def test_5_root_level_clean(self):
+        """Test: Root level has minimal files."""
+        print("\n" + "="*80)
+        print("TEST 5: Root Level Cleanup")
+        print("="*80)
+        
+        project_root = Path(__file__).parent.parent
+        
+        # Count markdown files in root
+        root_md_files = list(project_root.glob("*.md"))
+        root_md_count = len(root_md_files)
+        
+        print(f"  Root .md files: {root_md_count}")
+        for f in sorted(root_md_files):
+            print(f"    - {f.name}")
+        
+        # Should have minimal files (README, standards, guides)
+        assert root_md_count <= 5, f"Too many root .md files ({root_md_count}), should be <= 5"
+        
+        # Verify archive exists
+        archive_dir = project_root / "docs" / "archive"
+        assert archive_dir.exists(), "docs/archive/ should exist"
+        
+        archived_count = len(list(archive_dir.glob("*.md")))
+        print(f"\n  docs/archive/: {archived_count} files")
+        
+        print(f"\n✅ TEST 5 PASSED: Root level cleaned")
 
 
 if __name__ == '__main__':
-    # Run tests
     tester = TestSemanticTier()
     
     try:
-        tester.test_1_all_agents_have_semantic_roles()
-        tester.test_2_semantic_responsibilities_defined()
-        tester.test_3_semantic_relationships_consistent()
-        tester.test_4_semantic_schema_export()
-        tester.test_5_semantic_migration_status()
+        tester.test_1_subagents_importable()
+        tester.test_2_infrastructure_importable()
+        tester.test_3_lib_utilities_importable()
+        tester.test_4_directory_structure_clean()
+        tester.test_5_root_level_clean()
         
         print("\n" + "="*80)
         print("🎉 ALL TIER 1 TESTS PASSED (5/5)")
         print("="*80)
+        print("\n✅ Directory Optimization Validated!")
         
     except AssertionError as e:
         print(f"\n❌ Test failed: {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
-
+    except Exception as e:
+        print(f"\n❌ Test error: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)

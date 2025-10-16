@@ -27,7 +27,7 @@ class TestKineticTier:
         print("TEST 1: Sequential Workflow Pattern")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -47,7 +47,7 @@ class TestKineticTier:
         print("TEST 2: Concurrent Workflow Pattern")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -73,7 +73,7 @@ class TestKineticTier:
         print("TEST 3: Direct Data Passing")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -98,7 +98,7 @@ class TestKineticTier:
         print("TEST 4: Inefficiency Type 1 - Communication Overhead")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -126,7 +126,7 @@ class TestKineticTier:
         print("TEST 5: Inefficiency Type 2 - Redundant Work")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -146,7 +146,7 @@ class TestKineticTier:
         print("TEST 6: Inefficiency Type 3 - Context Loss")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -168,7 +168,7 @@ class TestKineticTier:
         print("TEST 7: Inefficiency Type 4 - Tool Misalignment")
         print("="*80)
         
-        from agents.meta_orchestrator import meta_orchestrator
+        from lib.orchestrator_utils import meta_orchestrator
         
         prompt = meta_orchestrator.prompt
         
@@ -208,7 +208,7 @@ class TestKineticTier:
         print(f"  ✓ Hooks importable: {hooks_available}")
         
         # Verify hook integration in agents
-        from agents.meta_orchestrator import HOOKS_AVAILABLE as meta_hooks
+        from lib.orchestrator_utils import HOOKS_AVAILABLE as meta_hooks
         from agents.socratic_requirements_agent import HOOKS_AVAILABLE as socratic_hooks
         
         print(f"  ✓ Meta-orchestrator hooks: {meta_hooks}")

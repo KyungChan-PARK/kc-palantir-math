@@ -1,19 +1,14 @@
 """
-Tier 5: Complete System E2E Tests
+Tier 5: Complete System E2E Tests - Kenneth-Liao Pattern
 
-Tests full integration of all components:
-- All 18 agents discoverable and functional
-- Hook system operational
-- Meta-cognitive system active
-- Documentation complete
-- Main.py integration
-- Math Education System integrated
+Tests full integration of refactored system:
+- All 11 subagents discoverable and functional
+- Meta-orchestrator as main agent
+- Clean kenneth-liao pattern architecture
+- Infrastructure modules functional
 
-This is the comprehensive system validation.
-
-VERSION: 2.0.0
+VERSION: 3.0.0 - Kenneth-Liao Pattern
 DATE: 2025-10-16
-UPDATED: Fixed agent count (13→18), removed deleted agents, added math education agents
 """
 
 import pytest
@@ -27,35 +22,25 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 class TestCompleteSystem:
     """Complete system integration validation tests."""
     
-    def test_1_all_18_agents_discoverable(self):
-        """Test: All 18 agents can be imported and are registered."""
+    def test_1_all_11_subagents_discoverable(self):
+        """Test: All 11 subagents can be imported."""
         print("\n" + "="*80)
-        print("TEST 1: Agent Registry Complete (18 Agents)")
+        print("TEST 1: Subagent Registry (11 Subagents)")
         print("="*80)
         
+        # Expected subagents (meta-orchestrator is NOT included - it's the main agent)
         expected_agents = [
-            'meta_orchestrator',
-            'socratic_requirements_agent',
             'knowledge_builder',
-            'research_agent',
             'quality_agent',
-            # 'example_generator',  # ❌ DELETED - replaced by problem_scaffolding_generator_agent
-            # 'dependency_mapper',   # ❌ DELETED - replaced by neo4j_query_agent
-            'self_improver_agent',
-            'meta_planning_analyzer',
-            'meta_query_helper',
-            'test_automation_specialist',
-            'security_auditor',
-            'performance_engineer',
-            # Math Education Agents (NEW)
+            'research_agent',
+            'socratic_requirements_agent',
             'neo4j_query_agent',
             'problem_decomposer_agent',
             'problem_scaffolding_generator_agent',
             'personalization_engine_agent',
-            # Tier Coordinators (NEW)
-            'semantic_manager_agent',
-            'kinetic_execution_agent',
-            'dynamic_learning_agent',
+            'self_improver_agent',
+            'meta_planning_analyzer',
+            'meta_query_helper',
         ]
         
         imported = []
@@ -63,7 +48,7 @@ class TestCompleteSystem:
         
         for agent_name in expected_agents:
             try:
-                module = __import__(f'agents.{agent_name}', fromlist=[agent_name])
+                module = __import__(f'agents', fromlist=[agent_name])
                 agent = getattr(module, agent_name)
                 imported.append(agent_name)
                 print(f"  ✓ {agent_name}")
@@ -71,298 +56,279 @@ class TestCompleteSystem:
                 failed.append((agent_name, str(e)))
                 print(f"  ✗ {agent_name}: {e}")
         
-        print(f"\n  Total: {len(imported)}/{len(expected_agents)} agents")
+        print(f"\n  Total: {len(imported)}/{len(expected_agents)} subagents")
         
-        assert len(imported) >= 18, f"Expected 18 agents, found {len(imported)}"
+        if failed:
+            print(f"\n  Failed imports:")
+            for name, error in failed:
+                print(f"    - {name}: {error}")
+        
         assert len(imported) == len(expected_agents), f"Expected {len(expected_agents)} agents, found {len(imported)}"
         
-        print(f"\n✅ TEST 1 PASSED: All 18 agents discoverable")
+        print(f"\n✅ TEST 1 PASSED: All 11 subagents discoverable")
     
-    def test_2_hook_system_operational(self):
-        """Test: Hook system is integrated and operational."""
+    def test_2_meta_orchestrator_utility_class(self):
+        """Test: MetaOrchestratorLogic utility class is functional."""
         print("\n" + "="*80)
-        print("TEST 2: Hook System Operational")
+        print("TEST 2: Meta-Orchestrator Utility Class")
         print("="*80)
         
-        # Import hook modules
-        try:
-            from hooks import (
-                validate_sdk_parameters,
-                check_agent_exists,
-                verify_parallel_execution_possible,
-                validate_file_operation,
-                auto_quality_check_after_write,
-                monitor_improvement_impact,
-                enforce_code_quality_standards,
-                calculate_change_impact_score,
-                auto_trigger_improvement,
-                detect_ambiguity_before_execution,
-                inject_historical_context,
-            )
-            
-            hook_count = 11
-            print(f"  ✓ All hook functions importable")
-            print(f"  ✓ Hook count: {hook_count}")
-            
-        except ImportError as e:
-            print(f"  ⚠️  Some hooks not available: {e}")
-            # Still pass if hooks exist but some imports fail
-            from hooks import validation_hooks, quality_hooks, learning_hooks
-            print(f"  ✓ Hook modules exist: validation, quality, learning")
+        from lib.orchestrator_utils import MetaOrchestratorLogic
         
-        # Verify hook integrator
-        from hooks.hook_integrator import get_default_meta_orchestrator_hooks
+        logic = MetaOrchestratorLogic()
         
-        meta_hooks = get_default_meta_orchestrator_hooks()
-        assert isinstance(meta_hooks, dict)
+        # Test quality gate evaluation
+        test_impact = {
+            'cis_size': 10,
+            'test_coverage': 0.85,
+            'critical_affected': False
+        }
+        test_root_cause = {
+            'confidence_score': 0.8
+        }
         
-        print(f"  ✓ Hook integrator functional")
-        print(f"  ✓ Hook types: {list(meta_hooks.keys()) if meta_hooks else 'None'}")
+        result = logic.evaluate_quality_gate(test_impact, test_root_cause)
         
-        print(f"\n✅ TEST 2 PASSED: Hook system operational")
+        assert result['approved'] == True, "Quality gate should pass"
+        assert result['status'] == 'PASSED'
+        
+        print(f"  ✓ MetaOrchestratorLogic instantiable")
+        print(f"  ✓ evaluate_quality_gate() functional")
+        print(f"  ✓ Quality gate test: {result['status']}")
+        
+        print(f"\n✅ TEST 2 PASSED: Utility class functional")
     
-    def test_3_meta_cognitive_system_active(self):
-        """Test: Meta-cognitive components are all active."""
+    def test_3_infrastructure_modules_available(self):
+        """Test: Infrastructure modules are importable."""
         print("\n" + "="*80)
-        print("TEST 3: Meta-Cognitive System Active")
+        print("TEST 3: Infrastructure Modules")
         print("="*80)
         
-        # All 4 components should exist
-        from tools.meta_cognitive_tracer import MetaCognitiveTracer
-        from tools.user_feedback_collector import UserFeedbackCollector
-        from tools.background_log_optimizer import BackgroundLogOptimizer
-        from tools.dynamic_weight_calculator import DynamicWeightCalculator
+        # Import infrastructure
+        from subagents import (
+            ErrorTracker,
+            StructuredLogger,
+            PerformanceMonitor,
+            ContextManager,
+            AgentRegistry
+        )
         
         # Verify instantiation
-        tracer = MetaCognitiveTracer()
-        collector = UserFeedbackCollector()
-        optimizer = BackgroundLogOptimizer()
-        calculator = DynamicWeightCalculator()
+        error_tracker = ErrorTracker(max_retries=3)
+        logger = StructuredLogger(log_dir="/tmp/test-logs")
+        perf_monitor = PerformanceMonitor()
         
-        print(f"  ✓ Meta-cognitive tracer: Active")
-        print(f"  ✓ User feedback collector: Active")
-        print(f"  ✓ Background log optimizer: Active")
-        print(f"  ✓ Dynamic weight calculator: Active")
+        print(f"  ✓ ErrorTracker")
+        print(f"  ✓ StructuredLogger")
+        print(f"  ✓ PerformanceMonitor")
+        print(f"  ✓ ContextManager")
+        print(f"  ✓ AgentRegistry")
         
-        print(f"\n✅ TEST 3 PASSED: All meta-cognitive components active")
+        print(f"\n✅ TEST 3 PASSED: Infrastructure modules available")
     
-    def test_4_semantic_schema_complete(self):
-        """Test: Semantic schema covers all components."""
+    def test_4_agent_definition_compliance(self):
+        """Test: All agents are simple AgentDefinition instances."""
         print("\n" + "="*80)
-        print("TEST 4: Semantic Schema Completeness")
+        print("TEST 4: AgentDefinition Compliance (Kenneth-Liao Pattern)")
         print("="*80)
         
-        schema_file = Path(__file__).parent.parent / "semantic_schema.json"
-        with open(schema_file) as f:
-            schema = json.load(f)
+        from claude_agent_sdk import AgentDefinition
+        from subagents import (
+            knowledge_builder,
+            quality_agent,
+            research_agent,
+        )
         
-        # Verify comprehensive coverage
-        assert len(schema['agents']) >= 10, "Schema missing agents"
-        assert len(schema['hooks']) >= 4, "Schema missing hooks"
-        assert len(schema['patterns']) >= 5, "Schema missing patterns"
-        
-        # Verify ontology metadata
-        assert 'ontology_metadata' in schema
-        metadata = schema['ontology_metadata']
-        
-        assert 'based_on' in metadata
-        assert 'Palantir' in metadata['based_on']
-        
-        print(f"  ✓ Agents mapped: {len(schema['agents'])}")
-        print(f"  ✓ Hooks defined: {len(schema['hooks'])}")
-        print(f"  ✓ Patterns documented: {len(schema['patterns'])}")
-        print(f"  ✓ Ontology base: {metadata['based_on']}")
-        
-        print(f"\n✅ TEST 4 PASSED: Semantic schema is comprehensive")
-    
-    def test_5_palantir_research_complete(self):
-        """Test: Palantir 3-tier ontology research is complete."""
-        print("\n" + "="*80)
-        print("TEST 5: Palantir Research Validation")
-        print("="*80)
-        
-        # Research document should exist
-        research_file = Path(__file__).parent.parent / "docs" / "palantir-ontology-research.md"
-        assert research_file.exists(), "Research document not found"
-        
-        # Read and validate
-        content = research_file.read_text()
-        
-        # Should contain hypothesis validation
-        assert 'H1' in content or 'Hypothesis 1' in content
-        assert 'H2' in content or 'Hypothesis 2' in content
-        assert 'H3' in content or 'Hypothesis 3' in content
-        
-        # Should contain conclusions
-        assert 'CONFIRMED' in content or 'VALIDATED' in content or 'REFINED' in content
-        
-        print(f"  ✓ Research document exists ({len(content)} chars)")
-        print(f"  ✓ Hypotheses documented: H1, H2, H3")
-        print(f"  ✓ Validation results present")
-        
-        print(f"\n✅ TEST 5 PASSED: Palantir research complete")
-    
-    def test_6_claude_md_guidelines_exist(self):
-        """Test: CLAUDE.md project guidelines exist."""
-        print("\n" + "="*80)
-        print("TEST 6: Project Guidelines")
-        print("="*80)
-        
-        claude_md = Path(__file__).parent.parent / ".claude" / "CLAUDE.md"
-        assert claude_md.exists(), "CLAUDE.md not found"
-        
-        content = claude_md.read_text()
-        
-        # Verify key sections
-        assert 'Hypothesis-Driven Research' in content or 'hypothesis' in content.lower()
-        assert 'Community Agent Patterns' in content
-        
-        print(f"  ✓ CLAUDE.md exists ({len(content)} chars)")
-        print(f"  ✓ Hypothesis protocol documented")
-        print(f"  ✓ Community patterns referenced")
-        
-        print(f"\n✅ TEST 6 PASSED: Project guidelines complete")
-    
-    def test_7_community_agents_integrated(self):
-        """Test: 3 community agents are properly integrated."""
-        print("\n" + "="*80)
-        print("TEST 7: Community Agents Integration")
-        print("="*80)
-        
-        from agents.test_automation_specialist import test_automation_specialist
-        from agents.security_auditor import security_auditor
-        from agents.performance_engineer import performance_engineer
-        
-        # Verify proactive keywords
-        agents = [
-            ('test_automation', test_automation_specialist),
-            ('security_auditor', security_auditor),
-            ('performance_engineer', performance_engineer),
+        agents_to_test = [
+            ('knowledge_builder', knowledge_builder),
+            ('quality_agent', quality_agent),
+            ('research_agent', research_agent),
         ]
         
-        for name, agent in agents:
-            desc = agent.description
-            has_proactive = 'PROACTIVELY' in desc or 'MUST BE USED' in desc
-            assert has_proactive, f"{name} missing proactive keywords"
-            print(f"  ✓ {name}: PROACTIVELY + MUST BE USED")
+        for name, agent in agents_to_test:
+            # Verify it's an AgentDefinition instance
+            assert isinstance(agent, AgentDefinition), f"{name} is not AgentDefinition"
+            
+            # Verify required fields
+            assert hasattr(agent, 'description'), f"{name} missing description"
+            assert hasattr(agent, 'prompt'), f"{name} missing prompt"
+            assert hasattr(agent, 'model'), f"{name} missing model"
+            assert hasattr(agent, 'tools'), f"{name} missing tools"
+            
+            print(f"  ✓ {name}: AgentDefinition compliant")
         
-        # Verify tool restriction (security should be read-only)
-        security_tools = security_auditor.tools
-        assert 'Read' in security_tools
-        assert 'Write' not in security_tools, "Security auditor should be read-only"
-        
-        print(f"  ✓ Security auditor: Read-only (safe)")
-        
-        print(f"\n✅ TEST 7 PASSED: Community agents properly integrated")
+        print(f"\n✅ TEST 4 PASSED: Agents follow kenneth-liao pattern")
     
-    def test_8_main_py_integration(self):
-        """Test: main.py is integrated with all systems."""
+    def test_5_no_markdown_duplicates(self):
+        """Test: .claude/agents/ directory removed (no duplicates)."""
         print("\n" + "="*80)
-        print("TEST 8: Main.py Integration")
+        print("TEST 5: No Markdown Duplicates")
+        print("="*80)
+        
+        agents_md_dir = Path(__file__).parent.parent / ".claude" / "agents"
+        
+        if agents_md_dir.exists():
+            md_files = list(agents_md_dir.glob("*.md"))
+            print(f"  ✗ .claude/agents/ exists with {len(md_files)} files")
+            assert False, ".claude/agents/ should be deleted"
+        else:
+            print(f"  ✓ .claude/agents/ directory removed")
+        
+        print(f"\n✅ TEST 5 PASSED: No markdown duplicates")
+    
+    def test_6_removed_agents_not_importable(self):
+        """Test: Removed agents are no longer importable."""
+        print("\n" + "="*80)
+        print("TEST 6: Removed Agents Cleanup")
+        print("="*80)
+        
+        removed_agents = [
+            'semantic_manager_agent',
+            'kinetic_execution_agent',
+            'dynamic_learning_agent',
+            'performance_engineer',
+            'security_auditor',
+            'test_automation_specialist',
+        ]
+        
+        for agent_name in removed_agents:
+            try:
+                module = __import__(f'agents.{agent_name}', fromlist=[agent_name])
+                print(f"  ✗ {agent_name}: Still importable (should be deleted)")
+                assert False, f"{agent_name} should not be importable"
+            except (ImportError, ModuleNotFoundError):
+                print(f"  ✓ {agent_name}: Properly removed")
+        
+        print(f"\n✅ TEST 6 PASSED: All removed agents are gone")
+    
+    def test_7_main_py_kenneth_liao_pattern(self):
+        """Test: main.py follows kenneth-liao pattern."""
+        print("\n" + "="*80)
+        print("TEST 7: Main.py Kenneth-Liao Pattern")
         print("="*80)
         
         main_file = Path(__file__).parent.parent / "main.py"
-        assert main_file.exists()
-        
         content = main_file.read_text()
         
-        # Verify version
-        assert '2.2.0' in content, "Version not updated"
+        # Verify kenneth-liao pattern elements
+        checks = [
+            ('ClaudeSDKClient import', 'ClaudeSDKClient' in content),
+            ('AgentDefinition import', 'AgentDefinition' in content),
+            ('agents dict', 'agents={' in content),
+            ('Version 3.0.0', '3.0.0' in content),
+            ('Kenneth-Liao Pattern', 'Kenneth-Liao' in content),
+        ]
         
-        # Verify hook integration
-        assert 'hook' in content.lower()
-        assert 'HOOKS_AVAILABLE' in content or 'hooks' in content.lower()
+        for check_name, passed in checks:
+            print(f"  {'✓' if passed else '✗'} {check_name}")
+            assert passed, f"Missing: {check_name}"
         
-        # Verify semantic layer
-        assert 'Semantic Layer' in content or 'semantic' in content.lower()
-        
-        print(f"  ✓ Version: 2.2.0")
-        print(f"  ✓ Hook integration present")
-        print(f"  ✓ Semantic layer referenced")
-        
-        print(f"\n✅ TEST 8 PASSED: Main.py properly integrated")
+        print(f"\n✅ TEST 7 PASSED: Main.py follows kenneth-liao pattern")
     
-    def test_9_documentation_completeness(self):
-        """Test: All key documentation exists."""
+    def test_8_agent_count_validation(self):
+        """Test: Exactly 11 subagents (meta-orchestrator separate)."""
         print("\n" + "="*80)
-        print("TEST 9: Documentation Completeness")
+        print("TEST 8: Agent Count Validation")
         print("="*80)
         
-        project_root = Path(__file__).parent.parent
+        from subagents import __all__
         
-        required_docs = {
-            '.claude/CLAUDE.md': 'Project guidelines',
-            'docs/palantir-ontology-research.md': 'Palantir research',
-            'semantic_schema.json': 'Semantic schema',
-            'META-COGNITIVE-ANALYSIS.md': 'Meta-cognitive analysis',
-            'HOOK-INTEGRATION-GUIDE.md': 'Hook guide',
-        }
+        # Filter out infrastructure modules
+        infrastructure = [
+            'ErrorTracker', 'StructuredLogger', 'PerformanceMonitor',
+            'ContextManager', 'AgentRegistry', 'DependencyAgent',
+            'SelfImprover', 'ImprovementManager', 'ImprovementAction',
+            'ImpactAnalysis', 'QualityGateApproval', 'RootCauseAnalysis',
+            'IssueReport', 'ChangeStatus', 'ChangeRecord', 'ActionType',
+            'PlanningObserver', 'PlanningStep', 'PlanningSessionManager',
+            'ask_agent_tool', 'resilient_task', 'RetryConfig',
+            'human_escalation_handler', 'setup_structured_logger',
+            'AgentLogger', 'set_trace_id', 'get_trace_id',
+            'AgentMetrics', 'PerformanceTimer', 'DependencyNode',
+            'DependencyEdge', 'NodeType', 'EdgeType',
+        ]
         
-        for doc_path, description in required_docs.items():
-            full_path = project_root / doc_path
-            exists = full_path.exists()
-            print(f"  {'✓' if exists else '✗'} {description}: {doc_path}")
-            assert exists, f"Missing: {doc_path}"
+        agents_exported = [item for item in __all__ if item not in infrastructure]
         
-        print(f"\n  Total documentation files: {len(required_docs)}")
+        print(f"  Total exports in __all__: {len(__all__)}")
+        print(f"  Infrastructure modules: {len(infrastructure)}")
+        print(f"  Agent exports: {len(agents_exported)}")
+        print(f"\n  Agents:")
+        for agent in agents_exported:
+            print(f"    - {agent}")
         
-        print(f"\n✅ TEST 9 PASSED: All key documentation exists")
+        assert len(agents_exported) == 11, f"Expected 11 agents, found {len(agents_exported)}"
+        
+        print(f"\n✅ TEST 8 PASSED: Exactly 11 subagents exported")
     
-    def test_10_system_ready_for_production(self):
-        """Test: Final production readiness check."""
+    def test_9_main_loop_simplicity(self):
+        """Test: Main loop is simple (kenneth-liao pattern)."""
         print("\n" + "="*80)
-        print("TEST 10: Production Readiness")
+        print("TEST 9: Main Loop Simplicity")
         print("="*80)
         
-        # Check all critical components
-        checks = []
+        main_file = Path(__file__).parent.parent / "main.py"
+        content = main_file.read_text()
         
-        # 1. Semantic layer
-        from semantic_layer import SemanticAgentDefinition
-        checks.append(('Semantic layer', True))
+        # Verify simplicity indicators
+        checks = [
+            ('async with ClaudeSDKClient', 'async with ClaudeSDKClient' in content),
+            ('while True loop', 'while True:' in content),
+            ('client.query()', 'client.query(' in content),
+            ('receive_response()', 'receive_response()' in content),
+            ('Simple exit handling', "'exit'" in content.lower()),
+        ]
         
-        # 2. Hook system
-        try:
-            from hooks import validation_hooks
-            checks.append(('Hook system', True))
-        except:
-            checks.append(('Hook system', False))
+        for check_name, passed in checks:
+            print(f"  {'✓' if passed else '✗'} {check_name}")
+            assert passed, f"Missing: {check_name}"
         
-        # 3. Meta-cognitive tools
-        from tools.meta_cognitive_tracer import MetaCognitiveTracer
-        checks.append(('Meta-cognitive tools', True))
+        # Verify NOT overly complex (no elaborate session management)
+        lines = content.split('\n')
+        print(f"\n  Total lines: {len(lines)}")
         
-        # 4. Agents
-        from agents.meta_orchestrator import meta_orchestrator
-        checks.append(('Agents', True))
+        # Kenneth-liao pattern should be < 200 lines
+        assert len(lines) < 250, f"main.py too complex ({len(lines)} lines), should be < 250"
         
-        # 5. Schema
-        schema_file = Path(__file__).parent.parent / "semantic_schema.json"
-        checks.append(('Semantic schema', schema_file.exists()))
+        print(f"\n✅ TEST 9 PASSED: Main loop is simple and clean")
+    
+    def test_10_system_architecture_validated(self):
+        """Test: Final architecture validation."""
+        print("\n" + "="*80)
+        print("TEST 10: Architecture Validation")
+        print("="*80)
         
-        # 6. Research
-        research_file = Path(__file__).parent.parent / "docs" / "palantir-ontology-research.md"
-        checks.append(('Palantir research', research_file.exists()))
+        print("\n  Architecture Summary:")
+        print("  " + "-" * 76)
+        print(f"  Main Agent: meta-orchestrator (system prompt in .claude/CLAUDE.md)")
+        print(f"  Subagents: 11 specialized agents")
+        print(f"  Pattern: Kenneth-Liao (ClaudeSDKClient + AgentDefinition dict)")
+        print(f"  Duplicates: 0 (markdown files removed)")
+        print(f"  Tier Coordinators: Removed (logic in meta-orchestrator)")
+        print("  " + "-" * 76)
         
-        # 7. Learning logs
-        log_file = Path(__file__).parent.parent / "logs" / "meta-cognitive-learning-session-2025-10-15.json"
-        checks.append(('Learning logs', log_file.exists()))
+        # Verify no duplicate definitions
+        agents_dir = Path(__file__).parent.parent / "agents"
+        claude_agents_dir = Path(__file__).parent.parent / ".claude" / "agents"
         
-        # 8. CLAUDE.md
-        claude_md = Path(__file__).parent.parent / ".claude" / "CLAUDE.md"
-        checks.append(('CLAUDE.md', claude_md.exists()))
+        assert claude_agents_dir.exists() == False, ".claude/agents/ should not exist"
         
-        # Print results
-        for component, status in checks:
-            print(f"  {'✓' if status else '✗'} {component}")
+        # Count Python agent files
+        agent_files = list(agents_dir.glob("*_agent.py"))
+        print(f"\n  Python agent files: {len(agent_files)}")
         
-        # All should pass
-        all_passed = all(status for _, status in checks)
-        assert all_passed, "Some components not ready"
+        # Verify all are importable
+        from subagents import (
+            knowledge_builder,
+            quality_agent,
+            research_agent,
+        )
         
-        print(f"\n  System readiness: {sum(1 for _, s in checks if s)}/{len(checks)}")
+        print(f"  ✓ All agents importable")
+        print(f"  ✓ No markdown duplicates")
+        print(f"  ✓ Clean architecture validated")
         
-        print(f"\n✅ TEST 10 PASSED: System ready for production")
+        print(f"\n✅ TEST 10 PASSED: System architecture validated")
 
 
 if __name__ == '__main__':
@@ -370,20 +336,25 @@ if __name__ == '__main__':
     tester = TestCompleteSystem()
     
     try:
-        tester.test_1_all_13_agents_discoverable()
-        tester.test_2_hook_system_operational()
-        tester.test_3_meta_cognitive_system_active()
-        tester.test_4_semantic_schema_complete()
-        tester.test_5_palantir_research_complete()
-        tester.test_6_claude_md_guidelines_exist()
-        tester.test_7_community_agents_integrated()
-        tester.test_8_main_py_integration()
-        tester.test_9_documentation_completeness()
-        tester.test_10_system_ready_for_production()
+        tester.test_1_all_11_subagents_discoverable()
+        tester.test_2_meta_orchestrator_utility_class()
+        tester.test_3_infrastructure_modules_available()
+        tester.test_4_agent_definition_compliance()
+        tester.test_5_no_markdown_duplicates()
+        tester.test_6_removed_agents_not_importable()
+        tester.test_7_main_py_kenneth_liao_pattern()
+        tester.test_8_agent_count_validation()
+        tester.test_9_main_loop_simplicity()
+        tester.test_10_system_architecture_validated()
         
         print("\n" + "="*80)
         print("🎉 ALL TIER 5 TESTS PASSED (10/10)")
         print("="*80)
+        print("\n✅ Kenneth-Liao Pattern Refactoring Complete!")
+        print("   - 11 subagents")
+        print("   - 1 main agent (meta-orchestrator)")
+        print("   - 0 duplicates")
+        print("   - Clean architecture")
         
     except AssertionError as e:
         print(f"\n❌ Test failed: {e}")
@@ -395,4 +366,3 @@ if __name__ == '__main__':
         import traceback
         traceback.print_exc()
         sys.exit(1)
-

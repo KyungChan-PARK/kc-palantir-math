@@ -1,0 +1,46 @@
+[
+  {
+    "pattern_id": "lp_20251016_184319_2",
+    "type": "question_improvement",
+    "rule": "Improve step 2: Could be clearer about which value to substitute",
+    "confidence": 1.0,
+    "applicable_concepts": [
+      "middle-1-1-ch5-5.1.2",
+      "middle-1-1-ch5-5.1.4",
+      "middle-2-1-ch4-4.1.4"
+    ],
+    "improvement_rate": null,
+    "reuse_count": 0,
+    "examples": [
+      {
+        "before": "일차함수 y=1/2x+1/2가 x축과 만나는 점 C를 구하려면 y=?를 대입해야 하나요?",
+        "after": "일차함수 y=1/2x+1/2가 x축과 만나는 점 C를 구하려면 y=?를 대입해야 하나요? (y=0을 대입)"
+      }
+    ],
+    "discovered_date": "2025-10-16T18:43:19.482883",
+    "source": "teacher_kc",
+    "tested": false,
+    "auto_apply": false
+  },
+  {
+    "pattern_id": "lp_add_why_questions_20251016_184319",
+    "type": "conceptual_depth",
+    "rule": "Insert 'why' questions between mechanical steps",
+    "confidence": 0.85,
+    "applicable_concepts": [
+      "all"
+    ],
+    "improvement_rate": null,
+    "reuse_count": 0,
+    "examples": [
+      {
+        "insert_after": "calculation_step",
+        "question": "왜 이렇게 계산하는지 생각해보세요"
+      }
+    ],
+    "discovered_date": "2025-10-16T18:43:19.549842",
+    "source": "teacher_kc",
+    "tested": false,
+    "auto_apply": false
+  }
+]

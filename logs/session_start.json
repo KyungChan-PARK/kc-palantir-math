@@ -1,0 +1,9 @@
+[
+  {
+    "session_id": "6295c869-d6e2-4d81-b99b-396a2594c928",
+    "transcript_path": "/home/kc-palantir/.claude/projects/-home-kc-palantir-math/6295c869-d6e2-4d81-b99b-396a2594c928.jsonl",
+    "cwd": "/home/kc-palantir/math",
+    "hook_event_name": "SessionStart",
+    "source": "startup"
+  }
+]

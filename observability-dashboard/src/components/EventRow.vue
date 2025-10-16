@@ -211,6 +211,16 @@ const hookEmoji = computed(() => {
     'neo4j_write_completed': '🗄️',
     'validation_completed': '✅',
     
+    // Parallel execution / infinite-agentic-loop types (added 2025-10-16)
+    'wave_started': '🌊',
+    'wave_completed': '🏁',
+    'variation_generated': '🎨',
+    'parallel_feedback_started': '💬',
+    'parallel_feedback_completed': '✅',
+    'meta_pattern_extracted': '🧬',
+    'spec_evolved': '📈',
+    'uniqueness_validation_failed': '⚠️',
+    
     // Test events
     'test_event': '🧪'
   };

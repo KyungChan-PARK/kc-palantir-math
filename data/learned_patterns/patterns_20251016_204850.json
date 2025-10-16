@@ -1,0 +1,25 @@
+[
+  {
+    "pattern_id": "lp_20251016_204850_2",
+    "type": "question_improvement",
+    "rule": "Improve step 2: Could be clearer",
+    "confidence": 1.0,
+    "applicable_concepts": [
+      "middle-1-1-ch5-5.1.2",
+      "middle-1-1-ch5-5.1.4",
+      "middle-2-1-ch4-4.1.4"
+    ],
+    "improvement_rate": null,
+    "reuse_count": 0,
+    "examples": [
+      {
+        "before": "일차함수 y=1/2x+1/2가 x축과 만나는 점 C를 구하려면 y=?를 대입해야 하나요?",
+        "after": "일차함수 y=1/2x+1/2가 x축과 만나는 점 C를 구하려면 y=?를 대입해야 하나요? (Clarify the concept)"
+      }
+    ],
+    "discovered_date": "2025-10-16T20:48:50.669412",
+    "source": "teacher_kc",
+    "tested": false,
+    "auto_apply": false
+  }
+]
