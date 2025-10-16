@@ -710,7 +710,255 @@ flowchart TD
 
 ---
 
-**문서 버전**: 3.2.0 - indydevdan Observability Integration
+---
+
+## 18. Infinite Agentic Feedback Loop (NEW - 2025-10-16)
+
+```mermaid
+flowchart TD
+    Image[Problem Image] --> SharedContext[Shared Context Prep<br/>OCR + Concepts + Patterns]
+    
+    SharedContext --> Wave1[Wave 1: Parallel Generation]
+    
+    subgraph Wave1
+        direction LR
+        Agent1[Agent 1<br/>Socratic Depth] -.-> Var1[Variation 1]
+        Agent2[Agent 2<br/>Visual Emphasis] -.-> Var2[Variation 2]
+        Agent3[Agent 3<br/>Algebraic Rigor] -.-> Var3[Variation 3]
+    end
+    
+    Var1 --> Feedback1[Parallel Feedback<br/>Collection]
+    Var2 --> Feedback1
+    Var3 --> Feedback1
+    
+    Feedback1 --> MetaPattern[Meta-Pattern<br/>Extraction]
+    MetaPattern --> SpecEvolution[Specification<br/>Evolution]
+    
+    SpecEvolution --> Wave2[Wave 2: Advanced Generation]
+    
+    subgraph Wave2
+        direction LR
+        Agent4[Agent 4<br/>Metacognitive] -.-> Var4[Variation 4]
+        Agent5[Agent 5<br/>Minimal Hints] -.-> Var5[Variation 5]
+        Agent6[Agent 6<br/>Socratic+Visual] -.-> Var6[Variation 6]
+    end
+    
+    Var4 --> Feedback2[Parallel Feedback]
+    Var5 --> Feedback2
+    Var6 --> Feedback2
+    
+    Feedback2 --> MetaPattern2[Meta-Pattern<br/>Wave 2]
+    MetaPattern2 --> Neo4j[(Neo4j<br/>Meta-Patterns)]
+    
+    MetaPattern2 -.->|Next Problem| SharedContext
+    
+    style SharedContext fill:#4ecdc4,color:#fff
+    style Wave1 fill:#ffe1e1
+    style Wave2 fill:#e1ffe1
+    style MetaPattern fill:#f093fb,color:#fff
+    style SpecEvolution fill:#feca57,color:#000
+    style Neo4j fill:#5f27cd,color:#fff
+```
+
+### Key Innovations
+
+**Parallel Execution**:
+- 3-7 variations generated simultaneously per wave
+- Shared context reuse (OCR, concepts, patterns)
+- asyncio.gather() for true parallelism
+- <1 second for 3 variations
+
+**Variation Dimensions (7)**:
+1. Socratic Depth - Question-based discovery
+2. Visual Emphasis - Geometric/graphical thinking
+3. Algebraic Rigor - Symbolic manipulation
+4. Metacognitive - "Why" questions & strategy
+5. Minimal Hints - Challenge mode
+6. Conceptual Bridges - Cross-concept connections
+7. Real-World - Application contexts
+
+**Meta-Pattern Learning**:
+- Extract patterns FROM patterns
+- Dimension effectiveness analysis
+- Optimal step count discovery
+- Pedagogical combination synergies
+
+---
+
+## 19. Parallel Workflow Timeline
+
+```mermaid
+gantt
+    title Infinite Scaffolding Loop - 2 Waves (6 Variations)
+    dateFormat  ss
+    axisFormat %S
+    
+    section Preparation
+    Shared Context (OCR + Concepts)    :done, prep, 00, 01s
+    
+    section Wave 1
+    Agent 1: Socratic     :active, a1, 01, 01s
+    Agent 2: Visual       :active, a2, 01, 01s
+    Agent 3: Algebraic    :active, a3, 01, 01s
+    Parallel Feedback     :done, fb1, 02, 01s
+    Meta-Pattern Extract  :done, mp1, 03, 01s
+    Spec Evolution        :done, se1, 04, 01s
+    
+    section Wave 2
+    Agent 4: Metacognitive :active, a4, 05, 01s
+    Agent 5: Minimal Hints :active, a5, 05, 01s
+    Agent 6: Socratic+Visual :active, a6, 05, 01s
+    Parallel Feedback     :done, fb2, 06, 01s
+    Meta-Pattern Extract  :done, mp2, 07, 01s
+    Final Synthesis       :done, syn, 08, 01s
+```
+
+**Timeline Benefits**:
+- Total time: ~8 seconds for 6 variations
+- Sequential would be: ~30 seconds (4x slower)
+- Parallel feedback: All variations rated simultaneously
+- Progressive sophistication: Wave 2 builds on Wave 1 learnings
+
+---
+
+## 20. Variation Dimension Matrix
+
+```mermaid
+graph TB
+    Problem[Math Problem] --> Analysis[Problem Analysis]
+    Analysis --> Dims[7 Variation Dimensions]
+    
+    Dims --> D1[Socratic Depth<br/>🎯 Discovery Learning<br/>Difficulty: 1.1x]
+    Dims --> D2[Visual Emphasis<br/>👁️ Spatial Reasoning<br/>Difficulty: 0.9x]
+    Dims --> D3[Algebraic Rigor<br/>📐 Symbolic Focus<br/>Difficulty: 1.15x]
+    Dims --> D4[Metacognitive<br/>🧠 Strategy Awareness<br/>Difficulty: 1.0x]
+    Dims --> D5[Minimal Hints<br/>💪 Challenge Mode<br/>Difficulty: 1.2x]
+    Dims --> D6[Conceptual Bridges<br/>🔗 Cross-Concept<br/>Difficulty: 1.05x]
+    Dims --> D7[Real-World<br/>🌍 Applications<br/>Difficulty: 0.95x]
+    
+    D1 --> Scaffolding[Unique Scaffoldings]
+    D2 --> Scaffolding
+    D3 --> Scaffolding
+    D4 --> Scaffolding
+    D5 --> Scaffolding
+    D6 --> Scaffolding
+    D7 --> Scaffolding
+    
+    style Problem fill:#e1f5ff
+    style Dims fill:#fff3cd
+    style D1 fill:#c7ffd8
+    style D2 fill:#ffd8e1
+    style D3 fill:#d8e1ff
+    style D4 fill:#ffe1d8
+    style D5 fill:#e1d8ff
+    style D6 fill:#d8ffe1
+    style D7 fill:#ffd8c7
+    style Scaffolding fill:#f093fb,color:#fff
+```
+
+---
+
+## 21. Meta-Pattern Extraction Flow
+
+```mermaid
+sequenceDiagram
+    participant Vars as 6 Variations
+    participant Feedback as Parallel Feedback
+    participant Extractor as Meta-Pattern Extractor
+    participant Analysis as Pattern Analysis
+    participant Neo4j as Neo4j Storage
+    
+    Vars->>Feedback: Submit all variations
+    Feedback->>Feedback: Collect ratings (1-5)
+    Feedback->>Feedback: Collect comments
+    
+    Feedback->>Extractor: Feedback results
+    Extractor->>Analysis: Analyze dimension effectiveness
+    Analysis-->>Extractor: Top dimensions: Socratic (4.6), Visual (4.5)
+    
+    Extractor->>Analysis: Analyze step sequences
+    Analysis-->>Extractor: Optimal: 8.3 steps average
+    
+    Extractor->>Analysis: Analyze hint strategies
+    Analysis-->>Extractor: Minimal hints rated higher for advanced
+    
+    Extractor->>Neo4j: Store meta-patterns
+    Neo4j-->>Extractor: :MetaPattern nodes created
+    
+    Note over Extractor,Neo4j: Meta-patterns guide next wave
+```
+
+---
+
+## 22. Complete System with Infinite Loop
+
+```mermaid
+graph TB
+    subgraph "User Interface"
+        CLI[CLI Input]
+        Dashboard[Vue Dashboard<br/>localhost:5173]
+    end
+    
+    subgraph "Main System"
+        Main[main.py]
+        MetaOrch[Meta-orchestrator<br/>.claude/CLAUDE.md]
+    end
+    
+    subgraph "Parallel Execution Layer NEW"
+        ParallelOrch[ParallelScaffoldingOrchestrator]
+        VarEngine[VariationEngine<br/>7 Dimensions]
+        InfiniteLoop[InfiniteFeedbackLoop]
+    end
+    
+    subgraph "Original Workflows"
+        MathScaff[MathScaffoldingWorkflow<br/>Single scaffolding]
+        ConceptMatch[ConceptMatcher<br/>841 concepts]
+        OCR[Mathpix OCR]
+    end
+    
+    subgraph "Learning & Storage"
+        MetaExtractor[MetaPatternExtractor]
+        SpecEvolution[SpecificationEvolution]
+        Neo4j[(Neo4j<br/>Patterns + Meta-Patterns)]
+    end
+    
+    subgraph "Observability"
+        ObsServer[Observability Server<br/>8 new event types]
+        ObsDB[(SQLite<br/>50+ events)]
+    end
+    
+    CLI --> Main
+    Main --> MetaOrch
+    MetaOrch --> ParallelOrch
+    MetaOrch --> MathScaff
+    
+    ParallelOrch --> VarEngine
+    ParallelOrch --> OCR
+    ParallelOrch --> ConceptMatch
+    ParallelOrch --> InfiniteLoop
+    
+    InfiniteLoop --> MetaExtractor
+    InfiniteLoop --> SpecEvolution
+    
+    MetaExtractor --> Neo4j
+    SpecEvolution --> Neo4j
+    
+    ParallelOrch -.->|Events| ObsServer
+    InfiniteLoop -.->|Events| ObsServer
+    ObsServer --> ObsDB
+    ObsServer -.->|WebSocket| Dashboard
+    
+    style ParallelOrch fill:#ff6b6b,color:#fff
+    style VarEngine fill:#4ecdc4,color:#fff
+    style InfiniteLoop fill:#f093fb,color:#fff
+    style MetaExtractor fill:#feca57,color:#000
+    style ObsServer fill:#45b7d1,color:#fff
+    style Dashboard fill:#5f27cd,color:#fff
+```
+
+---
+
+**문서 버전**: 4.0.0 - Infinite Agentic Loop Integration
 **작성일**: 2025-10-16
-**업데이트**: indydevdan Claude Code hooks 통합 (19 hook scripts, WebSocket, AI summaries)
+**업데이트**: Parallel scaffolding generation, wave-based execution, meta-pattern learning, 8 new event types
 **대상**: 시각적 학습자
