@@ -71,14 +71,38 @@ def main():
         print(f"Failed to parse JSON input: {e}", file=sys.stderr)
         sys.exit(0)  # Exit 0 to not block Claude
     
+    # Extract session_id and create human-readable name
+    raw_session_id = input_data.get('session_id', 'unknown')
+    
+    # Create human-readable session name from context
+    session_name = None
+    if args.event_type == 'SessionStart':
+        source = input_data.get('source', 'unknown')
+        timestamp = datetime.now().strftime('%H:%M:%S')
+        source_labels = {
+            'startup': 'New Session',
+            'resume': 'Resume Session',
+            'clear': 'Fresh Session'
+        }
+        session_name = f"{source_labels.get(source, 'Session')} - {timestamp}"
+    elif args.event_type in ['PreToolUse', 'PostToolUse']:
+        # Extract tool name from payload (Claude Code format)
+        tool_name = input_data.get('tool_name') or input_data.get('tool', {}).get('name', 'Unknown Tool')
+        timestamp = datetime.now().strftime('%H:%M:%S')
+        session_name = f"{tool_name} - {timestamp}"
+    
     # Prepare event data for server
     event_data = {
         'source_app': args.source_app,
-        'session_id': input_data.get('session_id', 'unknown'),
+        'session_id': raw_session_id,
         'hook_event_type': args.event_type,
         'payload': input_data,
         'timestamp': int(datetime.now().timestamp() * 1000)
     }
+    
+    # Add session_name if generated
+    if session_name:
+        event_data['session_name'] = session_name
     
     # Handle --add-chat option
     if args.add_chat and 'transcript_path' in input_data:

@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "52f40646-c8e2-46eb-99ea-15b07cf3daaf",
+    "transcript_path": "/home/kc-palantir/.claude/projects/-home-kc-palantir-math/52f40646-c8e2-46eb-99ea-15b07cf3daaf.jsonl",
+    "cwd": "/home/kc-palantir/math",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false
+  }
+]

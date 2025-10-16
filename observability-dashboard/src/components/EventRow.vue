@@ -177,7 +177,15 @@ const sessionIdShort = computed(() => {
   if (props.event.session_name) {
     return props.event.session_name;
   }
-  return props.event.session_id.slice(0, 8);
+  
+  // Handle full UUIDs (from Claude Code hooks) by extracting first 8 chars
+  const sessionId = props.event.session_id;
+  if (sessionId && sessionId.length > 20) {
+    // Full UUID format: extract first segment
+    return sessionId.split('-')[0];
+  }
+  
+  return sessionId?.slice(0, 8) || 'unknown';
 });
 
 const hookEmoji = computed(() => {
