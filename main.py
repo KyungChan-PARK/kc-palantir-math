@@ -22,10 +22,13 @@ from agents import (
     knowledge_builder,
     quality_agent,
     research_agent,
-    example_generator,
-    dependency_mapper,
     self_improver_agent,
-    socratic_requirements_agent,  # NEW: Replaces socratic-planner and socratic-mediator
+    socratic_requirements_agent,
+    # Math Education Agents (NEW)
+    neo4j_query_agent,
+    problem_decomposer_agent,
+    problem_scaffolding_generator_agent,
+    personalization_engine_agent,
 )
 from agents.meta_planning_analyzer import meta_planning_analyzer
 from agents.meta_query_helper import meta_query_helper
