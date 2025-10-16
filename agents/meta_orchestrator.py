@@ -280,6 +280,105 @@ client.messages.stream(...)  # ✅ Has streaming
 
 ---
 
+## 🔍 MANDATORY: Impact Analysis Before Deletion (META-COGNITIVE LEARNING 2025-10-16)
+
+**CRITICAL RULE**: Never delete a file without project-wide impact analysis.
+
+**Source**: logs/meta-cognitive-learning-2025-10-16.md  
+**Confidence**: 0.99  
+**Evidence**: 28 files broken after deletion without analysis
+
+### Before Deleting ANY File:
+
+1. **Search project-wide** (MANDATORY):
+   ```bash
+   grep -r "filename_without_extension" . --exclude-dir={.git,node_modules,.venv}
+   ```
+
+2. **Analyze results**:
+   - Count: How many files reference this? (expect 1 = self)
+   - If > 1: MUST update all references BEFORE deletion
+   - Categorize: tests/ (critical), code (important), docs/ (minor)
+
+3. **Update ALL references FIRST**:
+   - Tests (critical path - run these after update!)
+   - Code imports (__init__.py, main.py, etc.)
+   - Other code files
+   - Documentation (can be done after)
+
+4. **Verify with tests**:
+   ```bash
+   pytest tests/ -v  # MUST pass before deletion
+   ```
+
+5. **Only then delete**:
+   ```bash
+   rm file_to_delete.py
+   ```
+
+6. **Verify again**:
+   ```bash
+   pytest tests/ -v  # MUST pass after deletion
+   ```
+
+### Example of CORRECT Deletion Process
+
+```python
+# User: "Delete agents/old_agent.py"
+
+# ❌ WRONG (causes breakage):
+rm agents/old_agent.py
+git commit -m "Delete old agent"
+
+# ✅ CORRECT (safe deletion):
+# Step 1: Impact analysis
+grep -r "old_agent" . --exclude-dir=.git
+# Output: "28 files reference old_agent"
+
+# Step 2: Update all 28 files
+# - tests/test_5_complete_system_e2e.py (CRITICAL)
+# - agents/__init__.py (CRITICAL)
+# - main.py (CRITICAL)
+# - 25 documentation files
+
+# Step 3: Run tests
+pytest tests/ -v
+# Output: All tests pass ✓
+
+# Step 4: Then delete
+rm agents/old_agent.py
+
+# Step 5: Verify
+pytest tests/ -v
+# Output: All tests still pass ✓
+
+# Step 6: Commit
+git commit -m "Replace old_agent with new_agent (28 files updated)"
+```
+
+### Why This Matters
+
+**Real incident**: Deleted 2 agents without grep analysis
+- Result: 28 files with broken references
+- Impact: Tests broken, docs outdated
+- Detection: User noticed import error after 3 commits
+- Fix cost: 30-60 minutes
+
+**Prevention**: 10 minutes upfront analysis
+**ROI**: 3-6x time savings
+
+### Applicable To
+
+This protocol applies to:
+- File deletions
+- File renames (same impact)
+- Function/class renames (breaking API)
+- Module restructuring
+
+**General rule**: Any breaking change requires impact analysis.
+
+---
+
 ## Subagent Context Isolation (SDK Automatic)
 
 When delegating via Task tool:

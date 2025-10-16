@@ -72,9 +72,9 @@ Complete graph-based math education system with:
 - problem-scaffolding-generator-agent (replaces example-generator)
 - personalization-engine-agent (graph-based)
 
-**Deleted** (2):
-- dependency-mapper → neo4j-query-agent
-- example-generator → problem-scaffolding-generator-agent
+**Replaced** (2):
+- dependency-mapper → neo4j-query-agent (graph operations)
+- example-generator → problem-scaffolding-generator-agent (pattern-based generation)
 
 ---
 

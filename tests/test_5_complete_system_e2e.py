@@ -2,16 +2,18 @@
 Tier 5: Complete System E2E Tests
 
 Tests full integration of all components:
-- All 13 agents discoverable and functional
+- All 18 agents discoverable and functional
 - Hook system operational
 - Meta-cognitive system active
 - Documentation complete
 - Main.py integration
+- Math Education System integrated
 
 This is the comprehensive system validation.
 
-VERSION: 1.0.0
+VERSION: 2.0.0
 DATE: 2025-10-16
+UPDATED: Fixed agent count (13→18), removed deleted agents, added math education agents
 """
 
 import pytest
@@ -25,10 +27,10 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 class TestCompleteSystem:
     """Complete system integration validation tests."""
     
-    def test_1_all_13_agents_discoverable(self):
-        """Test: All 13 agents can be imported and are registered."""
+    def test_1_all_18_agents_discoverable(self):
+        """Test: All 18 agents can be imported and are registered."""
         print("\n" + "="*80)
-        print("TEST 1: Agent Registry Complete")
+        print("TEST 1: Agent Registry Complete (18 Agents)")
         print("="*80)
         
         expected_agents = [
@@ -37,14 +39,23 @@ class TestCompleteSystem:
             'knowledge_builder',
             'research_agent',
             'quality_agent',
-            'example_generator',
-            'dependency_mapper',
+            # 'example_generator',  # ❌ DELETED - replaced by problem_scaffolding_generator_agent
+            # 'dependency_mapper',   # ❌ DELETED - replaced by neo4j_query_agent
             'self_improver_agent',
             'meta_planning_analyzer',
             'meta_query_helper',
             'test_automation_specialist',
             'security_auditor',
             'performance_engineer',
+            # Math Education Agents (NEW)
+            'neo4j_query_agent',
+            'problem_decomposer_agent',
+            'problem_scaffolding_generator_agent',
+            'personalization_engine_agent',
+            # Tier Coordinators (NEW)
+            'semantic_manager_agent',
+            'kinetic_execution_agent',
+            'dynamic_learning_agent',
         ]
         
         imported = []
@@ -62,9 +73,10 @@ class TestCompleteSystem:
         
         print(f"\n  Total: {len(imported)}/{len(expected_agents)} agents")
         
-        assert len(imported) >= 13, f"Expected 13 agents, found {len(imported)}"
+        assert len(imported) >= 18, f"Expected 18 agents, found {len(imported)}"
+        assert len(imported) == len(expected_agents), f"Expected {len(expected_agents)} agents, found {len(imported)}"
         
-        print(f"\n✅ TEST 1 PASSED: All 13 agents discoverable")
+        print(f"\n✅ TEST 1 PASSED: All 18 agents discoverable")
     
     def test_2_hook_system_operational(self):
         """Test: Hook system is integrated and operational."""
